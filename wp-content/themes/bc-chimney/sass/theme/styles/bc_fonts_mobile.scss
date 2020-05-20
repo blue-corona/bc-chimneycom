@@ -1,4 +1,123 @@
-@media only screen and (max-width: 768px) {
+@media (hover: none), only screen and (max-width: 768px) {
+
+h1, .h1{
+  	font-family:$default_font_family;
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 34px;
+	letter-spacing: default;
+	color: $primary_color;
+}
+
+h2, .h2{
+  	font-family:$default_font_family;
+	font-size: 26px;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 30px;
+	letter-spacing: default;
+	color: $white_color;
+}
+
+.h2-alt{
+  	font-family:$default_font_family;
+	font-size: 26px;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 30px;
+	letter-spacing: default;
+	color: $primary_color;
+}
+
+h3, .h3{
+  	font-family: $default_font_family;
+  	font-size: 22px;
+  	font-weight: 300;
+  	text-transform: capitalize;
+  	line-height: 30px;
+  	letter-spacing: default;
+  	color: $primary_color;
+}
+
+h4,.h4{
+  	font-family: $default_font_family;
+  	font-size: 30px;
+  	font-weight: 700;
+  	text-transform: capitalize;
+  	line-height: 32px;
+  	letter-spacing: default;
+  	color: $primary_color;
+}
+
+h5,.h5{
+  	font-family: $default_font_family;
+  	font-size: 20px;
+  	font-weight: 700; 
+  	text-transform: capitalize;
+  	line-height: 24px;
+  	letter-spacing: default;
+  	color: $primary_color;
+}
+
+
+h6, .h6{
+  	font-family: $alternate_font_family_2;
+  	font-size: 18px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	letter-spacing: default;
+  	line-height: 20px;
+  	color: $primary_color;
+}
+ 
+p, .p, body,li{
+  	font-family: $alternate_font_family_1;
+  	font-size: 16px;
+  	font-weight: 400;
+  	text-transform: none;
+  	line-height: 30px;
+  	letter-spacing: default;
+  	color: $primary_color;
+
+}
+
+.p-alt{
+  	font-family: $alternate_font_family_1;
+  	font-size: 16px;
+  	font-weight: 400;
+  	text-transform: none;
+  	line-height: 30px;
+  	letter-spacing: default;
+  	color: $white_color;
+
+}
+
+body{
+	p, li{
+		a{
+			font-family: $alternate_font_family_1;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 30px;
+			letter-spacing: default;
+			color: $secondary_color;
+			text-decoration: none;
+			&:hover{
+				color: $tertiary_color;
+			}
+		}
+	}
+}
+
+button {
+  font-family: $default_font_family;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 	//Classes for font-weights
 	.bc_sm_text_thin { font-weight: 100; }
 	.bc_sm_text_xlight { font-weight: 200; }
