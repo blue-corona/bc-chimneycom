@@ -62,6 +62,20 @@
 		color: #000000 !important; 
 	}
 }
+.bc_color_white { 
+	color: $white_color!important; 
+	&--imp{
+		@extend .bc_color_white;
+		color: $white_color !important; 
+	}
+}
+.bc_color_brown { 
+	color: $brown_color!important; 
+	&--imp{
+		@extend .bc_color_brown;
+		color: $brown_color !important; 
+	}
+}
 
 //Classes for bg color
 .bc_color_primary_bg { background-color: $primary_color; }
@@ -73,6 +87,8 @@
 .bc_color_success_bg { background-color: $success_color; }
 .bc_color_info_bg { background-color: $info_color; }
 .bc_color_black_bg { background-color: #000000; }
+.bc_color_white_bg { background-color: $white_color; }
+.bc_color_brown_bg { background-color: $brown_color !important; }
 
 //Classes for hover color
 .bc_color_primary_hover { &:hover{ color: $primary_color !important; } }
@@ -84,6 +100,8 @@
 .bc_color_success_hover { &:hover{ color: $success_color !important; } }
 .bc_color_info_hover { &:hover{ color: $info_color !important; } }
 .bc_color_black_hover { &:hover{ color: #000000 !important; } }
+.bc_color_white_hover { &:hover{ color: $white_color !important; } }
+.bc_color_brown_hover { &:hover{ color: $brown_color !important; } }
 
 //Classes for hover bg color
 .bc_color_primary_hover_bg { &:hover{ background-color: $primary_color; } }
@@ -95,3 +113,5 @@
 .bc_color_success_hover_bg { &:hover{ background-color: $success_color; } }
 .bc_color_info_hover_bg { &:hover{ background-color: $info_color; } }
 .bc_color_black_hover_bg { &:hover{ background-color: #000000; } }
+.bc_color_white_hover_bg { &:hover{ background-color:  $white_color; } }
+.bc_color_brown_hover_bg { &:hover{ background-color:  $brown_color; } }
