@@ -1,12 +1,9 @@
-@import "fonts_backup"; //Remove this for new themes
-@import "bc_fonts_mobile";
-
 //Default BC core font scheme
 h1, .h1{
-	font-family: $default_font_family;
+	font-family:$default_font_family;
 	font-size: 48px;
 	font-weight: 700;
-	text-transform: none;
+	text-transform: capitalize;
 	line-height: 48px;
 	letter-spacing: default;
 	color: $primary_color;
@@ -14,27 +11,77 @@ h1, .h1{
 
 h2, .h2{
 	font-family: $default_font_family;
-	font-size: 36px;
-	font-weight: 500;
-	text-transform: uppercase;
-	line-height: 36px;
+	font-size: 48px;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 55px;
 	letter-spacing: default;
 	color: $primary_color;
 }
 
+.h2-alt{
+	font-family: $alternate_font_family_1;
+	font-size: 48px;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 55px;
+	letter-spacing: default;
+	color: $white_color;
+}
+
 h3, .h3{
 	font-family: $default_font_family;
-	font-size: 30px;
+	font-size: 36px;
 	font-weight: 300;
-	text-transform: uppercase;
-	line-height: 36px;
+	text-transform: capitalize;
+	line-height: 43px;
 	letter-spacing: default;
 	color: $primary_color;
 }
 
 h4, .h4{
 	font-family: $default_font_family;
-	font-size: 24px;
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 48px;
+	letter-spacing: default;
+	color: $primary_color;
+}
+
+h5, .h5{
+	font-family: $default_font_family;
+	font-size: 22px;
+	font-weight: 700; 
+	text-transform: capitalize;
+	line-height: 26px;
+	letter-spacing: default;
+	color: $primary_color;
+}
+
+h6, .h6{
+	font-family: $alternate_font_family_2;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 30px;
+	letter-spacing: default;
+	color: $primary_color;
+}
+
+.h7{
+	font-family: $alternate_font_family_1;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 30px;
+	letter-spacing: default;
+	color: $primary_color;
+}
+
+p, .p, body,li{
+	font-family: $alternate_font_family_1;
+	font-size: 20px;
 	font-weight: 400;
 	text-transform: none;
 	line-height: 30px;
@@ -42,35 +89,33 @@ h4, .h4{
 	color: $primary_color;
 }
 
-h5, .h5{
-	font-family: $default_font_family;
-	font-size: 18px;
-	font-weight: 400; 
-	text-transform: none;
-	line-height: 24px;
-	letter-spacing: default;
-	color: $primary_color;
-}
-
-h6, .h6{
-	font-family: $default_font_family;
-	font-size: 16px;
-	font-weight: 400;
-	text-transform: none;
-	line-height: 18px;
-	letter-spacing: default;
-	color: $primary_color;
-}
-
-p, .p, body{
-	font-family: $default_font_family;
+.p-alt{
+	font-family: $alternate_font_family_1;
 	font-size: 20px;
 	font-weight: 400;
 	text-transform: none;
-	line-height: 36px;
+	line-height: 30px;
 	letter-spacing: default;
-	color: $primary_color;
+	color: $white_color;
 
+}
+
+body{
+	p, li{
+		a{
+			font-family: $alternate_font_family_1;
+			font-size: 20px;
+			font-weight: 400;
+			text-transform: none;
+			line-height: 30px;
+			letter-spacing: default;
+			color: $secondary_color;
+			text-decoration: none;
+			&:hover{
+				color: $tertiary_color;
+			}
+		}
+	}
 }
 
 //Todo: need to style for hyperlinks <a>
@@ -124,6 +169,7 @@ p, .p, body{
 ::placeholder, button {
   font-family: $default_font_family;
   font-weight: 400;
-  line-height: 36px;
-  color: $success_color;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
 }

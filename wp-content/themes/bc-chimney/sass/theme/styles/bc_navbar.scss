@@ -22,7 +22,12 @@
 		li {
 
 			a {
-				color: $secondary_color; //Top level link
+				color: $primary_color; //Top level link
+				font-family: $alternate_font_family_1;
+				font-size:20px;
+				line-height:30px;
+				font-weight: 400;
+				text-transform: uppercase;
 				svg { color: $info_color; } // Top level dropdown icon
 			}
 			&:hover{
@@ -47,7 +52,12 @@
 
 
 			a{	
-				color: $secondary_color; // Dropdown link
+				color: $primary_color; // Dropdown link
+				font-family: $alternate_font_family_1;
+				font-size:20px;
+				line-height:50px;
+				font-weight: 400;
+				text-transform: uppercase;
 				svg { // Dropdown icon 
 					color: $primary_color; 
 					@media (hover: none), only screen and (max-width: 991px) {
@@ -71,7 +81,7 @@
 				}
 				svg { color: $secondary_color; } // Dropdown icon hover
 				a { // Dropdown icon hover
-					color: $secondary_color;
+					color: $secondary_color; // Dropdown link
 				} 
 			}
 		}
