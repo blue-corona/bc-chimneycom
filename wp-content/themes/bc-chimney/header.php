@@ -26,9 +26,9 @@ defined( 'ABSPATH' ) || exit;
 <body <?php  body_class();?> >
 <!-- Show header accordingly fixed or default -->
 <?php if(bc_get_theme_mod('bc_theme_options', 'header', 'type', 'fixed') == 'fixed'){
-    echo '<header class="bc_header sticky-top bc_color_secondary_bg">';
+    echo '<header class="bc_header sticky-top bg-white">';
  }else{
-    echo  '<header class="bc_header bc_color_secondary_bg">';
+    echo  '<header class="bc_header bg-white">';
  }?>
     <!-- announcement bar background color-->
     <div class="container-fluid bc_color_primary_bg bc_announcement_bar p-0">

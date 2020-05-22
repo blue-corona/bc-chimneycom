@@ -8128,6 +8128,9 @@ body p a, body li a {
 .bc_text_26 {
   font-size: 26px; }
 
+.bc_text_27 {
+  font-size: 27px; }
+
 .bc_text_30 {
   font-size: 30px; }
 
@@ -8164,6 +8167,9 @@ body p a, body li a {
 .bc_line_height_26 {
   line-height: 26px; }
 
+.bc_line_height_28 {
+  line-height: 28px; }
+
 .bc_line_height_30 {
   line-height: 30px; }
 
@@ -8181,6 +8187,9 @@ body p a, body li a {
 
 .bc_line_height_48 {
   line-height: 48px; }
+
+.bc_line_height_50 {
+  line-height: 50px; }
 
 .bc_line_height_60 {
   line-height: 60px; }
