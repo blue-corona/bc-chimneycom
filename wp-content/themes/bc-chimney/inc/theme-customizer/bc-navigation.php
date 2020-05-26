@@ -272,12 +272,12 @@ function navigation_style($wp_customize){
         ; } /* Top level link hover */
     .bc_nav_container .navbar-nav > li a svg { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_dropdown_icon', '#116eab');?>; } /*NEW Top level dropdown icon*/
     .bc_nav_container .navbar-nav > li:hover svg { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_dropdown_icon_hover', '#00395e;');?>; } /*NEW Top level dropdown icon hover*/
-    .bc_nav_container .navbar-nav > li:hover { background-color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_dropdown_background', '#116eab');?>; } /* NEW Top level dropdown background hover    */
+    /*.bc_nav_container .navbar-nav > li:hover { background-color: <?php //secho bc_get_theme_mod('bc_theme_options', 'navigation_bar','top_level_dropdown_background', '#116eab');?>; }*/ /* NEW Top level dropdown background hover    */
   
     .bc_nav_container .navbar-nav .dropdown-menu { background-color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','dropdown_background', '#116eab');?>; } /* Dropdown background*/
      .bc_nav_container .dropdown li:hover a, .bc_nav_container .dropdown .dropdown-item:hover a { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','dropdown_link_hover', '#ffffff');?>; } /* Dropdown Link Hover */
     .bc_nav_container .dropdown li:hover, .bc_nav_container .dropdown .dropdown-item:hover { background-color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','dropdown_link_hover_background', '#00395e');?>; } /* Dropdown Link Hover Background */
-    .navbar-toggler-icon { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','mobile_nav_icon', '#f38527');?>; } /* Mobile Nav Icon */
+    /*.navbar-toggler-icon { color: <?php //echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','mobile_nav_icon', '#f38527');?>; }*/ /* Mobile Nav Icon */
     .navbar-toggler:hover { background-color: #ffffff00 !important; }
     /*Not working*/
     .bc_nav_container .dropdown li a.nav-link svg, .bc_nav_container .dropdown .dropdown-item a svg { color: <?php echo bc_get_theme_mod('bc_theme_options', 'navigation_bar','dropdown_icon', '#00395e');?>; } /* Dropdown icon */
