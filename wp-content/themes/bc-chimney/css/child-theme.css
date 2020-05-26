@@ -8128,6 +8128,9 @@ body p a, body li a {
 .bc_text_26 {
   font-size: 26px; }
 
+.bc_text_27 {
+  font-size: 27px; }
+
 .bc_text_30 {
   font-size: 30px; }
 
@@ -8164,6 +8167,9 @@ body p a, body li a {
 .bc_line_height_26 {
   line-height: 26px; }
 
+.bc_line_height_28 {
+  line-height: 28px; }
+
 .bc_line_height_30 {
   line-height: 30px; }
 
@@ -8181,6 +8187,9 @@ body p a, body li a {
 
 .bc_line_height_48 {
   line-height: 48px; }
+
+.bc_line_height_50 {
+  line-height: 50px; }
 
 .bc_line_height_60 {
   line-height: 60px; }
@@ -8635,14 +8644,20 @@ ul.gform_fields li::before {
     .bc_nav_container {
       background-color: #2a2a2a; } }
   .bc_nav_container .navbar-nav li a {
-    color: #2a2a2a;
-    font-family: "Open Sans", sans-serif;
+    color: #2a2a2a !important;
+    font-family: "Open Sans", sans-serif !important;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 12px 14px !important; }
     .bc_nav_container .navbar-nav li a svg {
-      color: #0e4c7d; }
+      color: #8f3e28 !important; }
+    .bc_nav_container .navbar-nav li a .fa-chevron-down {
+      font-size: 10px; }
+  .bc_nav_container .navbar-nav li:last-child a {
+    background: #bf703f;
+    color: #ffffff !important; }
   .bc_nav_container .navbar-nav li:hover {
     background-color: #0e4c7d; }
     @media (hover: none), only screen and (max-width: 991px) {
@@ -8698,15 +8713,16 @@ ul.gform_fields li::before {
     top: 18px; }
 
 .navbar {
-  padding: 0rem 1rem; }
+  padding: 0rem; }
 
 .navbar-nav li {
-  padding-top: .5rem;
-  padding-bottom: .5rem; }
+  padding-top: 0rem;
+  padding-bottom: 0rem; }
 
 .navbar-nav > li {
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: unset !important; }
 
 .dropdown li {
   padding: 0rem 0rem; }
@@ -8936,6 +8952,9 @@ ul.gform_fields li::before {
     .btn-secondary:hover:before {
       -webkit-transform: scale(1);
       transform: scale(1); }
+
+.w-200 {
+  width: 200px; }
 
 @media (hover: none), only screen and (max-width: 768px) {
   h1, .h1 {
@@ -9285,5 +9304,9 @@ div {
 
 .brown_border {
   border-color: #290D0C; }
+
+.shadow_bottom {
+  -webkit-box-shadow: 0 0 13px 6px rgba(0, 0, 0, 0.29);
+          box-shadow: 0 0 13px 6px rgba(0, 0, 0, 0.29); }
 
 /*# sourceMappingURL=child-theme.css.map */

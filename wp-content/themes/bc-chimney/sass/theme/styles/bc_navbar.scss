@@ -22,13 +22,23 @@
 		li {
 
 			a {
-				color: $primary_color; //Top level link
-				font-family: $alternate_font_family_1;
+				color: $primary_color !important; //Top level link
+				font-family: $alternate_font_family_1 !important;
 				font-size:20px;
 				line-height:30px;
 				font-weight: 400;
 				text-transform: uppercase;
-				svg { color: $info_color; } // Top level dropdown icon
+				padding:12px 14px !important;
+				svg { color: $secondary_color !important; } // Top level dropdown icon
+				.fa-chevron-down{
+						font-size:10px;
+				}
+			}
+			&:last-child{
+				a{
+					background:$tertiary_color;
+					color:$white_color !important;
+				}
 			}
 			&:hover{
 				background-color: $info_color;	// Top level dropdown background hover
@@ -110,16 +120,17 @@
 }
 
 .navbar {
-	padding: 0rem 1rem;
+	padding: 0rem;
 }
 .navbar-nav{
 	li{
-		padding-top: .5rem;
-		padding-bottom: .5rem;	
+		padding-top: 0rem;
+		padding-bottom: 0rem;	
 	}
 	& > li {
-		padding-left: 10px;
-		padding-right: 10px;	
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+    	width: unset !important;	
 	}
 }
 .dropdown {
