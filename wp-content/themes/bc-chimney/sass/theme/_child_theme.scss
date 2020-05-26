@@ -155,7 +155,7 @@ border-width:$border_width_custom_2;
 		padding:5px 35px !important;
 	}
 }
-
+/*
 div, {
  	&::-webkit-scrollbar {
 	 	width: 10px;
@@ -166,7 +166,7 @@ div, {
 	}
 
 	scrollbar-color: #f38527 lightgrey;  
-}
+}*/
 
 .bc_branding_btn_1, .bc_branding_btn_2{
 	@media screen and (min-width: 1024px) {
@@ -282,5 +282,49 @@ div, {
 	transition:all ease 0.4s;
 	&:hover{
 		box-shadow: 0 0 32px 1px rgba(0,0,0,0.15);
+	}
+}
+.top_line{
+	border-top:2px solid $secondary_color;
+}
+.bottom_border{
+	border-bottom:2px solid $secondary_color;
+}
+.right_md_border{
+	border-right:2px solid $secondary_color;
+	@media only screen and (max-width: 767px) {
+		border-right:none;
+	}
+}
+.footer_badge{
+	border-right:2px solid $secondary_color;
+}
+.footer_border{
+	border-top:13px solid $secondary_color;
+}
+.social_icons a{
+	color: $primary_color; 
+	margin-right:5px;
+	font-size:20px;
+	svg{
+		font-size:20px;
+	}
+	@media only screen and (max-width: 767px) {
+		margin:0px 5px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.footer_logo{
+		max-width:293px;
+		margin:0px auto
+	}
+	.footer_badge{
+		max-width:85px;
+		margin-left:10px;
+	}
+	.copyright_border{
+		border-top:2px solid $secondary_color;
+		padding-top:15px;
 	}
 }
