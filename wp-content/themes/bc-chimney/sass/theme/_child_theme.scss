@@ -278,3 +278,9 @@ div, {
 .shadow_bottom{
 	box-shadow: 0 0 13px 6px rgba(0,0,0,0.29);
 }
+.outer_shadow{
+	transition:all ease 0.4s;
+	&:hover{
+		box-shadow: 0 0 32px 1px rgba(0,0,0,0.15);
+	}
+}

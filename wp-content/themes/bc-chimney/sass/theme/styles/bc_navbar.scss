@@ -1,9 +1,15 @@
 // Nav bar color scheme according to theme customizer
 .bc_nav_container{
+	@media only screen and (max-width: 768px) {
+		position: absolute !important;
+		top: 0px !important;
+		z-index: 10 !important;
+		background-color: #fff !important;
+	}
 	#navbarSupportedContent{
 		@media (hover: none), only screen and (max-width: 991px) {
-			height: auto;
-		    max-height: 500px;
+			height: 100vh;
+		    max-height: 100vh;
 		    overflow-x: hidden;
 		}
 	}
@@ -20,7 +26,6 @@
 	}
 	.navbar-nav{
 		li {
-
 			a {
 				color: $primary_color !important; //Top level link
 				font-family: $alternate_font_family_1 !important;
@@ -28,53 +33,80 @@
 				line-height:30px;
 				font-weight: 400;
 				text-transform: uppercase;
-				padding:12px 14px !important;
+				padding:12px !important;
+				transition:all ease 0.4s;
+				border-radius:0px;
 				svg { color: $secondary_color !important; } // Top level dropdown icon
 				.fa-chevron-down{
 						font-size:10px;
-				}
-			}
-			&:last-child{
-				a{
-					background:$tertiary_color;
-					color:$white_color !important;
+						vertical-align: middle;
 				}
 			}
 			&:hover{
-				background-color: $info_color;	// Top level dropdown background hover
 				@media (hover: none), only screen and (max-width: 991px) {
 					background-color: #ffffff00 !important; // Mobile nav bar Background
 				}		
 				svg { color: $primary_color; } //Top level dropdown icon hover
-				a.nav-link { color: $secondary_color; } // Top level link hover	
+				a.nav-link { color: $secondary_color!important; } // Top level link hover	
+			}
+			&:last-child{
+				a{
+					background-color:$tertiary_color;
+					color:$white_color !important;
+					transition:all ease 0.4s;
+				}
+				&:hover{
+					a{
+						color: $primary_color !important; 
+						background-color:$tertiary_color !important;
+					}
+				}
 			}
 		}
-		.dropdown-menu{ 
-			background-color: $info_color; // Dropdown background
+		li.dropdown{
+				li{
+					&:last-child{
+						a{
+							color: $primary_color !important; // Dropdown link
+							background-color: $white_color!important; // Dropdown background
+						}
+					}
+					&:hover{
+						a{
+							color: $secondary_color!important;
+							background-color:#EBEBEB !important;
+						}
+					}
+				}
+			}
+		.dropdown-menu{
+			border-top:12px solid $secondary_color;
+			box-shadow: 0 0 32px 1px rgba(0,0,0,0.15);
+			background-color: $white_color!important; // Dropdown background
+			line-height:50px;
 			@media (hover: none), only screen and (max-width: 991px) {
 				 background-color: #ffffff00 !important; 
+				 border:none;
+				 box-shadow:none;
 			} 
 		} 
 	}
 
 	.dropdown {
 		li, .dropdown-item {
-
-
 			a{	
 				color: $primary_color; // Dropdown link
 				font-family: $alternate_font_family_1;
 				font-size:20px;
-				line-height:50px;
 				font-weight: 400;
 				text-transform: uppercase;
+				background-color:$white_color!important; 
 				svg { // Dropdown icon 
 					color: $primary_color; 
 					@media (hover: none), only screen and (max-width: 991px) {
 						color: $info_color;
 					}
 				} 
-
 			}
 
 			&:focus{
@@ -85,7 +117,10 @@
 			}
 
 			&:hover{
-				background-color: $tertiary_color; 	//Dropdown background hover	
+				a{
+					color: $secondary_color!important;
+					background-color: #EBEBEB !important; 	//Dropdown background hover	
+				}
 				@media (hover: none), only screen and (max-width: 991px) {
 					background-color: #ffffff00 !important; // Mobile nav bar Background
 				}
@@ -98,7 +133,7 @@
 	}
 }
 
-.navbar-toggler-icon{ color: $tertiary_color; } // Toggle icon color
+.navbar-toggler-icon{ color: $primary_color; } // Toggle icon color
 
 //Menu dropdown modifications
 
@@ -130,7 +165,11 @@
 	& > li {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
-    	width: unset !important;	
+    	width: unset !important;
+    	@media (hover: none), only screen and (max-width: 991px) {
+			width: 100% !important;	
+			border-top: 1px solid #b5b5b5 !important;
+		}		
 	}
 }
 .dropdown {
@@ -178,6 +217,32 @@
 
 //Overriding navbar-expand-lg behaviour for touch screen devices 
 @media (hover: none) {
+	.bc_nav_container {
+		.navbar-nav{
+			margin-top:30px;
+			li{
+				&:first-child{
+					display:none;
+				}
+				&:last-child{
+					a{
+						color: $primary_color !important; //Top level link
+						background-color:$white_color!important; 
+					}
+				}
+				a{
+					white-space: break-spaces;
+				}
+			}
+			li.dropdown{
+				li{
+					&:first-child{
+						display:block;
+					}
+				}
+			}
+		}
+	}
 	.bc-nav-dropdown-icon{
 		width: 45px;
 		height: 30px;

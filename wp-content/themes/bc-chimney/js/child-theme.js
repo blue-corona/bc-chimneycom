@@ -6939,6 +6939,7 @@ function toggleFloatLabel(selector, type){
 
 
 jQuery(document).ready(function(){
+
     jQuery(".navbar-nav li").hover(
     function(){
         jQuery(this).children('ul').hide();
@@ -6947,6 +6948,16 @@ jQuery(document).ready(function(){
     function () {
         jQuery('ul', this).hide();            
     });
+    jQuery('#navbarSupportedContent').on('hidden.bs.collapse', function () {
+        toggleIcon();        
+    })
+    jQuery('#navbarSupportedContent').on('show.bs.collapse', function () {
+        toggleIcon();
+    })
+    function toggleIcon(){
+        jQuery(".navbar-toggler-icon").toggleClass('fa-bars');
+        jQuery(".navbar-toggler-icon").toggleClass('fa-times');
+    }
 });
 
 jQuery(".nav-link").on('touchstart',function(e){

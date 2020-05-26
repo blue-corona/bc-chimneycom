@@ -36,7 +36,9 @@ get_header();?>
           		<p class="pr-5 mr-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora</p>
           		<p class="bc_font_alt_1 bc_text_normal bc_text_20 bc_line_height_30 bc_color_primary mb-5 text-uppercase">
           			<span class="d-block">Navigation - open sans regular/400 20px 30LH #2a2a2a & #FFFFFF</span>
-	                <span class="pr-3">about us</span><span class="px-3">services</span><span class="px-3">resources</span><span class="px-3">careers</span><span class="px-3">contact us</span>
+	                <span class="d-flex flex-wrap">
+                    <span class="pr-3">about us</span><span class="pr-3">services</span><span class="pr-3">resources</span><span class="pr-3">careers</span><span class="pr-3">contact us</span>
+                  </span>
 	            </p>
 	            <p class="bc_font_default bc_text_normal bc_color_primary bc_line_height_24 bc_text_24 mb-2 text-uppercase">Footer Titles - Oxygen Regular/400 24px 24LH #2a2a2a</p>
 	            <p>Footer Address - Open Sans Regular/400 20px 30LH #2a2a2a</p>
@@ -65,7 +67,9 @@ get_header();?>
           		<p class="pr-5 mr-5 mb-5 bc_text_16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
           		<p class="bc_font_alt_1 bc_text_normal bc_text_20 bc_line_height_30 bc_color_primary mb-5 text-uppercase">
           			<span class="d-block">Navigation - open sans regular/400 20px 60LH #2a2a2a & #2a2a2a</span>
-	                <span class="pr-3">about us</span><span class="px-3">services</span><span class="px-3">resources</span><span class="px-3">careers</span><span class="px-3">contact us</span>
+	                <span class="d-flex flex-wrap">
+                    <span class="pr-3">about us</span><span class="pr-3">services</span><span class="pr-3">resources</span><span class="pr-3">careers</span><span class="pr-3">contact us</span>
+                  </span>
 	            </p>
 	            <p class="bc_font_default bc_text_normal bc_color_primary bc_text_17 bc_line_height_17 mb-2 text-uppercase">Footer Titles - Oxygen Regular/400 17px 17LH #2a2a2a</p>
 	            <p class="bc_text_16 bc_line_height_20">Footer Address - Open Sans Regular/400 16px 20LH #2a2a2a</p>
