@@ -8824,7 +8824,7 @@ ul.gform_fields li::before {
       background-color: #ffffff !important; }
     .bc_nav_container .navbar-nav li a {
       white-space: break-spaces;
-      padding: 12px !important; }
+      padding: 16px 12px 10px !important; }
     .bc_nav_container .navbar-nav li.dropdown li:first-child {
       display: block; }
   .bc-nav-dropdown-icon {

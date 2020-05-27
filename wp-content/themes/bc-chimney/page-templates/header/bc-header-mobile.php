@@ -14,8 +14,8 @@
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mobile_logo_header.png">
                     </a>
                 </div>
-                <div class="col-2 bc_color_secondary_bg text-center py-3">
-                    <a href="tel: 555-555-5555" class="mx-auto d-block mt-1 text-white"><i class="fas fa-phone  bc_text_24"></i></a>
+                <div class="col-2 bc_color_secondary_bg text-center">
+                    <a href="tel: 555-555-5555" class="mx-auto d-block mt-1 text-white  py-3"><i class="fas fa-phone  bc_text_24"></i></a>
                 </div>
             </div>
         </div>
