@@ -6977,9 +6977,11 @@ jQuery(".nav-link").on('touchstart',function(e){
   }else{
     jQuery(this).children('span').children('svg').addClass("fa-angle-up");
     jQuery(this).children('span').children('svg').removeClass("fa-angle-down");
+    
   }
   jQuery(this).parent('li').children('ul').toggle();
   return false;
+  
 });
 
 //toggle read more - read less
