@@ -320,11 +320,21 @@ div, {
 		margin:0px auto
 	}
 	.footer_badge{
-		max-width:85px;
 		margin-left:10px;
+		img{
+			min-width: 82px;
+    		max-width: 82px;
+		}
 	}
 	.copyright_border{
 		border-top:2px solid $secondary_color;
-		padding-top:15px;
+		padding-top:.5rem!important;
 	}
+}
+
+.footer_address{
+	color:#2C2B2B;
+}
+.free_estimate{
+	margin-right:2px;
 }

@@ -30,10 +30,10 @@
 				color: $primary_color !important; //Top level link
 				font-family: $alternate_font_family_1 !important;
 				font-size:20px;
-				line-height:30px;
+				line-height:50px;
 				font-weight: 400;
 				text-transform: uppercase;
-				padding:12px !important;
+				padding:0px 12px !important;
 				transition:all ease 0.4s;
 				border-radius:0px;
 				svg { color: $secondary_color !important; } // Top level dropdown icon
@@ -68,6 +68,7 @@
 					&:last-child{
 						a{
 							color: $primary_color !important; // Dropdown link
+
 							background-color: $white_color!important; // Dropdown background
 						}
 					}
@@ -99,6 +100,7 @@
 				font-family: $alternate_font_family_1;
 				font-size:20px;
 				font-weight: 400;
+				line-height:50px;
 				text-transform: uppercase;
 				background-color:$white_color!important; 
 				svg { // Dropdown icon 
@@ -219,7 +221,7 @@
 @media (hover: none) {
 	.bc_nav_container {
 		.navbar-nav{
-			margin-top:30px;
+			margin-top:50px;
 			li{
 				&:first-child{
 					display:none;
@@ -232,7 +234,9 @@
 				}
 				a{
 					white-space: break-spaces;
+					padding:12px !important
 				}
+				
 			}
 			li.dropdown{
 				li{
