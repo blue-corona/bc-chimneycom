@@ -1,8 +1,8 @@
 <div class="container-fluid bc_nav_container bg-white mx-0">
     <div class="container p-0">
         <div class="row m-0">
-            <div class="col-lg-8 offset-lg-4 mt-xl-n5 px-0">
-                <nav class="navbar navbar-expand-lg navbar-dark d-table w-100 text-xl-right">
+            <div class="col-xl-8 offset-xl-4 mt-xl-n5 px-0">
+                <nav class="navbar navbar-expand-xl navbar-dark d-table w-100 text-xl-right">
                     <div id="navbarSupportedContent" class="navbar-collapse collapse" style="width:100%">
                         <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="d-none navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
                             <span class="navbar-toggler-icon navbar-dark"></span>
