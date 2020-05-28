@@ -34,12 +34,12 @@ defined( 'ABSPATH' ) || exit;
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-9 pr-md-0">
+                        <div class="col-xl-9 col-md-12 pr-md-0">
                             <div class=" d-flex align-items-center top_line pt-3">
-                                <div class="footer_badge pr-3">
+                                <div class="footer_badge pr-xl-3 pr-md-2">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer_badge.png">
                                 </div>
-                                <div class="ml-3 text-left">
+                                <div class="ml-xl-3 ml-md-2 text-left">
                                     <p class="mb-2 bc_font_default bc_text_normal bc_text_23 bc_line_height_24 bc_color_primary text-uppercase">Call Today</p>
                                     <p class="mb-2 bc_text_bold"><i class="fas fa-phone  bc_text_21 bc_line_height_50 bc_text_bold bc_sm_line_height_51"></i> <a href="tel: 555-555-5555" class="bc_text_bold text-decoration-none"><strong class="bc_font_default bc_text_23 bc_line_height_20 bc_color_secondary bc_text_bold bc_sm_line_height_24">(555) 555-5555</strong></a></p>
                                     <div class="social_icons mb-0 d-none d-md-block">
@@ -61,15 +61,15 @@ defined( 'ABSPATH' ) || exit;
                         </div>
                    </div>
                 </div>
-                <div class="col-md-6 offset-md-1 mt-md-4">
+                <div class="col-md-6 offset-md-1 mt-xl-4 mt-md-3 mt-lg-4 pt-lg-2 pt-xl-0">
                     <div class="row mt-3">
-                        <div class="col-md-6 col-10 offset-1 offset-md-0 right_md_border pt-md-4 pr-md-4 text-md-left text-center mb-3">
+                        <div class="col-md-6 col-10 offset-1 offset-md-0 right_md_border pt-md-4 pr-xl-4 text-md-left text-center mb-3">
                             <p class="bc_font_default bottom_border bc_text_24 bc_line_height_24 text-uppercase pb-2 bc_sm_text_17 bc_sm_line_height_17 mx-4 mx-md-0 mb-2 mb-md-3">Maryland</p>
-                            <p class="mb-md-5 bc_sm_line_height_20 px-4 px-md-0 pr-md-3 mx-3 mx-md-0 footer_address">10 Old Bonifant Rd. Silver Spring, MD 20905</p>
+                            <p class="mb-md-5 bc_sm_line_height_20 px-4 px-md-0 pr-xl-3 mx-3 mx-md-0 footer_address">10 Old Bonifant Rd. <br>Silver Spring, MD 20905</p>
                         </div>
-                        <div class="col-md-6  col-10 offset-1 offset-md-0 pt-md-4 pr-md-4 text-md-left text-center pl-md-4">
+                        <div class="col-md-6  col-10 offset-1 offset-md-0 pt-md-4 pr-xl-4 text-md-left text-center pl-xl-4">
                             <p class="bc_font_default bottom_border bc_text_24 bc_line_height_24 text-uppercase pb-2 bc_sm_text_17 bc_sm_line_height_17 mx-4 mx-md-0  mb-2 mb-md-3">Virginia</p>
-                            <p class="pr-md-4 mb-md-5 mb-0 bc_sm_line_height_20 footer_address">12929 Centre Park Circle Unit 115 Herndon, VA 20171</p>
+                            <p class="pr-xl-4 mb-md-5 mb-0 bc_sm_line_height_20 footer_address">12929 Centre Park Circle Unit 115 Herndon, VA 20171</p>
                         </div>
                     </div>
                 </div>
