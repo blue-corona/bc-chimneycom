@@ -6960,28 +6960,15 @@ jQuery(document).ready(function(){
     }
 });
 
-jQuery(".nav-link").on('touchstart',function(e){
-  // e.preventDefault();
-  e.stopPropagation();                                                      
-  if(jQuery(e.target).is(".nav-link-title")){
-    window.location = this.getAttribute('href');
-  }
-
-  if(jQuery(e.target).is("a")){
-    return;
-  }
-  
-  if(jQuery(this).children('span').children('svg').hasClass("fa-angle-up")){
-    jQuery(this).children('span').children('svg').removeClass("fa-angle-up");
-    jQuery(this).children('span').children('svg').addClass("fa-angle-down");
-  }else{
-    jQuery(this).children('span').children('svg').addClass("fa-angle-up");
-    jQuery(this).children('span').children('svg').removeClass("fa-angle-down");
-    
-  }
-  jQuery(this).parent('li').children('ul').toggle();
-  return false;
-  
+jQuery(document).ready(function(){
+    jQuery(".bc_nav_container_desktop .navbar-nav li").hover(
+    function(){
+        jQuery(this).children('ul').hide();
+        jQuery(this).children('ul').show();
+    },
+    function () {
+        jQuery('ul', this).hide();            
+    });
 });
 
 //toggle read more - read less

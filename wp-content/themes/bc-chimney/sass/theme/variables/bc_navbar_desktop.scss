@@ -1,0 +1,35 @@
+	$nav: (
+		background: #fff
+	);
+
+	$topLevel: (
+		color: #2a2a2a,
+		hoverColor:#8f3e28,
+		fontFamily:'Open Sans',
+		fontSize: 20px,
+		fontWeight: 400, 
+		background: none,
+		hoverBackground: #fff,
+		iconColor: #8f3e28
+	);
+
+	$secondLevel: (
+		color: #2a2a2a,
+		hoverColor:#8f3e28,
+		fontFamily:'Open Sans',
+		fontSize: 20px,
+		fontWeight: 400, 
+		background: #FFFFFF,
+		hoverBackground: #EBEBEB,
+		iconColor: #3B3B3B
+	);
+
+	$thirdLevel:(
+		color: #3E3B3B,
+		hoverColor:#BE4122,
+		fontFamily:'Open Sans',
+		fontSize: 16px,
+		fontWeight: 400, 
+		background: #FFFFFF,
+		hoverBackground: #EBEBEB
+	);

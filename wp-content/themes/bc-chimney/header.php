@@ -88,7 +88,7 @@ defined( 'ABSPATH' ) || exit;
         }
         get_template_part( 'page-templates/header/bc-header-mobile');
     ?>
-<div class="d-none hide-on-touch d-lg-block"> 
-    <?php get_template_part( 'page-templates/common/bc-nav-menu' ); ?>
-</div>
+
+    <?php get_template_part( 'page-templates/nav/bc-nav-menu-desktop' ); ?>
+    <?php get_template_part( 'page-templates/nav/bc-nav-menu-mobile' ); ?>
 </header>
