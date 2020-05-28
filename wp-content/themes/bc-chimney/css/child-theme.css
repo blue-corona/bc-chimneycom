@@ -9430,12 +9430,18 @@ div, {
     .social_icons a {
       margin: 0px 5px; } }
 
+@media only screen and (max-width: 1024px) {
+  .footer_badge img {
+    min-width: 85px;
+    max-width: 85px; } }
+
 @media only screen and (max-width: 767px) {
   .footer_logo {
     max-width: 293px;
     margin: 0px auto; }
   .footer_badge {
-    margin-left: 10px; }
+    margin-right: 8px;
+    padding-right: 8px; }
     .footer_badge img {
       min-width: 82px;
       max-width: 82px; }
