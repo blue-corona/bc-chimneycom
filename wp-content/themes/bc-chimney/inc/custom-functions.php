@@ -87,12 +87,12 @@ function add_custom_css_class( $button, $form ) {
 // Button Style 
 add_action( 'wp_head', 'button_style');
 function button_style($wp_customize){?>
-<style type="text/css">
+<!-- <style type="text/css">
 input[type=button], input[type=submit], input[type=reset],button {
-background-color: <?php echo bc_get_theme_mod('bc_theme_options', 'bc_button_color',false, '#00395e');?> ;color: <?php echo bc_get_theme_mod('bc_theme_options', 'bc_button_text_color',false, '#00395e');?>;
+background-color: <?php //echo bc_get_theme_mod('bc_theme_options', 'bc_button_color',false, '#00395e');?> ;color: <?php //echo bc_get_theme_mod('bc_theme_options', 'bc_button_text_color',false, '#00395e');?>;
 }input:hover[type=button], input:hover[type=submit], input:hover[type=reset],button:hover{
-background-color: <?php echo bc_get_theme_mod('bc_theme_options', 'bc_button_hover_color',false, '#00395e');?> ;color: <?php echo bc_get_theme_mod('bc_theme_options', 'bc_button_text_hover_color',false, '#00395e');?>;}
-</style>
+background-color: <?php //echo bc_get_theme_mod('bc_theme_options', 'bc_button_hover_color',false, '#00395e');?> ;color: <?php //echo bc_get_theme_mod('bc_theme_options', 'bc_button_text_hover_color',false, '#00395e');?>;}
+</style> -->
 <?php 
 }
 
