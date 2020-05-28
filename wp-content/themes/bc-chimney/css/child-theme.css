@@ -8108,6 +8108,9 @@ body p a, body li a {
 .bc_text_heavy {
   font-weight: 900; }
 
+.bc_text_14 {
+  font-size: 14px; }
+
 .bc_text_16 {
   font-size: 16px; }
 
@@ -8167,6 +8170,9 @@ body p a, body li a {
 
 .bc_line_height_20 {
   line-height: 20px; }
+
+.bc_line_height_20_61 {
+  line-height: 20.61px; }
 
 .bc_line_height_22 {
   line-height: 22px; }
@@ -8447,6 +8453,7 @@ body p a, body li a {
       padding-top: 18px !important;
       padding-bottom: 18px !important; }
   .floating_labels_wrapper .gform_footer {
+    display: none;
     padding: 12px !important;
     margin: 0px 0px !important; }
     .floating_labels_wrapper .gform_footer input {
@@ -8645,13 +8652,15 @@ body p a, body li a {
   .gform_wrapper ul li.gfield {
     padding-left: 16px; } }
 
-input[type="submit"] {
-  background: #f38527;
-  padding: 8px 23px;
-  color: #fff;
-  border-radius: 4px !important;
-  border-style: none; }
-
+/*input[type="submit"]{
+	background:map-get($submit_btn, background);
+	padding:map-get($submit_btn, padding);
+	color:map-get($submit_btn, color);
+	border:{
+		radius: map-get($form_input, border-radius);
+		style: map-get($form_input, border);
+	}
+}*/
 select {
   color: #4d4d4d !important; }
 
@@ -8728,6 +8737,13 @@ ul.gform_fields li::before {
 
 .p-98 {
   padding: 98px !important; }
+
+.px-26 {
+  padding-left: 26px;
+  padding-right: 26px; }
+
+.h-48 {
+  height: 48px; }
 
 .btn {
   color: #2a2a2a;
@@ -9239,12 +9255,12 @@ ul.gform_fields li::before {
 .bc_hero_container {
   background-image: url("../img/banner.jpg"); }
   .bc_hero_container .bc_hero_form_body {
-    background-color: #fef9f4; }
+    background-color: #fff; }
 
 .bc_landing_page_hero_container {
   background-image: url("../img/landingpage_banner.jpg"); }
   .bc_landing_page_hero_container .bc_hero_form_body {
-    background-color: #fef9f4; }
+    background-color: #fff; }
 
 .landing_page_hero_layer {
   background-color: #00006328; }
@@ -9465,5 +9481,24 @@ div, {
 
 .free_estimate {
   margin-right: 2px; }
+
+.input_btn {
+  top: 0px;
+  left: 0px; }
+
+.btn.btn-primary.hero_form_submit {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  .btn.btn-primary.hero_form_submit:before {
+    z-index: 99; }
+  .btn.btn-primary.hero_form_submit:hover input[type=submit] {
+    color: #fff; }
+
+.hero_form_submit input[type=submit] {
+  background: transparent;
+  color: #8f3e28;
+  z-index: 100;
+  border: 0px; }
 
 /*# sourceMappingURL=child-theme.css.map */

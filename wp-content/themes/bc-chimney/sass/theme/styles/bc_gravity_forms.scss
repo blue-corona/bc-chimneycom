@@ -38,6 +38,7 @@
 	}
 
 	.gform_footer{
+		display:none;
 		padding: 12px !important;
 		margin: 0px 0px !important;
 		input {
@@ -320,7 +321,7 @@
 	}
 }
 
-input[type="submit"]{
+/*input[type="submit"]{
 	background:map-get($submit_btn, background);
 	padding:map-get($submit_btn, padding);
 	color:map-get($submit_btn, color);
@@ -328,7 +329,7 @@ input[type="submit"]{
 		radius: map-get($form_input, border-radius);
 		style: map-get($form_input, border);
 	}
-}
+}*/
 select{
 	color:#4d4d4d !important;
 }

@@ -347,3 +347,25 @@ div, {
 .free_estimate{
 	margin-right:2px;
 }
+.input_btn{
+	top:0px;
+	left:0px;
+}
+.btn.btn-primary.hero_form_submit{
+	left: 50%;
+    transform: translateX(-50%);
+	&:before{
+		z-index:99;
+	}
+	&:hover{
+		input[type=submit]{
+			color:#fff;
+		}
+	}
+}
+.hero_form_submit input[type=submit]{
+	background:transparent;
+	color:$secondary_color;
+	z-index:100;
+	border:0px;
+}
