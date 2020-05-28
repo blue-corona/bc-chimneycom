@@ -13,6 +13,7 @@ $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
 		position: absolute;
 		top:0;
 		background: $bc_mobile_nav_color_A; //Nav bg
+		z-index:99;
 
 		#navbarSupportedContent{
 			height: 100vh;
