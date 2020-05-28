@@ -2,10 +2,11 @@
 @import "styles/bc_fonts";
 @import "styles/bc_colors";
 @import "styles/bc_gravity_forms";
-@import "styles/bc_navbar";
 @import "styles/bc_swiper";
 @import "styles/bc_bootstrap_override";
 @import "styles/bc_fonts_mobile";
+@import "styles/bc_navbar_desktop";
+@import "styles/bc_navbar_mobile";
 .no_hover_underline:hover{
 	text-decoration:none;
 }

@@ -1,7 +1,7 @@
 <div class="container-fluid d-none hide-on-touch d-lg-block">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 offset-md-3 offset-lg-3 col-lg-9 col-sm-12 col-xs-12 ml-auto p-0">
+            <div class="col-md-9 offset-md-3 offset-lg-3 col-lg-9 col-sm-12 col-xs-12 ml-auto">
                    <div class="d-flex align-items-center justify-content-end">
                         <span class=" mr-2 bc_text_27 bc_font_default bc_text_normal text-uppercase bc_line_height_50 bc_letter_spacing_0 color_3">Call Today <a href="tel: (555) 555-5555" class="no_hover_underline bc_line_height_50"><strong class="bc_color_secondary bc_line_height_50 bc_letter_spacing_0"><?php echo bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '(555) 555-5555');?></strong></a>
                         </span>
@@ -18,7 +18,7 @@
                     </div>
             </div>
         </div>
-        <div class="position-absolte mb-2 d-inline-block">
+        <div class=" mb-2 d-inline-block">
                 <a href="<?php echo get_home_url();?>" class="d-inline-block">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_header.png" class="bc_branding_logo" alt="logo" style="width:374px" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_header.png 2x, <?php echo get_stylesheet_directory_uri(); ?>/img/logo_header.png 3x">
                 </a>
