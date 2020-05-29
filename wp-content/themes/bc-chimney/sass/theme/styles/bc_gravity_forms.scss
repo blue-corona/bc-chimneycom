@@ -15,16 +15,23 @@
 		    transition: all 0.2s ease;
 		    opacity: 1;
 			line-height: 36px;
-			color:$success_color;
+			color:#000;
 			font-size: 14px !important;
 			font-weight: 400 !important;
+			font-family: $alternate_font_family_2;
+			font-weight: 300;
 		}
 
 		.gfield{
-			padding-top: 10px !important;
+			padding-top: 0px !important;
 			margin-top: 0px !important;
 			padding-bottom: 0px !important;
 			margin-bottom: 0px !important;
+			color:#000;
+			font-size: 14px !important;
+			font-weight: 400 !important;
+			font-family: $alternate_font_family_2;
+			font-weight: 300;
 			input::placeholder{
 				color:transparent;
 			}
@@ -220,7 +227,9 @@
 		}
 	}
 }
-
+.gfield_required{
+	color: #000 !important;
+}
 .gform_wrapper {
 
 	.validation_error{
@@ -307,12 +316,15 @@
 			}
 			.large, .medium{
 				padding:map-get($form_input, padding);
-				border:{
+				/*border:{
 					radius: map-get($form_input, border-radius);
 					style: solid;
 					width: 1px;
 					color: #c1c1c1;
-				}
+				}*/
+				border:none;
+				outline: none;
+				border-bottom: 1px solid #E4E4E4 !important;
 			}
 			@media only screen and (min-width: 768px) {
 				padding-left: 16px;

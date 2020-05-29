@@ -97,6 +97,20 @@
 		color: $color_3 !important; 
 	}
 }
+.color_4{
+	color: $color_4!important; 
+	&--imp{
+		@extend .color_4;
+		color: $color_4 !important; 
+	}
+}
+.color_5{
+	color: $color_5!important; 
+	&--imp{
+		@extend .color_5;
+		color: $color_5 !important; 
+	}
+}
 //Classes for bg color
 .bc_color_primary_bg { background-color: $primary_color; }
 .bc_color_secondary_bg { background-color: $secondary_color; }
