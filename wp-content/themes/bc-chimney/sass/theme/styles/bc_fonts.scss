@@ -126,6 +126,7 @@ body{
 .bc_font_alt_1 { font-family: $alternate_font_family_1; }
 .bc_font_alt_2 { font-family: $alternate_font_family_2; }
 .bc_font_alt_3 { font-family: $alternate_font_family_3; }
+.bc_font_alt_4 { font-family: $alternate_font_family_4; }
 
 //Classes for font-weights
 .bc_text_thin { font-weight: 100; }
@@ -152,8 +153,10 @@ body{
 .bc_text_27 { font-size: 27px; }
 .bc_text_30 { font-size: 30px; }
 .bc_text_32 { font-size: 32px; }
+.bc_text_35 { font-size: 35px; }
 .bc_text_36 { font-size: 36px; }
 .bc_text_48 { font-size: 48px; }
+.bc_text_50 { font-size: 50px; }
 
 //Classes for line Heights
 .bc_line_height_0 { line-height: 0px; }
@@ -172,13 +175,19 @@ body{
 .bc_line_height_34 { line-height: 34px; }
 .bc_line_height_36 { line-height: 36px; }
 .bc_line_height_40 { line-height: 40px; }
+.bc_line_height_45 { line-height: 45px; }
 .bc_line_height_48 { line-height: 48px; }
 .bc_line_height_50 { line-height: 50px; }
+.bc_line_height_55 { line-height: 55px; }
 .bc_line_height_60 { line-height: 60px; }
+.bc_line_height_64 { line-height: 64px; }
 
 
 //Classes for letter spacing
+.bc_letter_spacing_normal { letter-spacing: normal; }
 .bc_letter_spacing_0 { letter-spacing: 0px; }
+.bc_letter_spacing_1 { letter-spacing: 1px; }
+.bc_letter_spacing_10 { letter-spacing: 10px; }
 .bc_letter_spacing_24 { letter-spacing: 24px; }
 .bc_letter_spacing_25 { letter-spacing: 25px; }
 .bc_letter_spacing_36 { letter-spacing: 36px; }
