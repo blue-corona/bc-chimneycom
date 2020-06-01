@@ -128,7 +128,8 @@ function bc_social_shortcode () {?>
             foreach ($data as $key => $value) {
                 if(!empty($value->icon)){
                 ?>
-                <a target="_blank" class="mr-1 bc_social_media_fb mr-2 fa-lg" title="<?php echo $value->name;?>" href="<?php echo $value->url;?>">
+
+                <a target="_blank" class="bc_color_secondary_hover no_hover_underline" title="<?php echo $value->name;?>" href="<?php echo $value->url;?>">
                     <i class="<?php echo $value->icon;?>"></i>
                 </a>
             <?php } 
