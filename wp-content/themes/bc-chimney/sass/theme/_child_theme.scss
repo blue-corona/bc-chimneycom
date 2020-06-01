@@ -353,11 +353,29 @@ div, {
 	top:0px;
 	left:0px;
 }
+.experience_title{
+	text-transform:inherit;
+}
+.experience {
+	a.btn.btn-secondary.text-uppercase {
+	    width: 255px;
+	    height: 64px;
+	    line-height: 60px;
+	    padding: 0px;
+	}
+}
+.inspection {
+	p {
+    	color: #2C2B2B;
+    }
+}
 .btn.btn-primary.hero_form_submit{
 	left: 50%;
     transform: translateX(-50%);
     margin-bottom: 20px;
     margin-top: 20px;
+    width: 190px;
+    height: 48px;
 	&:before{
 		z-index:99;
 	}
@@ -366,18 +384,36 @@ div, {
 			color:#fff;
 		}
 	}
+	input[type=submit]{
+		background:transparent;
+		color:$secondary_color;
+		z-index:100;
+		border:0px;
+		font-size: 17px;
+	    text-transform: uppercase;
+	    line-height: 20px;
+	    font-family: Oxygen,sans-serif!important;
+	    font-weight: 400;
+	    padding:0px;
+	}
 }
-.hero_form_submit input[type=submit]{
-	background:transparent;
-	color:$secondary_color;
-	z-index:100;
-	border:0px;
-	font-size: 17px;
-    text-transform: uppercase;
-    line-height: 20px;
-    font-family: Oxygen,sans-serif!important;
-    font-weight: 400;
+.banner_form  {
+	.gform_wrapper {
+		ul {
+			li.gfield {
+				select {
+    				background: url(../img/br_down.png) no-repeat 90% center transparent!important;
+    				color: #000 !important;
+				    font-size: 14px!important;
+				    font-weight: 400!important;
+				    font-family: "Source Sans Pro",sans-serif;
+				    letter-spacing: 1px;
+    			}
+    		}
+    	}
+    }
 }
+
 .banner_form {
 	li:first-child {
 		.ginput_container_text{
@@ -387,8 +423,11 @@ div, {
 }
 .sevice_wrapper{
 	box-shadow: 0 20px 50px 0px rgba(0,0,0,0.03);
-    
+    height: 287px;
     position: relative;
+    @media only screen and (max-width: 768px) {
+    	height:auto;
+    }
     &:before{
     	content: "";
 	    position: absolute;
@@ -435,34 +474,24 @@ div, {
 .service_head{
 	img{
 		width:55px;
+		height:55px !important
 	}
 }
-.service_head.collapsed:after {
-	z-index: 10;
-    content: "\f067";
-    height: 25px;
-    width: 25px;
-    color: $primary_color;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    border:2px solid $primary_color;
-    line-height: 21px;
-}
-.service_head:after {
-    position: absolute;
-	right: 0px;
-	top: 18px;
-	z-index: 10;
-    content: "\f068";
-    height: 25px;
-    width: 25px;
-    color: $secondary_color;
-        font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    border:2px solid $secondary_color;
-    line-height: 23px;
-    border-radius:100%;
-    text-align:center;
+
+.service_head {
+	svg{
+	    position: absolute;
+		right: 0px;
+		top: 18px;
+		z-index: 10;
+	    font-size: 28px;
+	    color: $primary_color;
+	    line-height: 72px;
+	    text-align:center;
+	}
+	svg.fa-minus-circle{
+		color: $secondary_color;
+	}
 }
 .b_bottom{
 	border-bottom:1px solid #B5B5B5 !important;
@@ -482,6 +511,17 @@ div, {
 		background:url("../img/m_home_img1.jpg") !important;
 		background-repeat: no-repeat;
     	background-size: cover !important;
+    	img{
+    		width:181px;
+    		height:96px;
+    	}
+    	.btn.btn-white{
+    		width:250px !important;
+    		height:50px;
+    		line-height:20px;
+    		font-size:18px !important;
+    		text-transform:uppercase;
+    	}
 	}
 }
 .b_left{
@@ -490,12 +530,13 @@ div, {
 		border-left:2px solid #fff;
 		height: 100%;
 	    position: absolute;
-	    left: 0px;
+	    left: -5px;
 	    @media only screen and (max-width: 767px){
 	    	display:none;
 	    }
 	}
 }
+
 .b_right{
 	border-right:2px solid #fff;
 }
@@ -539,10 +580,11 @@ hr{
 .testimonial_inner{
 	margin-bottom: 40px;
 	.h7 {
-	    overflow: hidden;
-	    display: -webkit-box;
-	    -webkit-line-clamp: 6;
-	    -webkit-box-orient: vertical;
+	    color:#2C2B2B;
+	    text-transform: inherit;
+	}
+	span{
+		color:#363636;
 	}
 	&:before{
 		content: "";
@@ -588,7 +630,15 @@ hr{
 	}
 }
 
-
+.testimonial {
+	a.btn.btn-primary {
+	    width: 0;
+	    height: 64px;
+	    line-height: 60px;
+	    padding: 0px;
+	    width: 253px !important;
+	}
+}
 
 .affiliations_pagination{
 	left: 0%;

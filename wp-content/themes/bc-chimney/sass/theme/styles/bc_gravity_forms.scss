@@ -20,6 +20,7 @@
 			font-weight: 400 !important;
 			font-family: $alternate_font_family_2;
 			font-weight: 300;
+			letter-spacing: 1px;
 		}
 
 		.gfield{
@@ -297,7 +298,7 @@
 		}
 	}
 	ul{
-
+		line-height:59px;
 		li.gfield{
 
 			select {
@@ -325,6 +326,7 @@
 				border:none;
 				outline: none;
 				border-bottom: 1px solid #E4E4E4 !important;
+				color: #000;
 			}
 			@media only screen and (min-width: 768px) {
 				padding-left: 16px;
