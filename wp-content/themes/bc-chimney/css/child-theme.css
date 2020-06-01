@@ -9782,7 +9782,9 @@ hr {
   text-transform: inherit; }
 
 .testimonial_inner {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  width: 336px;
+  height: 263px; }
   .testimonial_inner .h7 {
     color: #2C2B2B;
     text-transform: inherit; }
@@ -9807,6 +9809,10 @@ hr {
     @media only screen and (max-width: 767px) {
       .testimonial_inner:before {
         display: none; } }
+  @media only screen and (max-width: 1024px) {
+    .testimonial_inner {
+      width: auto;
+      height: auto; } }
   @media only screen and (max-width: 767px) {
     .testimonial_inner {
       background: transparent !important;

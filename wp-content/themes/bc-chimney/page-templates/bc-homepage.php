@@ -496,7 +496,7 @@ var swiper = new Swiper('.experience_swiper', {
 });
 var swiper = new Swiper('.testimonial_swiper', {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 50,
       slidesPerGroup: 1,
 
       loop: true,
