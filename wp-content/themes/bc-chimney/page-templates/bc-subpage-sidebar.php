@@ -49,7 +49,7 @@ global $post;
                         <div class="bc_color_secondary_bg py-4">
                             <span class="bc_font_default bc_text_bold bc_text_28 d-block bc_line_height_24 text-uppercase pr-25 pl-35 text-white">Free Estimate</span>
                             <span class="bc_font_default bc_line_height_20_61 d-block bc_text_normal text-uppercase bc_text_14 pr-25 pl-35 text-white">Chimney and Fireplace service & repair</span>
-                            <div class="subpage_form px-2 mt-3"><?php echo do_shortcode('[gravityform id=3 ajax=true]')?></div>
+                            <div class="subpage_form px-2 mt-3"><?php echo do_shortcode('[gravityform id=2 ajax=true]')?></div>
                         </div>
 
                         <div class="testimonial pb-5">
