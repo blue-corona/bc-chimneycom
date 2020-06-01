@@ -12,14 +12,14 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <!-- Footer -->
 <footer class="page-footer font-small blue">
-    <div class="container-fluid bc_color_info_bg">
+    <!-- <div class="container-fluid bc_color_info_bg"> -->
     <!-- Include servicearea file here -->
-    <?php if ( is_front_page() ) {?>
+    <?php //if ( is_front_page() ) {?>
         <?php //get_template_part( 'page-templates/common/servicearea' ); ?>
-    <?php }else{?>
-        <div class="container py-3"></div>
-    <?php } ?>
-    </div>
+    <?php //}else{?>
+        <!-- <div class="container py-3"></div> -->
+    <?php //} ?>
+    <!-- </div> -->
     <!-- Footer Links -->
     <div class="container-fluid bg-white text-md-left pt-3 pb-md-3 footer_border">
         <!-- <img alt="footer man" height="323px" class="position-absolute d-none d-lg-block " src="<?php //echo get_template_directory_uri();?>/img/footer_eng.png"> -->
