@@ -92,60 +92,63 @@ get_header();
         <div class="container py-2 px-0">
             <div class="row pt-3">
                 <div class="col-md-12 text-center">
-                    <h4>Your #1 Trusted Chimney Company</h4>
+                    <h4 class="px-4">Your #1 Trusted Chimney Company</h4>
                     <span class="bc_font_default bc_text_24 bc_letter_spacing_normal bc_color_primary bc_line_height_24 bc_text_light">Servicing the DMV Since 1989</span>
                 </div>
             </div>
             <div class="row no-gutters">
                 <div class="col-lg-12 mt-2">
                     <div id="accordion">
-                        <div class="card border-0 mb-0">
-                            <div class="b_bottom">
+                            <div class="card border-0 b_bottom ">
                                 <div class="card-header position-relative border-bottom-0 bg-white service_head" data-toggle="collapse" href="#collapse1">
                                     <div class="d-flex">
                                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glass_icon.svg" class="mr-4">
                                         <h5>Professional<br>Inspections</h5>
+                                        <i class="fal fa-minus-circle"></i>
                                     </div>
                                 </div>
                                 <div id="collapse1" class="card-body collapse position-relative show" data-parent="#accordion">
                                     <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
-                                    <a href="#" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                 </div>
                             </div>
-                            <div class=" b_bottom">
+                            <div class="card border-0 b_bottom">
                                 <div class="card-header position-relative border_top border-bottom-0 bg-white border-t1 collapsed  service_head" data-parent="#accordion" data-toggle="collapse" href="#collapse2">
                                    <div class="d-flex">
                                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg" class="mr-4">
                                         <h5>Chimney & Fireplace<br>Cleaning</h5>
+                                        <i class="fal fa-plus-circle"></i>
                                     </div>
                                 </div>
                                 <div id="collapse2" class="card-body collapse position-relative " data-parent="#accordion">
                                     <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <a href="#" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                 </div>
                             </div>
-                            <div class="b_bottom">
+                            <div class="card border-0 b_bottom">
                                 <div class="card-header position-relative border_top bg-white border-bottom-0 collapsed  service_head" data-parent="#accordion" data-toggle="collapse" href="#collapse3">
                                     <div class="d-flex">
                                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_icon.svg" class="mr-4">
                                         <h5>Chimney & Fireplace<br>Repair</h5>
+                                        <i class="fal fa-plus-circle"></i>
                                     </div>
                                 </div>
                                 <div id="collapse3" class="card-body collapse position-relative " data-parent="#accordion">
                                     <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <a href="#" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                 </div>
                             </div>
-                            <div class=" b_bottom">
+                            <div class="card border-0 b_bottom">
                                 <div class="card-header position-relative border_top bg-white border-bottom-0 collapsed  service_head" data-parent="#accordion" data-toggle="collapse" href="#collapse4">
                                     <div class="d-flex">
                                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg" class="mr-4">
                                         <h5>Furnace & Fireplace<br>Relining</h5>
+                                        <i class="fal fa-plus-circle"></i>
                                     </div>
                                 </div>
                                 <div id="collapse4" class="card-body collapse position-relative " data-parent="#accordion">
                                     <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <a href="#" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -163,13 +166,13 @@ get_header();
                 <div class="col-md-3 text-center">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/WSSC_logo_white.png" class="img-fluid">
                 </div>
-                <div class="col-md-6 b_left position-relative text-center text-md-left  px-2 px-md-15">
-                    <h2 class="h2-alt bc_text_bold text-white bc_sm_text_bold px-4 px-md-0 pt-4 pt-md-0">Gas Furnace & Fireplace</h2>
-                    <h2 class="h2-alt text-white pb-2 mb-0  pb-md-0">Service & Installation</h2>
-                    <p class="p-alt mb-0 pr-md-2 bc_sm_line_height_24 pb-4 pb-md-0">We are the only chimney company in the metropolitan area licensed by WSSC. This license is required to perform service on or reline gas appliances.</p>
+                <div class="col-md-6 b_left position-relative text-center text-md-left pr-lg-0">
+                    <h2 class="h2-alt bc_text_bold text-white bc_sm_text_bold px-5 px-md-0 pt-4 pt-md-0 pb-1 bc_line_height_48 bc_font_default">Gas Furnace & Fireplace</h2>
+                    <h2 class="h2-alt text-white bc_line_height_48 bc_font_default mb-3 pb-2">Service & Installation</h2>
+                    <p class="p-alt mb-0 pr-md-4 bc_sm_line_height_24 pb-4 pb-md-0">We are the only chimney company in the metropolitan area licensed by WSSC. This license is required to perform service on or reline gas appliances.</p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a href="#" class="btn btn-white w-auto px-lg-5 px-3">Learn More</a>
+                    <a href="#" class="btn btn-white w-auto px-lg-5 px-3 mt-lg-5 text-uppercase">Learn More</a>
                 </div>
             </div>
         </div>
@@ -181,7 +184,7 @@ get_header();
         <div class="container">
             <div class="row pb-5">
                 <div class="col-md-12 text-center px-0">
-                    <h2 class="h2-alt bc_sm_text_23 text-white">Experience the Chimney.com Difference</h2>
+                    <h2 class="h2-alt bc_sm_text_23 text-white bc_font_default experience_title">Experience the Chimney.com Difference</h2>
                 </div>
             </div>
             <div class="d-lg-flex d-none justify-content-between mt-4 mb-5">
@@ -254,7 +257,7 @@ get_header();
     </div>
 
     <!-- inspection section--->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 inspection">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center px-0 px-md-15">

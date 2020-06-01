@@ -203,3 +203,17 @@ jQuery(".bc_toggle_content").on('click', function(e){
 
 });
 
+jQuery(document).ready(function () {
+  jQuery('#accordion').on('show.bs.collapse', function (e) {
+      toggleIcon(e.target);
+  });
+  jQuery('#accordion').on('hidden.bs.collapse', function (e) {
+      toggleIcon(e.target);
+  });
+});
+function toggleIcon(target){
+    var target = jQuery(target).parent('.card').children('.card-header').children('.d-flex').children('svg'); 
+    console.log(target);
+    target.toggleClass('fa-minus-circle');
+    target.toggleClass('fa-plus-circle');
+}
