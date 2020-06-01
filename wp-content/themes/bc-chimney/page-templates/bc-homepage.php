@@ -351,7 +351,7 @@ get_header();
                     </div>
 
                 </div>
-                <div class="col-md-12 text-center"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4">Read our reviews</a></div>
+                <div class="col-md-12 text-center mt-3"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4">Read our reviews</a></div>
             </div>
         </div>
     </div>
