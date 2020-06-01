@@ -28,7 +28,7 @@ get_header();
 	?>
 
     <!-- service section--->
-    <div class="container-fluid home_services bc_home_section_bg d-none d-md-block" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_bg.jpg')">
+    <div class="container-fluid home_services bc_home_section_bg d-none d-lg-block" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_bg.jpg')">
         <div class="container text-center pb-5">
             <div class="row pt-5">
                 <div class="col-md-12">
@@ -52,7 +52,7 @@ get_header();
                 <div class="col-md-3">
                     <div class="bg-white sevice_wrapper pt-5 pb-4 position-relative">
                         <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
+                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg" class="mb-4">
@@ -64,7 +64,7 @@ get_header();
                 <div class="col-md-3">
                     <div class="bg-white sevice_wrapper pt-5 pb-4 position-relative">
                         <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
+                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_icon.svg" class="mb-4">
                         <h5 class="mb-4">Chimney & Fireplace<br>Repair</h5>
@@ -75,7 +75,7 @@ get_header();
                 <div class="col-md-3">
                     <div class="bg-white sevice_wrapper pt-5 pb-4  position-relative">
                         <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
+                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg" class="mb-4">
@@ -88,8 +88,8 @@ get_header();
         
     </div>
     <!-- Mobile service_section -->
-    <div class="container-fluid d-md-none bg-white">
-        <div class="container py-2 px-0 d-md-none d-block">
+    <div class="container-fluid d-lg-none d-block bg-white">
+        <div class="container py-2 px-0">
             <div class="row pt-3">
                 <div class="col-md-12 text-center">
                     <h4>Your #1 Trusted Chimney Company</h4>
@@ -108,7 +108,7 @@ get_header();
                                     </div>
                                 </div>
                                 <div id="collapse1" class="card-body collapse position-relative show" data-parent="#accordion">
-                                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
                                     <a href="#" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
                                 </div>
                             </div>
@@ -169,7 +169,7 @@ get_header();
                     <p class="p-alt mb-0 pr-md-2 bc_sm_line_height_24 pb-4 pb-md-0">We are the only chimney company in the metropolitan area licensed by WSSC. This license is required to perform service on or reline gas appliances.</p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a href="#" class="btn btn-white">Learn More</a>
+                    <a href="#" class="btn btn-white w-auto px-lg-5 px-3">Learn More</a>
                 </div>
             </div>
         </div>
@@ -246,7 +246,7 @@ get_header();
                   <div class="swiper-pagination experience_pagination"></div>
             </div>
             <div class="row mt-4">
-                <div class="col-md-12 text-center mt-5 mt-md-0">
+                <div class="col-md-12 text-center mt-5 mt-lg-0">
                     <a href="#" class="btn btn-secondary text-uppercase">Get to know us</a>
                 </div>
             </div>
@@ -278,8 +278,8 @@ get_header();
     <!-- map section -->
     <div class="container-fluid map_location bc_home_section_bg" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/service_area_map.jpg')">
         <div class="container">
-            <div class="row py-5">
-                <div class="col-md-7 py-md-5 text-center text-md-left px-0">
+            <div class="row py-lg-5 py-md-4 py-5">
+                <div class="col-md-7 py-lg-5 text-center text-md-left px-0">
                     <h2 class="text-white pr-md-5 px-3 px-md-0 mr-md-5">Proudly Serving Maryland, Washington DC & Northern Virgina</h2>
                     <hr class="bg-white mx-0 my-md-4 my-3 ">
                     <span class="bc_text_24 bc_font_default bc_text_bold text-white bc_line_height_30 pr-md-4 d-block bc_sm_text_18 bc_sm_line_height_24 mr-md-5">Silver Spring, Gaithersburg, Laurel, Potomac, Bethesda, McLean, Arlington, Alexandria & More!</span>
@@ -355,36 +355,68 @@ get_header();
 
     <div class="container-fluid bg-white affiliations_section py-5">
         <div class="container">
-            <div class="row">
+            <div class="row d-lg-flex d-none align-items-center">
+                <div class="col-md-2 text-center">
+                    <a href="#">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2017.png">
+                    </a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="#">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2018.png">
+                    </a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="#">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2019.png">
+                    </a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="#">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor2.png">
+                    </a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="#">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor1.png">
+                    </a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="#">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wssc.png">
+                    </a>
+                </div>
+            </div>
+            <div class="row d-lg-none d-block">
                 <div class="col-md-12">
                     <div class="swiper-container affiliations_swiper">
                         <div class="swiper-wrapper d-flex align-items-center">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide text-center">
                                 <a href="#">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2017.png">
                                 </a>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide text-center">
                                 <a href="#">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2018.png">
                                 </a>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide text-center">
                                 <a href="#">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2019.png">
                                 </a>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide text-center">
                                 <a href="#">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor2.png">
                                 </a>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide text-center">
                                   <a href="#">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor1.png">
                                 </a>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide text-center">
                                 <a href="#">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wssc.png">
                                 </a>

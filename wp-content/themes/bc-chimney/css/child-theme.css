@@ -9759,6 +9759,11 @@ hr {
 
 .testimonial_inner {
   margin-bottom: 40px; }
+  .testimonial_inner .h7 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical; }
   .testimonial_inner:before {
     content: "";
     position: absolute;
