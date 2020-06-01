@@ -11,7 +11,7 @@
                         <div class=" col-md-8 col-lg-8 col-sm-12 col-xs-12 px-0 d-none d-lg-block">
                             
                             <div class="entry-content bc_hero_form_body">
-                                <span class="bc_font_default bc_text_bold bc_text_26 d-block bc_line_height_24 bc_color_secondary text-uppercase pr-25 pl-35">Free Estimate</span>
+                                <span class="bc_font_default bc_text_bold bc_text_28 d-block bc_line_height_24 bc_color_secondary text-uppercase pr-25 pl-35">Free Estimate</span>
                                 <span class="bc_font_default bc_line_height_20_61 d-block bc_text_normal bc_color_secondary text-uppercase bc_text_14 pr-25 pl-35">Chimney and Fireplace service & repair</span>
                                <div class="banner_form px-2 mt-3"><?php echo do_shortcode('[gravityform id=1 ajax=true]')?></div>
                             </div>
