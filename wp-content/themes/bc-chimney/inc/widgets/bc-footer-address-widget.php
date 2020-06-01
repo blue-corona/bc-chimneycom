@@ -16,24 +16,46 @@ class BC_Footer_Address_Widget extends WP_Widget {
     public function widget( $args, $instance ) {
         echo $args['before_widget'];
         ?>
-
-    <div class="col-12 px-5 px-md-0 bc_color_secondary">
-            <img alt="footer logo" class="img-fluid" src="<?php echo get_template_directory_uri();?>/img/logo_footer.svg">
-            <hr class="mx-3 mx-lg-0" style="background-color:#5692b9;">
-            <h4 class="text-uppercase bc_color_secondary"><em aria-hidden="true" class="fa fa-mobile"></em> <?php echo bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '(555) 555-5555');?></h4>
-            <div class="row">
-                <div class="col-lg-1 pr-0"><h4 class="bc_color_secondary"><em aria-hidden="true" class="far fa-map-marker-alt"></em></h4></div>
-                <div class="col-lg-9">
-                    <p class="bc_color_secondary" style="font-size: 14px; line-height: 20px">
-                    <?php echo bc_get_theme_mod('bc_theme_options', 'bc_address',false, '1401 Central Avenue, Suite 11 Charlotte, NC 28205');?>
-                     </p>
+           <div class="col-lg-5 col-md-5 text-md-left text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="<?php echo get_home_url();?>" class="d-block mb-4 footer_logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_footer.png" class="bc_branding_logo" alt="logo" style="width: 374px" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_footer.png 2x, <?php echo get_stylesheet_directory_uri(); ?>/img/m_logo_footer.png 3x">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-9 col-md-12 pr-md-0">
+                            <div class=" d-flex align-items-center top_line pt-3">
+                                <div class="footer_badge pr-xl-3 pr-md-2">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer_badge.png">
+                                </div>
+                                <div class="ml-xl-3 ml-md-2 text-left">
+                                    <p class="mb-2 bc_font_default bc_text_normal bc_text_23 bc_line_height_24 bc_color_primary text-uppercase">Call Today</p>
+                                    <p class="mb-2 bc_text_bold"><i class="fas fa-phone  bc_text_21 bc_line_height_50 bc_text_bold bc_sm_line_height_51"></i> <a href="tel: 555-555-5555" class="bc_text_bold text-decoration-none"><strong class="bc_font_default bc_text_23 bc_line_height_20 bc_color_secondary bc_text_bold bc_sm_line_height_24">
+                                    <?php echo bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '(555) 555-5555');?>
+                                    </strong></a></p>
+                                    <div class="social_icons mb-0 d-none d-md-block">
+                                          <?php echo do_shortcode('[social-icons]');?>
+                                      <!--   <a href="#" class="bc_color_secondary_hover"><i class="fab fa-facebook-square"></i></a>
+                                        <a href="#" class="bc_color_secondary_hover"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="bc_color_secondary_hover"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="bc_color_secondary_hover"><i class="fab fa-youtube"></i></a>
+                                        <a href="#" class="bc_color_secondary_hover"><i class="fab fa-pinterest"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social_icons mb-0 d-md-none d-block mt-4">
+                                  <?php echo do_shortcode('[social-icons]');?>
+                                      <!--   <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="#"><i class="fab fa-pinterest"></i></a> -->
+                                    </div>
+                        </div>
+                   </div>
                 </div>
-                <div class="m-auto m-lg-0 col-lg-12">License - <?php echo bc_get_theme_mod('bc_theme_options', 'bc_license',false, 'CLT140111');?></div>
-                <div class="m-auto m-lg-0 col-lg-12">
-                    <?php echo do_shortcode('[social-icons]');?>
-                </div>    
-            </div>
-    </div>
     <?php echo $args['after_widget'];
     }
 }

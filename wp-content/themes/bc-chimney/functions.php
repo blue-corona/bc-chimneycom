@@ -31,3 +31,18 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+$understrap_include = array(
+    
+    '/widgets.php',
+    '/bc-shortcode-override.php',
+    '/widgets/bc-footer-location.php',
+  
+);
+foreach ( $understrap_include as $file ) {
+    $filepath = locate_template( 'inc' . $file );
+    if ( ! $filepath ) {
+        trigger_error( sprintf( 'Error locating /inc%s for inclusion', $file ), E_USER_ERROR );
+    }
+    require_once $filepath;
+}
+remove_filter( 'the_content', 'wpautop' );
