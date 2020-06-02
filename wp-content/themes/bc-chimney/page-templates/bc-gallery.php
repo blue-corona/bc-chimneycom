@@ -30,7 +30,7 @@ global $post;
             <div class="container py-5">
               <div class="row">
                 <div class="col-md-12">
-                  <h1>Our Gallery</h1>
+                  <h1 class="mb-3">Our Gallery</h1>
                 </div>
               </div>
                 <div class="row">
