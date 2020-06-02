@@ -228,10 +228,10 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		    'name'           => 'Footer',
 		    'id'             => 'footer',
 		    'description'    => 'Displays one widget per column. Add an empty text widget to give column break',
-		    // 'before_widget'  => '<div id="%1$s" class="footer-widget %2$s ">', 
-		    // 'after_widget'   => '</div><!-- .footer-widget -->', 
-		    // 'before_title'   => '<h3>', 
-		    // 'after_title'    => '</h3>', 
+		    'before_widget'  => '', 
+		    'after_widget'   => '', 
+		    'before_title'   => '', 
+		    'after_title'    => '', 
 		) );
 	}
 } // endif function_exists( 'understrap_widgets_init' ).

@@ -47,6 +47,8 @@ foreach ( $understrap_include as $file ) {
 }
 remove_filter( 'the_content', 'wpautop' );
 
+<<<<<<< HEAD
+=======
 add_action('wp_footer', 'accordion_method');
 function accordion_method(){?>
 <script>
@@ -99,3 +101,4 @@ function bc_site_info_phone_number ( $atts ) {
     }
     return ob_get_clean();
 }
+>>>>>>> ca22770b0cd49f671e5188921d46175d284cea1c
