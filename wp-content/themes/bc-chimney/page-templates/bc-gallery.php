@@ -10,9 +10,9 @@ get_header();
 global $post;
 ?>
 <main>
-    <div class="container-fluid p-0 bc_hero_container bc_home_section_bg py-5 subpage_banner" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/sub_banner.jpg')">
-        <div class="container py-5">
-            <div class="row py-3">
+  <div class="container-fluid p-0 bc_hero_container bc_home_section_bg py-md-5 subpage_banner" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/sub_banner.jpg')">
+        <div class="container py-md-5">
+            <div class="row py-md-3">
                 <div class="col-sm-12 ">
                     <div class="bc_subpage_hero_overlay d-block d-md-flex text-center">
                         <?php $title = get_post_meta( $post->ID, 'title_overlay', true );
@@ -30,7 +30,7 @@ global $post;
             <div class="container py-5">
               <div class="row">
                 <div class="col-md-12">
-                  <h1>Our Gallery</h1>
+                  <h1 class="mb-3">Our Gallery</h1>
                 </div>
               </div>
                 <div class="row">
