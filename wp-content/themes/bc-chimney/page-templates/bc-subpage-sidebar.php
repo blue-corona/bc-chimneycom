@@ -42,14 +42,14 @@ global $post;
                             <li>Cleanliness</li>
                             <li>Safety</li>
                         </ul>
-                        <p class="bc_text_bold pr-5">For top level chimney sweeping and chimney cleaning contact the experts at Chimney.com  by calling 555-555-5555.</p>
+                        <p class="bc_text_bold pr-5">For top level chimney sweeping and chimney cleaning contact the experts at Chimney.com  by calling <a href="tel: (555) 555-5555">555-555-5555.</a></p>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="bc_color_secondary_bg py-4">
+                        <div class="bc_color_secondary_bg py-4 form_shadow">
                             <span class="bc_font_default bc_text_bold bc_text_28 d-block bc_line_height_24 text-uppercase pr-25 pl-35 text-white">Free Estimate</span>
-                            <span class="bc_font_default bc_line_height_20_61 d-block bc_text_normal text-uppercase bc_text_14 pr-25 pl-35 text-white">Chimney and Fireplace service & repair</span>
-                            <div class="subpage_form px-2 mt-3"><?php echo do_shortcode('[gravityform id=2 ajax=true]')?></div>
+                            <span class="bc_font_default bc_line_height_20_61 d-block bc_text_normal text-uppercase bc_text_14 pr-25 pl-35 text-white mt-2">Chimney and Fireplace service & repair</span>
+                            <div class="subpage_form top_line px-2 mt-3"><?php echo do_shortcode('[gravityform id=2 ajax=true]')?></div>
                         </div>
 
                         <div class="testimonial pb-5">
@@ -61,31 +61,35 @@ global $post;
                                             <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
                                             <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
                                         </div>
-                                        <h3 class="mb-3 bc_color_primary bc_line_height_36">What Your Neighbors Have to Say</h3>
+                                        <h3 class="mb-3 bc_color_primary bc_line_height_36 bc_sm_line_height_30">What Your Neighbors Have to Say</h3>
                                         <div class="position-relative mt-4">
                                             <div class="swiper-container testimonial_swiper_subpage">
                                                 <div class="swiper-wrapper">
                                                   <div class="swiper-slide">
                                                         <div class="testimonial_inner position-relative bg-white p-4">
-                                                           <h7 class="h7 bc_sm_text_16">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</h7>
+                                                           <span class=" bc_text_16 bc_font_alt_1 bc_line_height_30 bc_text_normal bc_letter_spacing_normal color_1 d-lg-block d-none">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</span>
+                                                           <p class="d-lg-none d-block">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</p>
                                                            <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">James G, RSC</span>
                                                         </div>
                                                   </div>
                                                   <div class="swiper-slide">
                                                         <div class="testimonial_inner position-relative bg-white p-4">
-                                                           <h7 class="h7 bc_sm_text_16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
+                                                           <span class=" bc_text_16 bc_font_alt_1 bc_line_height_30 bc_text_normal bc_letter_spacing_normal color_1 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</span>
+                                                           <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                                                            <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name A, VA </span>
                                                         </div>
                                                   </div>
                                                   <div class="swiper-slide">
                                                         <div class="testimonial_inner position-relative bg-white p-4">
-                                                           <h7 class="h7 bc_sm_text_16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</h7>
+                                                           <span class=" bc_text_16 bc_font_alt_1 bc_line_height_30 bc_text_normal bc_letter_spacing_normal color_1 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</span>
+                                                           <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</p>
                                                            <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name B, MD</span>
                                                         </div>
                                                   </div>
                                                   <div class="swiper-slide">
                                                         <div class="testimonial_inner position-relative bg-white p-4">
-                                                           <h7 class="h7 bc_sm_text_16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
+                                                           <span class=" bc_text_16 bc_font_alt_1 bc_line_height_30 bc_text_normal bc_letter_spacing_normal color_1 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</span>
+                                                           <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                                                            <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name A, VA </span>
                                                         </div>
                                                   </div>
@@ -98,7 +102,7 @@ global $post;
                                             
                                         </div>
                                 
-                                    <div class="text-center"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4">our reviews</a></div>
+                                    <div class="text-center"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4 subpage_review">our reviews</a></div>
                             </div>
                         </div>
                     </div>
