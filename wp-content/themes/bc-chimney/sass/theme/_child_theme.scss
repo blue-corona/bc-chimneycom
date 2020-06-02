@@ -366,9 +366,9 @@ div, {
 	    line-height: 60px;
 	    padding: 0px;
 	    @media screen and (max-width:767px){
-		    width: 250px;
-		    height: 50px;
-	    	line-height: 20px;
+		    width: 250px !important;
+		    height: 50px !important;
+		    line-height: 20px !important;
 		    font-size: 18px !important;
 		    display: flex;
 		    align-items: center;
@@ -752,6 +752,7 @@ hr{
 			padding-left:25px;
 			list-style:none;
 			position:relative;
+			color: #2c2b2b;
 			&:before{
 				content: "";
 			    width: 10px;

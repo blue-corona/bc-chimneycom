@@ -9608,9 +9608,9 @@ div, {
   padding: 0px; }
   @media screen and (max-width: 767px) {
     .experience a.btn.btn-secondary.text-uppercase {
-      width: 250px;
-      height: 50px;
-      line-height: 20px;
+      width: 250px !important;
+      height: 50px !important;
+      line-height: 20px !important;
       font-size: 18px !important;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -9956,7 +9956,8 @@ hr {
   .subpage_content ul li {
     padding-left: 25px;
     list-style: none;
-    position: relative; }
+    position: relative;
+    color: #2c2b2b; }
     .subpage_content ul li:before {
       content: "";
       width: 10px;
@@ -10076,10 +10077,8 @@ hr {
     -webkit-transform: scale(1);
             transform: scale(1); }
 
-/*#bc_footer_address_widget-3{
-    list-style: none !important;
-}
-*/
+#bc_footer_address_widget-3 {
+  list-style: none !important; }
 
 .modal_title {
   padding-left: 20px;
