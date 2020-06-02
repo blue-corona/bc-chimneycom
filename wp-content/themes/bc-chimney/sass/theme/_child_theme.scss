@@ -472,22 +472,31 @@ div, {
 		}
 }
 .service_head{
+	padding-left:0px;
 	img{
-		width:55px;
-		height:55px !important
+		width: 55px;
+	    height: 55px!important;
+	    position: absolute;
+	    left: 7px;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+	h5{
+		padding-left: 80px;
+    	padding-right: 55px;
 	}
 }
 
 .service_head {
 	svg{
 	    position: absolute;
-		right: 0px;
-		top: 18px;
-		z-index: 10;
+	    right: 0;
+	    top: 5px;
+	    z-index: 10;
 	    font-size: 28px;
-	    color: $primary_color;
+	    color: #2a2a2a;
 	    line-height: 72px;
-	    text-align:center;
+	    text-align: center;
 	}
 	svg.fa-minus-circle{
 		color: $secondary_color;
@@ -579,6 +588,8 @@ hr{
 }
 .testimonial_inner{
 	margin-bottom: 40px;
+	width:336px;
+	height:263px;
 	.h7 {
 	    color:#2C2B2B;
 	    text-transform: inherit;
@@ -605,6 +616,10 @@ hr{
 	    @media only screen and (max-width: 767px){
 	    	display:none;
 	    }
+    }
+    @media only screen and (max-width: 1024px){
+    	width:auto;
+    	height:auto;
     }
     @media only screen and (max-width: 767px){
 		background:transparent !important;

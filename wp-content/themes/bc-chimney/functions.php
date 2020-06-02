@@ -47,3 +47,58 @@ foreach ( $understrap_include as $file ) {
 }
 remove_filter( 'the_content', 'wpautop' );
 
+<<<<<<< HEAD
+=======
+add_action('wp_footer', 'accordion_method');
+function accordion_method(){?>
+<script>
+
+</script>
+<?php }
+
+add_shortcode( 'bc_accordion', 'accordion_shortcode' );
+function accordion_shortcode( $atts, $content = null ) {
+    $content = str_replace('<br>', '', $content);
+    return '<div id="accordion" class="accordion w-100 border-bottom mt-5">' . do_shortcode($content) . '</div>';
+}
+add_shortcode( 'bc_card', 'card_shortcode' );
+function card_shortcode( $atts, $content = null ) {
+    $title='';  
+    if(isset($atts['title'])) {
+        $title = $atts['title'];
+    }
+    $imgTag = '';
+    if(isset($atts['image'])){
+        $image = $atts['image'];
+$imgTag = '<img src="'.$image.'"/>';
+    }
+    $iconClass = 'fal fa-plus-circle';
+    $expanded = '';
+    if(isset($atts['expanded'])) {
+        $expanded = 'show';
+        $iconClass = 'fal fa-minus-circle';
+    }
+    $id = 'collapse'.rand(0,100000);
+        return '<div class="card  border-0 b_bottom">
+        <div id="headingOne" class="card-header  position-relative border-bottom-0 bg-white service_head"><h5 class="card-title">'.$imgTag.$title.'<i class="'.$iconClass.' bc_color_primary float-right toggle_icon mt-2 ml-2" data-toggle="collapse" data-target="#'.$id.'" arivvvvvvvva-controls="'.$id.'"></i></h5></div><div id="'.$id.'" class="card-body collapse position-relative '.$expanded.'" aria-labelledby="headingOne" data-parent="#accordion"><p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">'.do_shortcode($content).'</p><a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a></div>
+        </div>';
+}
+
+//shortcode for phone number
+//<a href="tel:[site_info_phone_number]">[site_info_phone_number]</a>
+add_shortcode( 'site_info_phone_number', 'bc_site_info_phone_number' );
+function bc_site_info_phone_number ( $atts ) {
+    $anchor = true;
+    if(isset($atts['anchor'])){
+        $anchor = $atts['anchor'];
+    }
+    $tel = bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '3334357</sub>');
+    ob_start();
+    if($anchor){
+        echo "<a class='bc_text_18 bc_line_height_20 bc_font_alt_1 bc_text_light bc_color_primary bc_color_primary_hover mb-1 no_hover_underline' href='tel:$tel'>$tel</a>";
+    }else{
+     echo $tel;
+    }
+    return ob_get_clean();
+}
+>>>>>>> ca22770b0cd49f671e5188921d46175d284cea1c

@@ -98,7 +98,15 @@ get_header();
             </div>
             <div class="row no-gutters">
                 <div class="col-lg-12 mt-2">
-                    <div id="accordion">
+                    <?php 
+                        echo do_shortcode('[bc_accordion]
+                            [bc_card title="Professional Inspections" image="'.get_stylesheet_directory_uri().'/img/glass_icon.svg"  expanded=1]It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.[/bc_card]
+                            [bc_card title="Chimney & Fireplace Cleaning" image="'.get_stylesheet_directory_uri().'/img/broom_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
+                            [bc_card title="Chimney & Fireplace Repair" image="'.get_stylesheet_directory_uri().'/img/bricks_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
+                            [bc_card title="Furnace & Fireplace Relining" image="'.get_stylesheet_directory_uri().'/img/fire_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
+                            [/bc_accordion]');
+                    ?>
+                    <!-- <div id="accordion">
                             <div class="card border-0 b_bottom ">
                                 <div class="card-header position-relative border-bottom-0 bg-white service_head" data-toggle="collapse" href="#collapse1">
                                     <div class="d-flex">
@@ -151,7 +159,7 @@ get_header();
                                     <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -167,7 +175,7 @@ get_header();
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/WSSC_logo_white.png" class="img-fluid">
                 </div>
                 <div class="col-md-6 b_left position-relative text-center text-md-left pr-lg-0">
-                    <h2 class="h2-alt bc_text_bold text-white bc_sm_text_bold px-5 px-md-0 pt-4 pt-md-0 pb-1 bc_line_height_48 bc_font_default">Gas Furnace & Fireplace</h2>
+                    <h2 class="h2-alt bc_text_bold text-white bc_sm_text_bold px-5 px-md-0 pt-4 pt-md-0 pb-1 bc_line_height_48 bc_font_default bc_sm_text_32 bc_sm_line_height_34">Gas Furnace & Fireplace</h2>
                     <h2 class="h2-alt text-white bc_line_height_48 bc_font_default mb-3 pb-2">Service & Installation</h2>
                     <p class="p-alt mb-0 pr-md-4 bc_sm_line_height_24 pb-4 pb-md-0">We are the only chimney company in the metropolitan area licensed by WSSC. This license is required to perform service on or reline gas appliances.</p>
                 </div>
@@ -351,7 +359,7 @@ get_header();
                     </div>
 
                 </div>
-                <div class="col-md-12 text-center"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4">Read our reviews</a></div>
+                <div class="col-md-12 text-center mt-3"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4">Read our reviews</a></div>
             </div>
         </div>
     </div>
@@ -434,6 +442,7 @@ get_header();
         </div>
     </div>
     
+    
 
     <?php //get_template_part( 'page-templates/common/bc-locations-section' ); ?>
 	
@@ -496,7 +505,7 @@ var swiper = new Swiper('.experience_swiper', {
 });
 var swiper = new Swiper('.testimonial_swiper', {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 50,
       slidesPerGroup: 1,
 
       loop: true,
