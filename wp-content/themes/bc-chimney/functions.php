@@ -46,3 +46,4 @@ foreach ( $understrap_include as $file ) {
     require_once $filepath;
 }
 remove_filter( 'the_content', 'wpautop' );
+
