@@ -98,7 +98,15 @@ get_header();
             </div>
             <div class="row no-gutters">
                 <div class="col-lg-12 mt-2">
-                    <div id="accordion">
+                    <?php 
+                        echo do_shortcode('[bc_accordion]
+                            [bc_card title="Professional Inspections" image="'.get_stylesheet_directory_uri().'/img/glass_icon.svg"  expanded=1]It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.[/bc_card]
+                            [bc_card title="Chimney & Fireplace Cleaning" image="'.get_stylesheet_directory_uri().'/img/broom_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
+                            [bc_card title="Chimney & Fireplace Repair" image="'.get_stylesheet_directory_uri().'/img/bricks_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
+                            [bc_card title="Furnace & Fireplace Relining" image="'.get_stylesheet_directory_uri().'/img/fire_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
+                            [/bc_accordion]');
+                    ?>
+                    <!-- <div id="accordion">
                             <div class="card border-0 b_bottom ">
                                 <div class="card-header position-relative border-bottom-0 bg-white service_head" data-toggle="collapse" href="#collapse1">
                                     <div class="d-flex">
@@ -151,7 +159,7 @@ get_header();
                                     <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -433,6 +441,7 @@ get_header();
             </div>
         </div>
     </div>
+    
     
 
     <?php //get_template_part( 'page-templates/common/bc-locations-section' ); ?>
