@@ -9933,6 +9933,9 @@ hr {
     position: absolute;
     left: 0px;
     bottom: 0px; }
+    @media screen and (max-width: 767px) {
+      .subpage_content h1:after {
+        width: 100%; } }
 
 .subpage_content p {
   margin-bottom: 30px;
@@ -10050,6 +10053,9 @@ hr {
 
 .subpage_banner {
   background-position: center; }
+  @media screen and (max-width: 767px) {
+    .subpage_banner {
+      padding: 25px 0px !important; } }
 
 .gallery_main {
   margin-bottom: 30px; }
@@ -10089,7 +10095,9 @@ hr {
   padding-right: 20px !important; }
   .modal-body .subpage_form .floating_labels_wrapper ul.gform_fields {
     border-top: 1px solid #e4e4e4 !important;
-    margin-top: 20px !important; }
+    margin-top: 2rem !important; }
+  .modal-body .subpage_form .floating_labels_wrapper .subpage_form_submit {
+    margin-top: 2rem !important; }
 
 .form_shadow {
   -webkit-box-shadow: 0 33px 68px 0px rgba(24, 24, 24, 0.13);

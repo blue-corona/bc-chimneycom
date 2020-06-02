@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 
 <div class="modal fade bg-white" id="myModal_mobile" tabindex="-1" role="dialog" aria-labelledby="disclaimerLabel" aria-hidden="true">
   <div class="modal-dialog bc_color_secondary_bg m-0 pt-4" role="document" style="height:100%;">
-    <div class="modal-content rounded-0 bc_color_secondary_bg position-relative" style="z-index:100001; border: none !important;  ">
+    <div class="modal-content rounded-0 bc_color_secondary_bg position-relative mt-2" style="z-index:100001; border: none !important;  ">
       <div class="modal-header" style="z-index: 9; position: absolute; right: -15px; top: 0;">
         <button type="button" class="close mt-n5" data-dismiss="modal" aria-label="Close" style="opacity: 1;">
           <i class="fal fa-times text-white" style="font-size: 30px;"></i>
@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
       <div class="modal-body">
         <div class=" mt-4">
         	<span class="bc_font_default bc_text_bold bc_text_28 d-block bc_line_height_24 text-uppercase text-white modal_title">Free Estimate</span>
-            <span class="bc_font_default bc_line_height_20_61 d-block bc_text_normal text-uppercase bc_text_14 text-white modal_title">Chimney and Fireplace service & repair</span>
+            <span class="bc_font_default bc_line_height_20_61 d-block bc_text_normal text-uppercase bc_text_14 text-white modal_title mt-2">Chimney and Fireplace service & repair</span>
             <div class="subpage_form"><?php echo do_shortcode('[gravityform id=3 ajax=true]')?></div>
         </div>
       </div>
