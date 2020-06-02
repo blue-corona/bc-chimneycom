@@ -97,7 +97,7 @@ p, .p, body,li{
 	font-weight: 400;
 	text-transform: none;
 	line-height: 30px;
-	letter-spacing: default;
+	letter-spacing: normal;
 	color: $white_color;
 
 }
@@ -110,7 +110,7 @@ body{
 			font-weight: 400;
 			text-transform: none;
 			line-height: 30px;
-			letter-spacing: default;
+			letter-spacing: normal;
 			color: $secondary_color;
 			text-decoration: none;
 			&:hover{

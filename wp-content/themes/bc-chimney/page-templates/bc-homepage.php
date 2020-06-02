@@ -317,31 +317,36 @@ get_header();
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
                                     <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</h7>
+                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</h7>
+                                       <p class="d-lg-none d-block">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</p>
                                        <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">James G, RSC</span>
                                     </div>
                               </div>
                               <div class="swiper-slide">
                                     <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
+                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
+                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                                        <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name A, VA </span>
                                     </div>
                               </div>
                               <div class="swiper-slide">
                                     <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</h7>
+                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</h7>
+                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</p>
                                        <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name B, MD</span>
                                     </div>
                               </div>
                               <div class="swiper-slide">
                                     <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
+                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
+                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                                        <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name A, VA </span>
                                     </div>
                               </div>
                               <div class="swiper-slide">
                                     <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</h7>
+                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</h7>
+                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</p>
                                        <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name B, MD</span>
                                     </div>
                               </div>
