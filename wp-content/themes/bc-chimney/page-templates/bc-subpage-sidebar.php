@@ -46,10 +46,10 @@ global $post;
                     </div>
 
                     <div class="col-md-4">
-                        <div class="bc_color_secondary_bg py-4 form_shadow">
+                        <div class="bc_color_secondary_bg py-4 form_shadow d-md-block d-none">
                             <span class="bc_font_default bc_text_bold bc_text_28 d-block bc_line_height_24 text-uppercase pr-25 pl-35 text-white">Free Estimate</span>
                             <span class="bc_font_default bc_line_height_20_61 d-block bc_text_normal text-uppercase bc_text_14 pr-25 pl-35 text-white mt-2">Chimney and Fireplace service & repair</span>
-                            <div class="subpage_form top_line px-2 mt-3"><?php echo do_shortcode('[gravityform id=3 ajax=true]')?></div>
+                            <div class="subpage_form top_line px-2 mt-3"><?php echo do_shortcode('[gravityform id=2 ajax=true]')?></div>
                         </div>
 
                         <div class="testimonial pb-5">
@@ -107,6 +107,9 @@ global $post;
                         </div>
                     </div>
                 <!-- The Content Starts -->
+
+                 <!-- experience section--->
+    
                 <?php 
                 //if ( have_posts() ) : 
                    // while ( have_posts() ) : the_post();
@@ -122,6 +125,84 @@ global $post;
             </div>
         </div>
         <!--  Include Heating Services Features file here -->
+
+        <div class="container-fluid bc_color_secondary_bg py-5 experience">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-md-12 text-center px-0">
+                    <h2 class="h2-alt bc_sm_text_23 text-white bc_font_default experience_title">Experience the Chimney.com Difference</h2>
+                </div>
+            </div>
+            <div class="d-lg-flex d-none justify-content-between mt-4 mb-5">
+                <div class="text-center w-20 b_right">
+                    <i class="far fa-user-shield bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                    <h6 class=" text-white">Local licensed professionals</h6>
+                </div>
+                <div class="text-center w-20 b_right">
+                    <i class="far fa-file-invoice-dollar bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                    <h6 class=" text-white">Free & honest estimates</h6>
+                </div>
+                <div class="text-center w-20 b_right">
+                    <i class="far fa-video bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                    <h6 class=" text-white">Live video camera inspections</h6>
+                </div>
+                <div class="text-center w-20 b_right">
+                    <i class="far fa-shield-check bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                    <h6 class=" text-white">Quality stainless steel products</h6>
+                </div>
+                <div class="text-center w-20">
+                    <i class="far fa-award bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                    <h6 class=" text-white">Guaranteed clean & courteous service</h6>
+                </div>
+            </div>
+            <div class="d-lg-none d-block">
+                <div class="swiper-container experience_swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="text-center">
+                            <i class="far fa-user-shield bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                            <h6 class="text-white">Local licensed<br>professionals</h6>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="text-center">
+                            <i class="far fa-file-invoice-dollar bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                            <h6 class=" text-white">Free & honest<br>estimates</h6>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="text-center">
+                            <i class="far fa-video bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                            <h6 class=" text-white">Live video camera<br>inspections</h6>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="text-center">
+                            <i class="far fa-shield-check bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                            <h6 class=" text-white">Quality stainless<br>steel products</h6>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="text-center">
+                            <i class="far fa-award bc_text_50 bc_line_height_64 text-white mb-4"></i>
+                            <h6 class=" text-white">Guaranteed clean &<br>courteous service</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    
+                  </div>
+                  <div class="swiper-pagination experience_pagination"></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center mt-5 mt-lg-0">
+                    <a href="#" class="btn btn-secondary text-uppercase">Get to know us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
         <?php //get_template_part( 'page-templates/common/bc-heating-services-features' ); ?>
 
         <?php //get_template_part( 'page-templates/common/bc-dont-see-service' ); ?>

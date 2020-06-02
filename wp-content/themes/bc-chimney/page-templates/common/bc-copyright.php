@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 
 
 <div class="modal fade bg-white" id="myModal_mobile" tabindex="-1" role="dialog" aria-labelledby="disclaimerLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered bc_color_secondary_bg m-0" role="document" style="height:100%;">
+  <div class="modal-dialog bc_color_secondary_bg m-0 pt-4" role="document" style="height:100%;">
     <div class="modal-content rounded-0 bc_color_secondary_bg position-relative" style="z-index:100001; border: none !important;  ">
       <div class="modal-header" style="z-index: 9; position: absolute; right: -15px; top: 0;">
         <button type="button" class="close mt-n5" data-dismiss="modal" aria-label="Close" style="opacity: 1;">
