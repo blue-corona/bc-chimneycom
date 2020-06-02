@@ -34,8 +34,7 @@ public function widget( $args, $instance ) {
 		?>
 
 
-
-<div class="col-md-6 offset-md-1 mt-xl-4 mt-md-3 mt-lg-4 pt-lg-2 pt-xl-0">
+ <div class="col-md-6 offset-md-1 mt-xl-4 mt-md-3 mt-lg-4 pt-lg-2 pt-xl-0">
                     <div class="row mt-3">
                         <div class="col-md-6 col-10 offset-1 offset-md-0 right_md_border pt-md-4 pr-xl-4 text-md-left text-center mb-3">
                         
