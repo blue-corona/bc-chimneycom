@@ -6971,6 +6971,7 @@ jQuery(document).ready(function(){
     });
 });
 
+
 //toggle read more - read less
 function toggleColor(toggleScope, toggleType){
   var openColorClass = jQuery(toggleScope).data('open-color-class');
@@ -7030,11 +7031,11 @@ function toggleContent(toToggle, toggleScope, toggleType){
   if(typeof text == "undefined"){
     return;
   }
-  if(currentIcon == 'plus' && text.search('read more') != -1) {
-    jQuery(toggleScope).children('span').html(text.replace('read more', 'read less')); 
+  if(currentIcon == 'plus' && text.search('Read More') != -1) {
+    jQuery(toggleScope).children('span').html(text.replace('Read More', 'Read Less')); 
   }
-  if(currentIcon == 'minus' && text.search('read less') != -1) {
-    jQuery(toggleScope).children('span').html(text.replace('read less', 'read more'));  
+  if(currentIcon == 'minus' && text.search('Read Less') != -1) {
+    jQuery(toggleScope).children('span').html(text.replace('Read Less', 'Read More'));  
   }
 }
 jQuery(".bc_toggle_content").on('click', function(e){
