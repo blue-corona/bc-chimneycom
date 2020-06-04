@@ -10,7 +10,14 @@ get_header();
 global $post;
 ?>
 <main>
-    <div class="container-fluid p-0 bc_hero_container bc_home_section_bg py-5" <?php if (has_post_thumbnail() ) { $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?> style="background-image: url('<?php echo $image[0]; ?>');" <?php }?>>
+    <div class="container-fluid p-0 bc_hero_container bc_home_section_bg py-5"
+
+<?php if (has_post_thumbnail() ) {
+      $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id() ), 'single-post-thumbnail' ); ?>
+      <img src="<?php echo $image[0]; ?>" class="img-fluid w-100" alt="Contact-banner">
+      <?php }else{ ?>
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sub_banner.jpg" class="img-fluid w-100" alt="Contact-banner">
+      <?php }?>>
         <div class="container p-4">
             <div class="row">
                 <div class="col-sm-12 ">
