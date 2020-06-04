@@ -9973,6 +9973,12 @@ hr {
       left: 6px;
       top: 11px; }
 
+.page-template-bc-subpage-withoutsidebar .subpage_content p {
+  padding-right: 0px; }
+
+.page-template-bc-subpage-withoutsidebar .subpage_content a[href="tel: (555) 555-5555"] {
+  display: block; }
+
 .subpage_form label.gfield_label {
   color: #fff; }
   .subpage_form label.gfield_label .gfield_required {
