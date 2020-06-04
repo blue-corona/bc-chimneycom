@@ -9605,23 +9605,26 @@ div, {
   width: 255px;
   height: 64px;
   line-height: 60px;
-  padding: 0px; }
+  padding: 0px;
+  line-height: 24px !important;
+  font-size: 18px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px auto;
+  font-weight: 400; }
   @media screen and (max-width: 767px) {
     .experience a.btn.btn-secondary.text-uppercase {
       width: 250px !important;
       height: 50px !important;
       line-height: 20px !important;
       font-size: 18px !important;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      margin: 0px auto;
       font-weight: 400; } }
 
 .inspection p {
