@@ -19,257 +19,33 @@ get_header();
             get_template_part( 'page-templates/hero-section/bc-hero-video' );
         }
     ?>
-    <?php 
-    if ( have_posts() ) : 
-    	while ( have_posts() ) : the_post();
-			the_content();
-		endwhile;
-	endif;
-	?>
 
-    <!-- service section--->
-    <div class="container-fluid home_services bc_home_section_bg d-none d-lg-block" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_bg.jpg')">
-        <div class="container text-center pb-5">
-            <div class="row pt-5">
-                <div class="col-md-12">
-                    <h4>Your #1 Trusted Chimney Company</h4>
-                    <span class="bc_font_default bc_text_35 bc_letter_spacing_normal bc_color_primary bc_line_height_45 bc_text_light">Servicing the DMV Since 1989</span>
-                </div>
-            </div>
-            <div class="row pb-5 pt-5">
-                <div class="col-md-3">
-                    <div class="bg-white sevice_wrapper pt-5 pb-4 position-relative">
-                        <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
-                            
-                        </div>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glass_icon.svg" class="mb-4">
-                        <h5 class="mb-4">Professional<br>Inspections</h5>
-                        <a href="#" class="bc_text_16 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </div>
+    <!-- service section #Trusted Chimney Company (desktop/mobile)--->
+     <?php get_template_part( 'page-templates/common/trusted-chimney-company' ); ?>
+      <!-- End of service section #Trusted Chimney Company (desktop/mobile)--->
 
-                <div class="col-md-3">
-                    <div class="bg-white sevice_wrapper pt-5 pb-4 position-relative">
-                        <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            
-                        </div>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg" class="mb-4">
-                        <h5 class="mb-4">Chimney & Fireplace<br>Cleaning</h5>
-                        <a href="#" class="bc_text_16 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="bg-white sevice_wrapper pt-5 pb-4 position-relative">
-                        <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_icon.svg" class="mb-4">
-                        <h5 class="mb-4">Chimney & Fireplace<br>Repair</h5>
-                        <a href="#" class="bc_text_16 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="bg-white sevice_wrapper pt-5 pb-4  position-relative">
-                        <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            
-                        </div>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg" class="mb-4">
-                        <h5 class="mb-4">Furnace & Fireplace<br>Relining</h5>
-                        <a href="#" class="bc_text_16 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    <!-- Mobile service_section -->
-    <div class="container-fluid d-lg-none d-block bg-white">
-        <div class="container py-2 px-0">
-            <div class="row pt-3">
-                <div class="col-md-12 text-center">
-                    <h4 class="px-4">Your #1 Trusted Chimney Company</h4>
-                    <span class="bc_font_default bc_text_24 bc_letter_spacing_normal bc_color_primary bc_line_height_24 bc_text_light">Servicing the DMV Since 1989</span>
-                </div>
-            </div>
-            <div class="row no-gutters">
-                <div class="col-lg-12 mt-2">
-                    <?php 
-                        echo do_shortcode('[bc_accordion]
-                            [bc_card title="Professional Inspections" image="'.get_stylesheet_directory_uri().'/img/glass_icon.svg"  expanded=1]It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.[/bc_card]
-                            [bc_card title="Chimney & Fireplace Cleaning" image="'.get_stylesheet_directory_uri().'/img/broom_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
-                            [bc_card title="Chimney & Fireplace Repair" image="'.get_stylesheet_directory_uri().'/img/bricks_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
-                            [bc_card title="Furnace & Fireplace Relining" image="'.get_stylesheet_directory_uri().'/img/fire_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
-                            [/bc_accordion]');
-                    ?>
-                    <!-- <div id="accordion">
-                            <div class="card border-0 b_bottom ">
-                                <div class="card-header position-relative border-bottom-0 bg-white service_head" data-toggle="collapse" href="#collapse1">
-                                    <div class="d-flex">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glass_icon.svg" class="mr-4">
-                                        <h5>Professional<br>Inspections</h5>
-                                        <i class="fal fa-minus-circle"></i>
-                                    </div>
-                                </div>
-                                <div id="collapse1" class="card-body collapse position-relative show" data-parent="#accordion">
-                                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
-                                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="card border-0 b_bottom">
-                                <div class="card-header position-relative border_top border-bottom-0 bg-white border-t1 collapsed  service_head" data-parent="#accordion" data-toggle="collapse" href="#collapse2">
-                                   <div class="d-flex">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg" class="mr-4">
-                                        <h5>Chimney & Fireplace<br>Cleaning</h5>
-                                        <i class="fal fa-plus-circle"></i>
-                                    </div>
-                                </div>
-                                <div id="collapse2" class="card-body collapse position-relative " data-parent="#accordion">
-                                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="card border-0 b_bottom">
-                                <div class="card-header position-relative border_top bg-white border-bottom-0 collapsed  service_head" data-parent="#accordion" data-toggle="collapse" href="#collapse3">
-                                    <div class="d-flex">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_icon.svg" class="mr-4">
-                                        <h5>Chimney & Fireplace<br>Repair</h5>
-                                        <i class="fal fa-plus-circle"></i>
-                                    </div>
-                                </div>
-                                <div id="collapse3" class="card-body collapse position-relative " data-parent="#accordion">
-                                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="card border-0 b_bottom">
-                                <div class="card-header position-relative border_top bg-white border-bottom-0 collapsed  service_head" data-parent="#accordion" data-toggle="collapse" href="#collapse4">
-                                    <div class="d-flex">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg" class="mr-4">
-                                        <h5>Furnace & Fireplace<br>Relining</h5>
-                                        <i class="fal fa-plus-circle"></i>
-                                    </div>
-                                </div>
-                                <div id="collapse4" class="card-body collapse position-relative " data-parent="#accordion">
-                                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Mobile service_section for -->
-
-    <!-- service - install section--->
-    <div class="container-fluid sevice_install bc_home_section_bg position-relative pt-3 pb-5" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/home_img1.jpg')">
-        <div class="container py-5 position-relative">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-3 text-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/WSSC_logo_white.png" class="img-fluid">
-                </div>
-                <div class="col-md-6 b_left position-relative text-center text-md-left pr-lg-0">
-                    <h2 class="h2-alt bc_text_bold text-white bc_sm_text_bold px-5 px-md-0 pt-4 pt-md-0 pb-1 bc_line_height_48 bc_font_default bc_sm_text_32 bc_sm_line_height_34">Gas Furnace & Fireplace</h2>
-                    <h2 class="h2-alt text-white bc_line_height_48 bc_font_default mb-3 pb-2">Service & Installation</h2>
-                    <p class="p-alt mb-0 pr-md-4 bc_sm_line_height_24 pb-4 pb-md-0">We are the only chimney company in the metropolitan area licensed by WSSC. This license is required to perform service on or reline gas appliances.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <a href="#" class="btn btn-white w-auto px-lg-5 px-3 mt-lg-5 text-uppercase">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Gas Furnace & Fireplace section--->
+    <?php get_template_part( 'page-templates/common/gas-furnace-&-fireplace' ); ?>
+   
+<!-- End Gas Furnace & Fireplace -->
 
     <!-- experience section--->
-    <div class="container-fluid bc_color_secondary_bg py-5 experience">
-        <div class="container">
-            <div class="row pb-5">
-                <div class="col-md-12 text-center px-0">
-                    <h2 class="h2-alt bc_sm_text_23 text-white bc_font_default experience_title">Experience the Chimney.com Difference</h2>
-                </div>
-            </div>
-            <div class="d-lg-flex d-none justify-content-between mt-4 mb-5">
-                <div class="text-center w-20 b_right">
-                    <i class="far fa-user-shield bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Local licensed professionals</h6>
-                </div>
-                <div class="text-center w-20 b_right">
-                    <i class="far fa-file-invoice-dollar bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Free & honest estimates</h6>
-                </div>
-                <div class="text-center w-20 b_right">
-                    <i class="far fa-video bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Live video camera inspections</h6>
-                </div>
-                <div class="text-center w-20 b_right">
-                    <i class="far fa-shield-check bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Quality stainless steel products</h6>
-                </div>
-                <div class="text-center w-20">
-                    <i class="far fa-award bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Guaranteed clean & courteous service</h6>
-                </div>
-            </div>
-            <div class="d-lg-none d-block">
-                <div class="swiper-container experience_swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-user-shield bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class="text-white">Local licensed<br>professionals</h6>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-file-invoice-dollar bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class=" text-white">Free & honest<br>estimates</h6>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-video bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class=" text-white">Live video camera<br>inspections</h6>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-shield-check bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class=" text-white">Quality stainless<br>steel products</h6>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-award bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class=" text-white">Guaranteed clean &<br>courteous service</h6>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    
-                  </div>
-                  <div class="swiper-pagination experience_pagination"></div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-12 text-center mt-5 mt-lg-0">
-                    <a href="#" class="btn btn-secondary text-uppercase">Get to know us</a>
-                </div>
-            </div>
-        </div>
-    </div>
+   <?php get_template_part( 'page-templates/common/experience-the-chimney' ); ?>
 
     <!-- inspection section--->
+   
     <div class="container-fluid py-5 inspection">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center px-0 px-md-15">
-                    <h1 class="mb-3 expert_title">Expert Chimney & Fireplace Repairs and <span class="d-none d-md-inline">Service</span></h1>
+                      <?php 
+                        if ( have_posts() ) : 
+                            while ( have_posts() ) : the_post();
+                                the_content();
+                            endwhile;
+                        endif;
+                        ?>
+                    <!-- <h1 class="mb-3 expert_title">Expert Chimney & Fireplace Repairs and <span class="d-none d-md-inline">Service</span></h1>
                     <h2 class="bc_color_primary">Bonded, Licensed and Insured</h2>
                     <hr>
                     <p class="mb-4">Chimney.com brings modern, innovative venting solutions while never losing the time standing traditions taught by the chimney and masonry professionals before us. Chimney.com carries warmth, joy and a sense of comfort to every house we step into. Chimney.com offers complete chimney and fireplace repairs and services.</p>
@@ -279,7 +55,7 @@ get_header();
                         <p>Chimney.com is a fully licensed and insured company that offers a complete line of chimney services. We guarantee the quality of our work and can provide numerous references, both commercial and residential.</p>
                         <p class="bc_font_default bc_text_bold">Get a chimney inspection today!</p>
                     </div>
-                    <a class="bc_text_20 bc_line_height_30 no_hover_underline bc_text_normal bc_toggle_content bc_font_alt_4" href="#" data-toggle="#read_more"><span class="bc_color_secondary bc_color_secondary_hover">Read More</span> <i class="fal fa-plus bc_color_secondary bc_text_20 bc_line_height_30 bc_text_normal" aria-hidden="true"></i> </a>
+                    <a class="bc_text_20 bc_line_height_30 no_hover_underline bc_text_normal bc_toggle_content bc_font_alt_4" href="#" data-toggle="#read_more"><span class="bc_color_secondary bc_color_secondary_hover">Read More</span> <i class="fal fa-plus bc_color_secondary bc_text_20 bc_line_height_30 bc_text_normal" aria-hidden="true"></i> </a> -->
 
                 </div>
             </div>
@@ -287,207 +63,19 @@ get_header();
     </div>
 
     <!-- map section -->
-    <div class="container-fluid map_location bc_home_section_bg" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/service_area_map.jpg')">
-        <div class="container">
-            <div class="row py-lg-5 py-md-4 py-5">
-                <div class="col-md-7 py-lg-5 text-center text-md-left px-0">
-                    <h2 class="text-white pr-md-5 px-3 px-md-0 mr-md-5">Proudly Serving Maryland, Washington DC & Northern Virgina</h2>
-                    <hr class="bg-white mx-0 my-md-4 my-3 ">
-                    <span class="bc_text_24 bc_font_default bc_text_bold text-white bc_line_height_30 pr-md-4 d-block bc_sm_text_18 bc_sm_line_height_24 mr-md-5">Silver Spring, Gaithersburg, Laurel, Potomac, Bethesda, McLean, Arlington, Alexandria & More!</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+     <?php get_template_part( 'page-templates/common/proudly-serving' ); ?>
+  
     <!-- testimonial section --->
-    <div class="container-fluid testimonial pb-5" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_bg.jpg')">
-        <div class="container text-center py-4">
-            <div class="row">
-                <div class="col-md-12 px-0 px-md-15">
-                    <div class=" text-center mb-4">
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                    </div>
-                    <h2 class="mb-3 px-md-0 px-4 bc_color_primary">What Your Neighbors Have to Say</h2>
-                    <div class="position-relative mt-4">
-                        <div class="swiper-container testimonial_swiper">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</h7>
-                                       <p class="d-lg-none d-block">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">James G, RSC</span>
-                                    </div>
-                              </div>
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
-                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name A, VA </span>
-                                    </div>
-                              </div>
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</h7>
-                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name B, MD</span>
-                                    </div>
-                              </div>
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
-                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name A, VA </span>
-                                    </div>
-                              </div>
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</h7>
-                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name B, MD</span>
-                                    </div>
-                              </div>
-                            </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination testimonial_pagination d-md-none d-block"></div>
-                        
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="testimonial_buttons d-none d-md-block">
-                            <div class="swiper-button-next testimonial_next  bc_text_16 bc_line_height_0"><i class="fas fa-chevron-right bc_text_16 bc_line_height_0"></i></div>
-                            <div class="swiper-button-prev testimonial_prev bc_text_16 bc_line_height_0"><i class="fas fa-chevron-left bc_text_16 bc_line_height_0"></i></div>
-                        </div>
-                        
-                    </div>
+    <?php echo do_shortcode('[bc-testimonial]');?>
+<!-- testimonial end -->
 
-                </div>
-                <div class="col-md-12 text-center mt-3"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4">Read our reviews</a></div>
-            </div>
-        </div>
-    </div>
+<!--  start affiliations -->
 
-    <div class="container-fluid bg-white affiliations_section py-5">
-        <div class="container">
-            <div class="row d-lg-flex d-none align-items-center">
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2017.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2018.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2019.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor2.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor1.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wssc.png">
-                    </a>
-                </div>
-            </div>
-            <div class="row d-lg-none d-block">
-                <div class="col-md-12">
-                    <div class="swiper-container affiliations_swiper">
-                        <div class="swiper-wrapper d-flex align-items-center">
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2017.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2018.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2019.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor2.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                  <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor1.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wssc.png">
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>   
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination affiliations_pagination d-md-none d-block"></div>                 
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-
-    <?php //get_template_part( 'page-templates/common/bc-locations-section' ); ?>
-	
-    <!--  Include coupons file here -->
-	<?php //get_template_part( 'page-templates/common/coupons' ); ?>
-
-    <!--  Include testimonial file here -->
-	<?php //get_template_part( 'page-templates/common/testimonials' ); ?>
-    <!-- Include affiliations file here -->
-    <?php //get_template_part( 'page-templates/common/affiliations' ); ?>
-    <div class="d-lg-none d-block">
-        <?php //echo do_shortcode('[bc-contact-us]'); ?>
-    </div>
-
+  <?php echo do_shortcode ( '[bc-affiliation]');?>
+  
+  <?php echo do_shortcode ( '[bc-affiliation-mobile]');?>
+<!--  end affiliations -->
 </main>
-<!-- <?php //function serviceAreaJavascript() {?>-->
-<!-- <script type="text/javascript">
-jQuery(document).ready(function(){
-    jQuery(".hide_div").hide();
-    jQuery("#minus").toggle();
-    jQuery(".abc").click(function(){
-        jQuery("#minus").toggle();
-        jQuery("#plus").toggle();
-        jQuery(".hide_div").toggle(500);
-    });
-});
-var swiper = new Swiper('.experience_swiper', {
-      spaceBetween: 30,
-      autoplay: {
-        delay: 2000,
-      },
-      pagination: {
-        el: '.experience_pagination',
-        clickable: true,
-      },
-    });
-</script> -->
-<!--
-<?php// }
-//add_action( 'wp_footer' , 'serviceAreaJavascript' );?> -->
 <script>
     jQuery(document).ready(function(){
     jQuery(".hide_div").hide();
@@ -498,65 +86,28 @@ var swiper = new Swiper('.experience_swiper', {
         jQuery(".hide_div").toggle(500);
     });
 });
-var swiper = new Swiper('.experience_swiper', {
-      spaceBetween: 30,
-      autoplay: {
-        delay: 2000,
-      },
-      pagination: {
-        el: '.experience_pagination',
-        clickable: true,
-      },
-});
-var swiper = new Swiper('.testimonial_swiper', {
-      slidesPerView: 3,
-      spaceBetween: 50,
-      slidesPerGroup: 1,
 
-      loop: true,
-      loopFillGroupWithBlank: true,
-      autoplay: {
-        delay: 2000,
-      },
-      pagination: {
-        el: '.testimonial_pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.testimonial_next',
-        prevEl: '.testimonial_prev',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },}
-});
 
-var swiper = new Swiper('.affiliations_swiper', {
-      slidesPerView: 6,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      pagination: {
-        el: '.affiliations_pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-          slidesPerGroup: 1,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-          slidesPerGroup: 1,
-        },}
+// var swiper = new Swiper('.affiliations_swiper', {
+//       slidesPerView: 6,
+//       spaceBetween: 30,
+//       slidesPerGroup: 1,
+//       pagination: {
+//         el: '.affiliations_pagination',
+//         clickable: true,
+//       },
+//       breakpoints: {
+//         640: {
+//           slidesPerView: 3,
+//           spaceBetween: 20,
+//           slidesPerGroup: 1,
+//         },
+//         768: {
+//           slidesPerView: 3,
+//           spaceBetween: 40,
+//           slidesPerGroup: 1,
+//         },}
         
-    });
+//     });
 </script>
 <?php get_footer(); ?>
