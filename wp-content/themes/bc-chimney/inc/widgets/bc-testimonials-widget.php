@@ -13,19 +13,23 @@ class BC_Testimonials_Widget extends WP_Widget {
 	}
 
 	function addSwiperInitTestimonialJsToFooter($instance){
-			echo "
-			<script>
-			var sidebarTestimonialSwiper".$instance." = new Swiper('#".$instance."', {
-			    pagination: true,
-			    loop: true,
-			    navigation: {
-			        nextEl: '.bc_testimonial_swiper_next',
-			        prevEl: '.bc_testimonial_swiper_prev',
-			    },
-			    autoHeight: true,
-			});
-			</script>
-			";
+			echo "<script>
+    var swiper = new Swiper('.testimonial_swiper_subpage', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 2000,
+      },
+      pagination: {
+        el: '.testimonial_pagination_subpage',
+        clickable: true,
+      },
+     
+});
+</script>";
 	}
 
 	public function widget( $args, $instance ) {
@@ -34,18 +38,31 @@ class BC_Testimonials_Widget extends WP_Widget {
 		add_action('wp_footer', function() use ( $widgetInstance ) { 
         $this->addSwiperInitTestimonialJsToFooter( $widgetInstance ); });
 	?>
-	<div class="mt-5">
-		<?php 
+
+
+<div class="testimonial pb-5">
+<div class="text-center py-4">
+  <div class=" text-center mb-4">
+              <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
+              <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
+              <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
+              <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
+              <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
+          </div>
+           <?php 
 		if ( isset( $instance['title'] ) && !empty($instance['title']) ) {
 			echo $args['before_title'] . $instance['title'] . $args['after_title']; 
 		}else{
-			echo '<h2 class="text-center m-0 bc_alternate_font_blue text-capitalize">Testimonials</h2>';
+			echo '<h3 class="mb-3 bc_color_primary bc_line_height_36 bc_sm_line_height_30">What Your Neighbors Have to Say</h3>';
 		}
+         
+        
 		?>
-		<!-- before pase -->
-		<div id="<?php echo $this->id ?>" class="bc_testimonial_photos_swiper swiper-container text-center my-4">
-		<div class="swiper-wrapper text-center">
-			<?php 
+          </h3>
+          <div class="position-relative mt-4">
+              <div id="<?php echo $this->id ?>" class="swiper-container testimonial_swiper_subpage">
+                  <div class="swiper-wrapper">
+                  	<?php 
 			$testimonial_args  = array( 'post_type' => 'bc_testimonials', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish');
 
 	        $query = new WP_Query( $testimonial_args );
@@ -55,56 +72,39 @@ class BC_Testimonials_Widget extends WP_Widget {
 	        $message = get_post_meta( get_the_ID(), 'testimonial_message', true );
 	        $image = get_post_meta( get_the_ID(), 'testimonial_custom_image', true );
         ?>
-			<style type="text/css">
-			.circular--landscape {
-			display: inline-block !important;
-			position: relative;
-			width: 100px;
-			height: 100px;
-			overflow: hidden;
-			border-radius: 50%;
-			}
-			.circular--landscape img {
-			width: auto;
-			height: 100%;
-			margin-left: 0px;
-			}
-			</style>
-			<div class="swiper-slide">
-				<div class="row">
-				<div class="col-sm-12">
-					<div class="circular--landscape">
-						<img class="" src="<?php echo $image;?>" alt="testimonial02" />
-					</div>
-				</div>
-					<div class="col-sm-12">
-					<p class="bc_color_primary mb-0">
-						<?php 
+                    <div class="swiper-slide">
+                          <div class="testimonial_inner position-relative bg-white p-4">
+                             <span class=" bc_text_16 bc_font_alt_1 bc_line_height_30 bc_text_normal bc_letter_spacing_normal color_1 d-lg-block d-none">
+                             	<?php 
                         if (strlen($message) > 151){
                             echo $message = substr($message, 0, 151) . '...';
                         }else{
                             echo $message;
                         }
                         ?>
-					</p>
-					<p class="bc_alternate_font_blue mb-0">- <?php the_title();?></p>
-					<p class="mb-0"><?php echo $title;?></p>
-					</div>
-				</div>
-			</div>
-		 <?php
+                             </span>
+                             <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold"><?php echo $title;?></span>
+                          </div>
+                    </div>
+                     <?php
             endwhile; 
             wp_reset_query();
         endif;?>
 			
-		</div>
-		<ul class=" list-unstyled">
-		 	<li class="list-inline-item bc_testimonial_swiper_prev bc_swiper-button-prev"> <em class="fa fa-chevron-circle-left"></em> </li>
-		 	<li class="list-inline-item bc_testimonial_swiper_next bc_swiper-button-next"> <em class="fa fa-chevron-circle-right"></em> </li>
-		</ul>
-		</div>
-		<div class="text-center"><button class="btn bc_default_primary text-white " type="button">Read Testimonials</button></div>
-	</div>
+                   
+                  </div>
+                 
+                   <div class="swiper-pagination testimonial_pagination_subpage"></div>
+              
+              </div>
+              
+              
+          </div>
+  
+      <div class="text-center"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4 subpage_review">our reviews</a></div>
+</div>
+                        </div>
+
 <?php echo $args['after_widget'];
 }
 
@@ -120,7 +120,7 @@ class BC_Testimonials_Widget extends WP_Widget {
 		$for = $this->get_field_id( 'title' );
 		$name = $this->get_field_name( 'title' );
 		$label = __( 'Title', 'bc-testimonial-custom-widget' );
-		$title = '<h2 class="text-center m-0 bc_alternate_font_blue text-capitalize">'.__( 'Testimonials', 'bc-testimonial-custom-widget' ).'</h2>';
+		$title = '<h3 class="mb-3 bc_color_primary bc_line_height_36 bc_sm_line_height_30"></h3>'.__( 'What Your Neighbors Have to Say', 'bc-testimonial-custom-widget' ).'</h3>';
 		if ( isset( $instance['title'] ) && ! empty( $instance['title'] ) ) {
 			$title = $instance['title'];
 		}
