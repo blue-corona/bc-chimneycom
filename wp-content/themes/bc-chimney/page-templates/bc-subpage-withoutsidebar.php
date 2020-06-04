@@ -11,7 +11,11 @@ get_header();?>
 <main>
     <?php get_template_part( 'page-templates/common/bc-banner-section' ); ?> 
     <!-- The Content Starts -->
-    
+       <div class="container-fluid">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-12 subpage_content">
+
     <?php 
     if ( have_posts() ) : 
         while ( have_posts() ) : the_post();
@@ -20,6 +24,10 @@ get_header();?>
     endif;
     ?>
 
+</div>
+</div>
+</div>
+</div>
 
     <!-- The Content ends --> 
 

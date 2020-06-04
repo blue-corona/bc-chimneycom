@@ -15,25 +15,27 @@ class BC_Gravity_Widget extends WP_Widget {
 	
 	public function widget( $args, $instance ) {?>
 
-<div class="shadow-lg ">
-
-	<div class="bc_color_info_bg d-flex py-3 px-4">
-        <img alt="icon" class="img-fluid align-self-center " src="<?php echo get_template_directory_uri();?>/img/24icon.png">
-        <span class="bc_color_secondary text-capitalize bc_text_30 bc_font_alt_1 text-center px-2 pt-1">
-            <?php 
+ <div class="bc_color_secondary_bg py-4 form_shadow d-md-block d-none">
+ 	 <?php 
 				if ( isset( $instance['title'] ) && !empty($instance['title']) ) {
 					echo  $instance['title']; 
 				}else{
-					echo 'Emergency Service';
+					echo ' <span class="bc_font_default bc_text_bold bc_text_28 d-block bc_line_height_24 text-uppercase pr-25 pl-35 text-white">
+
+
+                            Free Estimate</span>
+                            <span class="bc_font_default bc_line_height_20_61 d-block bc_text_normal text-uppercase bc_text_14 pr-25 pl-35 text-white mt-2">Chimney and Fireplace service & repair
+
+                            </span>';
 				}
 			?>
-        </span>
-    </div>
-	<!-- <div class="bc_hero_bg_form_color mb-0 pl-1 pr-1">
-	
-	</div> -->
-	<div class="entry-content bg-light"><?php echo do_shortcode($instance['gravityform']);?></div>
-</div>
+                            <div class="subpage_form top_line px-2 mt-3">
+
+                            	<?php echo do_shortcode($instance['gravityform']);?></div>
+                            </div>
+
+
+
 
 <?php echo $args['after_widget'];
 }
@@ -53,7 +55,13 @@ class BC_Gravity_Widget extends WP_Widget {
 		$for = $this->get_field_id( 'title' );
 		$name = $this->get_field_name( 'title' );
 		$label = __( 'Title', 'bc-service-custom-widget' );
-		$title = 'Emergency Service';
+		$title = ' <span class="bc_font_default bc_text_bold bc_text_28 d-block bc_line_height_24 text-uppercase pr-25 pl-35 text-white">
+
+
+                            Free Estimate</span>
+                            <span class="bc_font_default bc_line_height_20_61 d-block bc_text_normal text-uppercase bc_text_14 pr-25 pl-35 text-white mt-2">Chimney and Fireplace service & repair
+
+                            </span>';
 		if ( isset( $instance['title'] ) && ! empty( $instance['title'] ) ) {
 			$title = $instance['title'];
 		}
