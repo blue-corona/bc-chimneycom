@@ -40,18 +40,19 @@ get_header();
    <?php get_template_part( 'page-templates/common/experience-the-chimney' ); ?>
 
     <!-- inspection section--->
-     <?php 
+   
+    <div class="container-fluid py-5 inspection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center px-0 px-md-15">
+                      <?php 
                         if ( have_posts() ) : 
                             while ( have_posts() ) : the_post();
                                 the_content();
                             endwhile;
                         endif;
                         ?>
-   <!--  <div class="container-fluid py-5 inspection">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center px-0 px-md-15">
-                    <h1 class="mb-3 expert_title">Expert Chimney & Fireplace Repairs and <span class="d-none d-md-inline">Service</span></h1>
+                    <!-- <h1 class="mb-3 expert_title">Expert Chimney & Fireplace Repairs and <span class="d-none d-md-inline">Service</span></h1>
                     <h2 class="bc_color_primary">Bonded, Licensed and Insured</h2>
                     <hr>
                     <p class="mb-4">Chimney.com brings modern, innovative venting solutions while never losing the time standing traditions taught by the chimney and masonry professionals before us. Chimney.com carries warmth, joy and a sense of comfort to every house we step into. Chimney.com offers complete chimney and fireplace repairs and services.</p>
@@ -61,12 +62,12 @@ get_header();
                         <p>Chimney.com is a fully licensed and insured company that offers a complete line of chimney services. We guarantee the quality of our work and can provide numerous references, both commercial and residential.</p>
                         <p class="bc_font_default bc_text_bold">Get a chimney inspection today!</p>
                     </div>
-                    <a class="bc_text_20 bc_line_height_30 no_hover_underline bc_text_normal bc_toggle_content bc_font_alt_4" href="#" data-toggle="#read_more"><span class="bc_color_secondary bc_color_secondary_hover">Read More</span> <i class="fal fa-plus bc_color_secondary bc_text_20 bc_line_height_30 bc_text_normal" aria-hidden="true"></i> </a>
+                    <a class="bc_text_20 bc_line_height_30 no_hover_underline bc_text_normal bc_toggle_content bc_font_alt_4" href="#" data-toggle="#read_more"><span class="bc_color_secondary bc_color_secondary_hover">Read More</span> <i class="fal fa-plus bc_color_secondary bc_text_20 bc_line_height_30 bc_text_normal" aria-hidden="true"></i> </a> -->
 
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- map section -->
      <?php get_template_part( 'page-templates/common/proudly-serving' ); ?>
