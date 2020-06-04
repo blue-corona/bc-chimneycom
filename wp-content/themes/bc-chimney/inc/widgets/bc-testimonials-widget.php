@@ -49,13 +49,14 @@ class BC_Testimonials_Widget extends WP_Widget {
               <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
               <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
           </div>
-          <h3 class="mb-3 bc_color_primary bc_line_height_36 bc_sm_line_height_30">
-         <?php 
+           <?php 
 		if ( isset( $instance['title'] ) && !empty($instance['title']) ) {
 			echo $args['before_title'] . $instance['title'] . $args['after_title']; 
 		}else{
-			echo 'What Your Neighbors Have to Say';
+			echo '<h3 class="mb-3 bc_color_primary bc_line_height_36 bc_sm_line_height_30">What Your Neighbors Have to Say</h3>';
 		}
+         
+        
 		?>
           </h3>
           <div class="position-relative mt-4">
@@ -119,7 +120,7 @@ class BC_Testimonials_Widget extends WP_Widget {
 		$for = $this->get_field_id( 'title' );
 		$name = $this->get_field_name( 'title' );
 		$label = __( 'Title', 'bc-testimonial-custom-widget' );
-		$title = '<h2 class="text-center m-0 bc_alternate_font_blue text-capitalize">'.__( 'Testimonials', 'bc-testimonial-custom-widget' ).'</h2>';
+		$title = '<h3 class="mb-3 bc_color_primary bc_line_height_36 bc_sm_line_height_30"></h3>'.__( 'What Your Neighbors Have to Say', 'bc-testimonial-custom-widget' ).'</h3>';
 		if ( isset( $instance['title'] ) && ! empty( $instance['title'] ) ) {
 			$title = $instance['title'];
 		}
