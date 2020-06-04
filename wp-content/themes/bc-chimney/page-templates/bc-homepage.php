@@ -68,84 +68,13 @@ get_header();
     <!-- testimonial section --->
     <?php echo do_shortcode('[bc-testimonial]');?>
 <!-- testimonial end -->
-    <div class="container-fluid bg-white affiliations_section py-5">
-        <div class="container">
-            <div class="row d-lg-flex d-none align-items-center">
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2017.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2018.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2019.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor2.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor1.png">
-                    </a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wssc.png">
-                    </a>
-                </div>
-            </div>
-            <div class="row d-lg-none d-block">
-                <div class="col-md-12">
-                    <div class="swiper-container affiliations_swiper">
-                        <div class="swiper-wrapper d-flex align-items-center">
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2017.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2018.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2019.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor2.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                  <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor1.png">
-                                </a>
-                            </div>
-                            <div class="swiper-slide text-center">
-                                <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wssc.png">
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>   
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination affiliations_pagination d-md-none d-block"></div>                 
-                </div>
-            </div>
-        </div>
-    </div>
 
+<!--  start affiliations -->
+
+  <?php echo do_shortcode ( '[bc-affiliation]');?>
+  
+  <?php echo do_shortcode ( '[bc-affiliation-mobile]');?>
+<!--  end affiliations -->
 </main>
 <script>
     jQuery(document).ready(function(){
@@ -158,55 +87,27 @@ get_header();
     });
 });
 
-// var swiper = new Swiper('.testimonial_swiper', {
-//       slidesPerView: 3,
-//       spaceBetween: 50,
-//       slidesPerGroup: 1,
 
-//       loop: true,
-//       loopFillGroupWithBlank: true,
-//       autoplay: {
-//         delay: 2000,
-//       },
+// var swiper = new Swiper('.affiliations_swiper', {
+//       slidesPerView: 6,
+//       spaceBetween: 30,
+//       slidesPerGroup: 1,
 //       pagination: {
-//         el: '.testimonial_pagination',
+//         el: '.affiliations_pagination',
 //         clickable: true,
-//       },
-//       navigation: {
-//         nextEl: '.testimonial_next',
-//         prevEl: '.testimonial_prev',
 //       },
 //       breakpoints: {
 //         640: {
-//           slidesPerView: 1,
-//           spaceBetween: 0,
+//           slidesPerView: 3,
+//           spaceBetween: 20,
+//           slidesPerGroup: 1,
 //         },
 //         768: {
-//           slidesPerView: 1,
-//           spaceBetween: 0,
+//           slidesPerView: 3,
+//           spaceBetween: 40,
+//           slidesPerGroup: 1,
 //         },}
-// });
-
-var swiper = new Swiper('.affiliations_swiper', {
-      slidesPerView: 6,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      pagination: {
-        el: '.affiliations_pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-          slidesPerGroup: 1,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-          slidesPerGroup: 1,
-        },}
         
-    });
+//     });
 </script>
 <?php get_footer(); ?>
