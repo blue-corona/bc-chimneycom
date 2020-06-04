@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row pb-5">
                 <div class="col-md-12 text-center px-0">
-                    <h2 class="h2-alt bc_sm_text_23 text-white bc_font_default experience_title">Experience the Chimney.com Difference</h2>
+                    <h2 class="h2-alt bc_sm_text_23 text-white bc_line_height_48 bc_font_default experience_title">Experience the Chimney.com Difference</h2>
                 </div>
             </div>
             <div class="d-lg-flex d-none justify-content-between mt-4 mb-5">
@@ -73,3 +73,16 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+      
+      var swiper = new Swiper('.experience_swiper', {
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2000,
+      },
+      pagination: {
+        el: '.experience_pagination',
+        clickable: true,
+      },
+});
+    </script>
