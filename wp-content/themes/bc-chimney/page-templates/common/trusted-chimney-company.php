@@ -15,7 +15,7 @@
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glass_icon.svg" class="mb-4">
                         <h5 class="mb-4">Professional<br>Inspections</h5>
-                        <a href="#" class="bc_text_16 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                        <a href="#" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
                     </div>
                 </div>
 
@@ -27,7 +27,7 @@
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg" class="mb-4">
                         <h5 class="mb-4">Chimney & Fireplace<br>Cleaning</h5>
-                        <a href="#" class="bc_text_16 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                        <a href="#" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_icon.svg" class="mb-4">
                         <h5 class="mb-4">Chimney & Fireplace<br>Repair</h5>
-                        <a href="#" class="bc_text_16 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                        <a href="#" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg" class="mb-4">
                         <h5 class="mb-4">Furnace & Fireplace<br>Relining</h5>
-                        <a href="#" class="bc_text_16 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                        <a href="#" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
                     </div>
                 </div>
             </div>
