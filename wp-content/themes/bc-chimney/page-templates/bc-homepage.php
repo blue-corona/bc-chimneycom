@@ -357,8 +357,8 @@ get_header();
                         </div>
                         <!-- Add Arrows -->
                         <div class="testimonial_buttons d-none d-md-block">
-                            <div class="swiper-button-next testimonial_next  bc_text_16 bc_line_height_0"><i class="fal fa-angle-right bc_text_16 bc_line_height_0"></i></div>
-                            <div class="swiper-button-prev testimonial_prev bc_text_16 bc_line_height_0"><i class="fal fa-angle-left bc_text_16 bc_line_height_0"></i></div>
+                            <div class="swiper-button-next testimonial_next  bc_text_16 bc_line_height_0"><i class="fas fa-chevron-right bc_text_16 bc_line_height_0"></i></div>
+                            <div class="swiper-button-prev testimonial_prev bc_text_16 bc_line_height_0"><i class="fas fa-chevron-left bc_text_16 bc_line_height_0"></i></div>
                         </div>
                         
                     </div>
