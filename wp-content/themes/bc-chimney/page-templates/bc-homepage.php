@@ -19,13 +19,6 @@ get_header();
             get_template_part( 'page-templates/hero-section/bc-hero-video' );
         }
     ?>
-    <?php 
-    if ( have_posts() ) : 
-    	while ( have_posts() ) : the_post();
-			the_content();
-		endwhile;
-	endif;
-	?>
 
     <!-- service section #Trusted Chimney Company (desktop/mobile)--->
      <?php get_template_part( 'page-templates/common/trusted-chimney-company' ); ?>
@@ -73,75 +66,8 @@ get_header();
      <?php get_template_part( 'page-templates/common/proudly-serving' ); ?>
   
     <!-- testimonial section --->
-    <div class="container-fluid testimonial pb-5" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_bg.jpg')">
-        <div class="container text-center py-4">
-            <div class="row">
-                <div class="col-md-12 px-0 px-md-15">
-                    <div class=" text-center mb-4">
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                        <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
-                    </div>
-                    <h2 class="mb-3 px-md-0 px-4 bc_color_primary">What Your Neighbors Have to Say</h2>
-                    <div class="position-relative mt-4">
-                        <div class="swiper-container testimonial_swiper">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</h7>
-                                       <p class="d-lg-none d-block">We love our new fireplace in the entrance of our office. The final result is really so welcoming and comforting I enjoy seeing it everyday! Thank you for all your hard work!</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">James G, RSC</span>
-                                    </div>
-                              </div>
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
-                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name A, VA </span>
-                                    </div>
-                              </div>
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</h7>
-                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name B, MD</span>
-                                    </div>
-                              </div>
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</h7>
-                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name A, VA </span>
-                                    </div>
-                              </div>
-                              <div class="swiper-slide">
-                                    <div class="testimonial_inner position-relative bg-white p-4">
-                                       <h7 class="h7 bc_sm_text_16 d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</h7>
-                                       <p class="d-lg-none d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud...</p>
-                                       <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">Name B, MD</span>
-                                    </div>
-                              </div>
-                            </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination testimonial_pagination d-md-none d-block"></div>
-                        
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="testimonial_buttons d-none d-md-block">
-                            <div class="swiper-button-next testimonial_next  bc_text_16 bc_line_height_0"><i class="fas fa-chevron-right bc_text_16 bc_line_height_0"></i></div>
-                            <div class="swiper-button-prev testimonial_prev bc_text_16 bc_line_height_0"><i class="fas fa-chevron-left bc_text_16 bc_line_height_0"></i></div>
-                        </div>
-                        
-                    </div>
-
-                </div>
-                <div class="col-md-12 text-center mt-3"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4">Read our reviews</a></div>
-            </div>
-        </div>
-    </div>
-
+    <?php echo do_shortcode('[bc-testimonial]');?>
+<!-- testimonial end -->
     <div class="container-fluid bg-white affiliations_section py-5">
         <div class="container">
             <div class="row d-lg-flex d-none align-items-center">
@@ -232,34 +158,34 @@ get_header();
     });
 });
 
-var swiper = new Swiper('.testimonial_swiper', {
-      slidesPerView: 3,
-      spaceBetween: 50,
-      slidesPerGroup: 1,
+// var swiper = new Swiper('.testimonial_swiper', {
+//       slidesPerView: 3,
+//       spaceBetween: 50,
+//       slidesPerGroup: 1,
 
-      loop: true,
-      loopFillGroupWithBlank: true,
-      autoplay: {
-        delay: 2000,
-      },
-      pagination: {
-        el: '.testimonial_pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.testimonial_next',
-        prevEl: '.testimonial_prev',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },}
-});
+//       loop: true,
+//       loopFillGroupWithBlank: true,
+//       autoplay: {
+//         delay: 2000,
+//       },
+//       pagination: {
+//         el: '.testimonial_pagination',
+//         clickable: true,
+//       },
+//       navigation: {
+//         nextEl: '.testimonial_next',
+//         prevEl: '.testimonial_prev',
+//       },
+//       breakpoints: {
+//         640: {
+//           slidesPerView: 1,
+//           spaceBetween: 0,
+//         },
+//         768: {
+//           slidesPerView: 1,
+//           spaceBetween: 0,
+//         },}
+// });
 
 var swiper = new Swiper('.affiliations_swiper', {
       slidesPerView: 6,
