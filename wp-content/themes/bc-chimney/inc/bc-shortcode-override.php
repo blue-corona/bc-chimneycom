@@ -8,6 +8,80 @@ function bc_promotion_shortcode_custom() {
 
     remove_shortcode('bc-affiliation');
     add_shortcode('bc-affiliation', 'custom_affiliation_shortcode');
+
+    remove_shortcode('bc-affiliation-mobile');
+    add_shortcode('bc-affiliation-mobile', 'custom_affiliation_shortcode_mobile');
+}
+
+function custom_affiliation_shortcode_mobile( $atts , $content = null ) {
+    static $count = 0;
+    $count++;
+    add_action( 'wp_footer' , function() use($count){
+    ?>
+        <script>
+ var swiper = new Swiper('.affiliations_swiper', {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.affiliations_pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          slidesPerGroup: 1,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+          slidesPerGroup: 1,
+        },}
+        
+    });
+        </script>
+    <?php });
+$args  = array( 'post_type' => 'bc_affiliations', 'posts_per_page' => -1, 'order'=> 'ASC','post_status'  => 'publish');
+ob_start();
+    ?>
+<div class="container-fluid bg-white affiliations_section py-5">
+        <div id="affiliation<?php echo $count;?>" class="container">
+              
+            <div class="row d-lg-none d-block">
+                <div class="col-md-12">
+                    <div class="swiper-container affiliations_swiper">
+                        <div class="swiper-wrapper d-flex align-items-center">
+                          <?php 
+                $query = new WP_Query( $args );
+                if ( $query->have_posts() ) :
+                while($query->have_posts()) : $query->the_post();
+                $name = get_post_meta( get_the_ID(), 'affiliation_name', true );
+                $link = get_post_meta( get_the_ID(), 'affiliation_link', true );
+                $image = get_post_meta( get_the_ID(), 'affiliation_custom_image', true );
+                ?>
+                            <div class="swiper-slide text-center">
+                                <a href="<?= $link?>" target="_blank"> <img src="<?= $image;?>">
+                                </a>
+                            </div>
+                            <?php
+                endwhile; 
+                wp_reset_query();
+                endif;
+                ?>
+                        </div>
+                        
+                    </div>  
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination affiliations_pagination d-md-none d-block"></div>                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+<?php 
+$output = ob_get_clean();
+return $output;
 }
 
 function custom_affiliation_shortcode( $atts , $content = null ) {
@@ -16,51 +90,17 @@ function custom_affiliation_shortcode( $atts , $content = null ) {
     add_action( 'wp_footer' , function() use($count){
     ?>
         <script>
-        var affiliationswiper = new Swiper('#affiliation<?php echo $count ?>', {
-              slidesPerView: 3,
-              spaceBetween: 30,
-              slidesPerGroup: 1,
-              loop: true,
-              loopFillGroupWithBlank: true,
-
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                renderBullet: function (index, className) {
-                  return '<span class="' + className + '">' +  '</span>';
-                },
-              },
-              breakpoints: {
-                640: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 2,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 50,
-                },
-              }
-
-            });
 
         </script>
     <?php });
 $args  = array( 'post_type' => 'bc_affiliations', 'posts_per_page' => -1, 'order'=> 'ASC','post_status'  => 'publish');
 ob_start();
     ?>
-<div class="container position-relative my-4 py-3 px-4">
- <div class="col-lg-12 col-12">
-  <div id="affiliation<?php echo $count;?>" class="swiper-container p-4"  >
-    <div class="swiper-wrapper">
- <?php 
+<div class="container-fluid bg-white affiliations_section py-5">
+        <div class="container">
+                
+            <div class="row d-lg-flex d-none align-items-center">
+              <?php 
                 $query = new WP_Query( $args );
                 if ( $query->have_posts() ) :
                 while($query->have_posts()) : $query->the_post();
@@ -68,22 +108,66 @@ ob_start();
                 $link = get_post_meta( get_the_ID(), 'affiliation_link', true );
                 $image = get_post_meta( get_the_ID(), 'affiliation_custom_image', true );
                 ?>
-      <div class="swiper-slide text-center">
-         <a href="<?= $link?>" target="_blank"> <img src="<?= $image;?>" class="img-fluid" alt="<?php echo $name;?>"></a></div>
-<?php
+                <div class="col-md-2 text-center">
+                    <a href="<?= $link?>">
+                        <img src="<?= $image;?>">
+                    </a>
+                </div>
+               <?php
                 endwhile; 
                 wp_reset_query();
                 endif;
                 ?>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination d-lg-none d-xs-block"></div>
-    <!-- Add Arrows -->
-    </div>
-  </div>
-   <div class="swiper-button-next  d-none d-lg-block"><i class="fas fa-chevron-right"></i></div>
-    <div class="swiper-button-prev d-none d-lg-block"><i class="fas fa-chevron-left"></i></div>
+            
 </div>
+           
+
+           <!--  <div class="row d-lg-none d-block">
+                <div class="col-md-12">
+                    <div class="swiper-container affiliations_swiper">
+                        <div class="swiper-wrapper d-flex align-items-center">
+                            <div class="swiper-slide text-center">
+                                <a href="#">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2017.png">
+                                </a>
+                            </div>
+                            <div class="swiper-slide text-center">
+                                <a href="#">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2018.png">
+                                </a>
+                            </div>
+                            <div class="swiper-slide text-center">
+                                <a href="#">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/AL_2019.png">
+                                </a>
+                            </div>
+                            <div class="swiper-slide text-center">
+                                <a href="#">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor2.png">
+                                </a>
+                            </div>
+                            <div class="swiper-slide text-center">
+                                  <a href="#">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/homeadvisor1.png">
+                                </a>
+                            </div>
+                            <div class="swiper-slide text-center">
+                                <a href="#">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wssc.png">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>  --> 
+                    <!-- Add Pagination -->
+                    <!-- <div class="swiper-pagination affiliations_pagination d-md-none d-block"></div>                 
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+
 
 <?php 
 $output = ob_get_clean();
