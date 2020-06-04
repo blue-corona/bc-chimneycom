@@ -10,20 +10,9 @@ get_header();
 global $post;
 ?>
 <main>
-    <div class="container-fluid p-0 bc_hero_container bc_home_section_bg py-md-5 subpage_banner" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/sub_banner.jpg')">
-        <div class="container py-md-5">
-            <div class="row py-md-3">
-                <div class="col-sm-12 ">
-                    <div class="bc_subpage_hero_overlay d-block d-md-flex text-center">
-                        <?php $title = get_post_meta( $post->ID, 'title_overlay', true );
-                        if(isset($title) && !empty($title)){
-                            echo $title;
-                        }?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+ <?php get_template_part( 'page-templates/common/bc-banner-section' ); ?> 
     
 
         <div class="container-fluid">
@@ -106,114 +95,13 @@ global $post;
                             </div>
                         </div>
                     </div>
-                <!-- The Content Starts -->
-
-                 <!-- experience section--->
-    
-                <?php 
-                //if ( have_posts() ) : 
-                   // while ( have_posts() ) : the_post();
-                     //   the_content();
-                    //endwhile;
-                //endif;
-                ?>
-                <!-- The Content ends --> 
-                <!-- right sidebar starts -->
-                <?php// get_template_part( 'sidebar-templates/sidebar', 'subpagerightsidebar' ); ?>
-                <!-- right sidebar ends -->
                 </div>
             </div>
         </div>
         <!--  Include Heating Services Features file here -->
 
-        <div class="container-fluid bc_color_secondary_bg py-5 experience">
-        <div class="container">
-            <div class="row pb-5">
-                <div class="col-md-12 text-center px-0">
-                    <h2 class="h2-alt bc_sm_text_23 text-white bc_font_default experience_title">Experience the Chimney.com Difference</h2>
-                </div>
-            </div>
-            <div class="d-lg-flex d-none justify-content-between mt-4 mb-5">
-                <div class="text-center w-20 b_right">
-                    <i class="far fa-user-shield bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Local licensed professionals</h6>
-                </div>
-                <div class="text-center w-20 b_right">
-                    <i class="far fa-file-invoice-dollar bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Free & honest estimates</h6>
-                </div>
-                <div class="text-center w-20 b_right">
-                    <i class="far fa-video bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Live video camera inspections</h6>
-                </div>
-                <div class="text-center w-20 b_right">
-                    <i class="far fa-shield-check bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Quality stainless steel products</h6>
-                </div>
-                <div class="text-center w-20">
-                    <i class="far fa-award bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                    <h6 class=" text-white">Guaranteed clean & courteous service</h6>
-                </div>
-            </div>
-            <div class="d-lg-none d-block">
-                <div class="swiper-container experience_swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-user-shield bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class="text-white">Local licensed<br>professionals</h6>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-file-invoice-dollar bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class=" text-white">Free & honest<br>estimates</h6>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-video bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class=" text-white">Live video camera<br>inspections</h6>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-shield-check bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class=" text-white">Quality stainless<br>steel products</h6>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <div class="text-center">
-                            <i class="far fa-award bc_text_50 bc_line_height_64 text-white mb-4"></i>
-                            <h6 class=" text-white">Guaranteed clean &<br>courteous service</h6>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    
-                  </div>
-                  <div class="swiper-pagination experience_pagination"></div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-12 text-center mt-5 mt-lg-0">
-                    <a href="#" class="btn btn-secondary text-uppercase">Get to know us</a>
-                </div>
-            </div>
-        </div>
-    </div>
+      <?php get_template_part( 'page-templates/common/experience-the-chimney' ); ?> 
 
-
-        <?php //get_template_part( 'page-templates/common/bc-heating-services-features' ); ?>
-
-        <?php //get_template_part( 'page-templates/common/bc-dont-see-service' ); ?>
-        
-        
-    <!--  Include blogs file here -->
-    <?php //echo do_shortcode('[bc-blog-slider]');?>
-    <?php //get_template_part( 'page-templates/common/blogs' ); ?>
-
-    <!--  Include testimonial file here -->
-    <?php //get_template_part( 'page-templates/common/testimonials' ); ?>
 </main>
 <script>
     var swiper = new Swiper('.testimonial_swiper_subpage', {
