@@ -489,7 +489,15 @@ div, {
 		}
 }
 .service_head{
-	padding-left:0px;
+	padding-left: 80px !important;
+    font-family: Oxygen,sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 24px;
+	letter-spacing: normal;
+	color: #2a2a2a;
+	text-align:left;
 	img{
 		width: 55px;
 	    height: 55px!important;
@@ -498,9 +506,8 @@ div, {
 	    top: 50%;
 	    transform: translateY(-50%);
 	}
-	h5{
-		padding-left: 80px;
-    	/*padding-right: 55px;*/
+	button{
+		
 	}
 }
 
