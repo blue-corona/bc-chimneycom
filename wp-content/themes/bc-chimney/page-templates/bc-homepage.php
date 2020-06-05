@@ -20,17 +20,17 @@ get_header();
         }
     ?>
  <script>
-    $(document).ready(function(){
+    jQuery(document).ready(function(){
         // Add minus icon for collapse element which is open by default
-        $(".collapse.show").each(function(){
-            $(this).prev(".card-header").find("svg").addClass("fa-minus").removeClass("fa-plus");
+        jQuery(".collapse.show").each(function(){
+            jQuery(this).prev(".card-header").find("svg").addClass("fa-minus-circle").removeClass("fa-plus-circle");
         });
         
         // Toggle plus minus icon on show hide of collapse element
-        $(".collapse").on('show.bs.collapse', function(){
-            $(this).prev(".card-header").find("svg").removeClass("fa-plus").addClass("fa-minus");
+        jQuery(".collapse").on('show.bs.collapse', function(){
+            jQuery(this).prev(".card-header").find("svg").removeClass("fa-plus-circle").addClass("fa-minus-circle");
         }).on('hide.bs.collapse', function(){
-            $(this).prev(".card-header").find("svh").removeClass("fa-minus").addClass("fa-plus");
+            jQuery(this).prev(".card-header").find("svg").removeClass("fa-minus-circle").addClass("fa-plus-circle");
         });
     });
 </script>
@@ -53,47 +53,7 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center px-0 px-md-15">
-                    <div class="bs-example">
-    <div class="accordion" id="accordionExample">
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">
-                        <img src="http://bluecorona.fullstackondemand.com/bc-chimney/wp-content/themes/bc-chimney/img/glass_icon.svg"> What is HTML? <i class="fa fa-plus"></i></button>                                  
-                </h2>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><img src="http://bluecorona.fullstackondemand.com/bc-chimney/wp-content/themes/bc-chimney/img/glass_icon.svg"> What is HTML? <i class="fa fa-plus"></i></button>
-                </h2>
-            </div>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                    <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><img src="http://bluecorona.fullstackondemand.com/bc-chimney/wp-content/themes/bc-chimney/img/glass_icon.svg"> What is HTML? <i class="fa fa-plus"></i></button>                     
-                </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>s
+                    
                       <?php 
                         if ( have_posts() ) : 
                             while ( have_posts() ) : the_post();
