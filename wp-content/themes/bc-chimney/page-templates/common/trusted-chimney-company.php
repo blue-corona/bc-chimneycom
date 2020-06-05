@@ -129,7 +129,7 @@
         
     </div>
 </div>
-                    <<!-- ?php 
+                    <!-- ?php 
                         echo do_shortcode('[bc_accordion]
                             [bc_card title="Professional Inspections" image="'.get_stylesheet_directory_uri().'/img/glass_icon.svg"  expanded=1]It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.[/bc_card]
                             [bc_card title="Chimney & Fireplace Cleaning" image="'.get_stylesheet_directory_uri().'/img/broom_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
