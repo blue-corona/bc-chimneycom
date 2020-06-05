@@ -890,9 +890,14 @@ hr{
 	}
 }
 .subpage_banner{
-	background-position:center;
+	background-position:center !important;
+	
 	@media screen and (max-width:767px){
-		padding: 25px 0px!important;
+		padding: 75px!important;
+	    background-size: cover!important;
+	    background-repeat: no-repeat!important;
+	    background: url(../img/m_sub_banner.jpg) !important;
+	    background-position: center !important;
 	}
 }
 .gallery_main{
