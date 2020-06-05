@@ -30,6 +30,5 @@ if ( ! empty( $categories ) ) {
 echo implode( ', ', $myArray );
 ?>
 </span>
-<h2><?php the_title()?></h2>
 <p class="m-0"><strong><?php the_time( 'm/d/y' ); ?></strong></p>
 <?php the_content(); ?>
