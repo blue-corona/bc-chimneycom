@@ -18,10 +18,10 @@
                     </div>
             </div>
         </div>
-        <div class=" mb-2 d-inline-block">
+        <div class=" col-md-3 mb-2 p-0 d-inline-block">
 
                       <a href="<?php echo get_home_url();?>" class="d-inline-block">
-                    <img src="<?php echo bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/logo_header.png'); ?>" class="bc_branding_logo" alt="logo" style="max-width:<?php echo bc_get_theme_mod('bc_theme_options', 'bc_max_width',false, 374);?>px" srcset="<?php echo get_stylesheet_directory_uri().'/img/logo_header.png';?> 2x, <?php echo get_stylesheet_directory_uri().'/img/logo_header.png';?> 3x">
+                    <img src="<?php echo bc_get_theme_mod('bc_theme_options', 'bc_logo_upload',false, get_template_directory_uri().'/img/logo_header.png'); ?>" class="bc_branding_logo" alt="logo" style="max-width:<?php echo bc_get_theme_mod('bc_theme_options', 'bc_max_width',false, 100);?>%" srcset="<?php echo get_stylesheet_directory_uri().'/img/logo_header.png';?> 2x, <?php echo get_stylesheet_directory_uri().'/img/logo_header.png';?> 3x">
                 </a>
 
                 
