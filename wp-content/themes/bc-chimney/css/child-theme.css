@@ -9723,7 +9723,15 @@ div, {
     vertical-align: middle; }
 
 .service_head {
-  padding-left: 0px; }
+  padding-left: 80px !important;
+  font-family: Oxygen,sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #2a2a2a;
+  text-align: left; }
   .service_head img {
     width: 55px;
     height: 55px !important;
@@ -9732,9 +9740,6 @@ div, {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-  .service_head h5 {
-    padding-left: 80px;
-    /*padding-right: 55px;*/ }
 
 .service_head svg {
   position: absolute;

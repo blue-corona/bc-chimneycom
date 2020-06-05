@@ -72,11 +72,12 @@
                     <div class="bs-example">
     <div class="accordion" id="accordionExample">
         <div class="card  border-0 b_bottom">
-            <div class="card-header position-relative border-bottom-0 bg-white service_head" id="headingOne">
+            <div class="card-header position-relative border-bottom-0 bg-white " id="headingOne">
                 <h2 class="mb-0">
-                    <h5  class="collapsed" data-toggle="collapse" data-target="#collapseOne">
+                    <button  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3 collapsed">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glass_icon.svg"> Professional<br>Inspections <i class="fal fa-minus-circle"></i>
-                    </h5>                                  
+                    </button>
+                                                      
                 </h2>
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -87,9 +88,12 @@
             </div>
         </div>
         <div class="card border-0 b_bottom">
-            <div class="card-header position-relative border-bottom-0 bg-white service_head" id="headingTwo">
+            <div class="card-header position-relative border-bottom-0 bg-white" id="headingTwo">
                 <h2 class="mb-0">
-                    <h5 data-toggle="collapse" data-target="#collapseTwo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg"> Chimney & Fireplace<br>Cleaning <i class="fal fa-plus-circle"></i></h5>
+                    <button  d data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg"> Chimney & Fireplace<br>Cleaning <i class="fal fa-plus-circle"></i>
+                    </button>
+                    
                 </h2>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -100,9 +104,12 @@
             </div>
         </div>
         <div class="card border-0 b_bottom">
-            <div class="card-header position-relative border-bottom-0 bg-white service_head" id="headingThree">
+            <div class="card-header position-relative border-bottom-0 bg-white" id="headingThree">
                 <h2 class="mb-0">
-                    <h5 data-toggle="collapse" data-target="#collapseThree"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_icon.svg"> Chimney & Fireplace<br>Repair <i class="fal fa-plus-circle"></i></h5>
+                    <button data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg"> Chimney & Fireplace<br>Repair <i class="fal fa-plus-circle"></i>
+                    </button>
+                    
                 </h2>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -114,9 +121,12 @@
         </div>
 
         <div class="card border-0 b_bottom">
-            <div class="card-header position-relative border-bottom-0 bg-white service_head" id="headingFour">
+            <div class="card-header position-relative border-bottom-0 bg-white" id="headingFour">
                 <h2 class="mb-0">
-                    <h5 data-toggle="collapse" data-target="#collapseFour"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg"> Furnace & Fireplace<br>Relining <i class="fal fa-plus-circle"></i></h5>
+                    <button data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg"> Furnace & Fireplace<br>Relining <i class="fal fa-plus-circle"></i>
+                    </button>
+                    
                 </h2>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
