@@ -16,6 +16,7 @@ get_header();
 	<div class="container">
 	  <div class="row no-gutters">
 	    <div class="col-lg-8">
+	    	  <h1><?php the_title()?></h1>
 	     	<?php 
 	     	while ( have_posts() ) : the_post();
 	     	get_template_part( 'loop-templates/content', 'single' ); 
