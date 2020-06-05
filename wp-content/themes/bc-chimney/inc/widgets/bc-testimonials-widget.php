@@ -74,15 +74,26 @@ class BC_Testimonials_Widget extends WP_Widget {
         ?>
                     <div class="swiper-slide">
                           <div class="testimonial_inner position-relative bg-white p-4">
-                             <span class=" bc_text_16 bc_font_alt_1 bc_line_height_30 bc_text_normal bc_letter_spacing_normal color_1 d-lg-block d-none">
-                             	<?php 
-                        if (strlen($message) > 200){
-                            echo $message = substr($message, 0, 200) . '...';
-                        }else{
-                            echo $message;
-                        }
-                        ?>
-                             </span>
+
+                          	  <span class=" bc_text_16 bc_font_alt_1 bc_line_height_30 bc_text_normal bc_letter_spacing_normal color_1 d-lg-block d-none">
+                          	  	 <?php 
+                                     if (strlen($message) > 189){
+                                        echo $message = substr($message, 0,189) . '...';
+                                    }else{
+                                        echo $message;
+                                    }
+                                    ?>
+                          	  </span>
+                                 <p class="d-lg-none d-block"> 
+                                   <?php 
+                                     if (strlen($message) > 189){
+                                        echo $message = substr($message, 0,189) . '...';
+                                    }else{
+                                        echo $message;
+                                    }
+                                    ?>
+                                 </p>
+                           
                              <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold"><?php the_title();?></span>
                           </div>
                     </div>
