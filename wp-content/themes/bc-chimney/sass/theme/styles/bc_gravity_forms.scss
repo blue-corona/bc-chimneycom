@@ -351,3 +351,19 @@ select{
 ul.gform_fields li::before {
  list-style-type: none;
 }
+@media screen and (max-width:1100px){
+	.modal{
+		.subpage_form{
+			.gform_wrapper {
+				ul.gform_fields {
+					li.gfield{
+						padding-left:0px !important;
+						padding-right:0px !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+

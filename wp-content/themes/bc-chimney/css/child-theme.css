@@ -8046,8 +8046,7 @@ p, .p, body, li {
   text-transform: none;
   line-height: 30px;
   letter-spacing: 0px;
-  color: #2a2a2a;
-  list-style: none; }
+  color: #2a2a2a; }
 
 .p-alt {
   font-family: "Open Sans", sans-serif;
@@ -8069,6 +8068,9 @@ body p a, body li a {
   text-decoration: none; }
   body p a:hover, body li a:hover {
     color: #bf703f; }
+
+body ul li {
+  list-style: none; }
 
 .bc_font_default {
   font-family: "Oxygen", sans-serif; }
@@ -8720,6 +8722,11 @@ select {
 
 ul.gform_fields li::before {
   list-style-type: none; }
+
+@media screen and (max-width: 1100px) {
+  .modal .subpage_form .gform_wrapper ul.gform_fields li.gfield {
+    padding-left: 0px !important;
+    padding-right: 0px !important; } }
 
 .bc_testimonial_swiper .swiper-slide-container {
   background-image: url("../img/slider-background.png");
@@ -9965,6 +9972,25 @@ hr {
     position: relative;
     color: #2c2b2b; }
     .subpage_content ul li:before {
+      content: "";
+      width: 10px;
+      background: #8f3e28;
+      line-height: 30px;
+      height: 10px;
+      border-radius: 100%;
+      font-size: 10px;
+      position: absolute;
+      left: 6px;
+      top: 11px; }
+
+main ul {
+  padding-left: 0px; }
+  main ul li {
+    padding-left: 25px;
+    list-style: none;
+    position: relative;
+    color: #2c2b2b; }
+    main ul li:before {
       content: "";
       width: 10px;
       background: #8f3e28;

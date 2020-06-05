@@ -774,6 +774,29 @@ hr{
 		}
 	}
 }
+main{
+	ul{
+		padding-left:0px;
+		li{
+			padding-left:25px;
+			list-style:none;
+			position:relative;
+			color: #2c2b2b;
+			&:before{
+				content: "";
+			    width: 10px;
+			    background: #8f3e28;
+			    line-height: 30px;
+			    height: 10px;
+			    border-radius: 100%;
+			    font-size: 10px;
+			    position: absolute;
+			    left: 6px;
+			    top: 11px;
+			}
+		}
+	}
+}
 .page-template-bc-subpage-withoutsidebar{
 	.subpage_content{
 		p{
