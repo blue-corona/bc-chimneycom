@@ -88,7 +88,6 @@ p, .p, body,li{
 	line-height: 30px;
 	letter-spacing: 0px;
 	color: $primary_color;
-	list-style:none;
 }
 
 .p-alt{
@@ -119,7 +118,13 @@ body{
 		}
 	}
 }
-
+body{
+	ul {
+		li{
+			list-style:none;
+		}
+	}
+}
 //Todo: need to style for hyperlinks <a>
 
 //Classes for font family
