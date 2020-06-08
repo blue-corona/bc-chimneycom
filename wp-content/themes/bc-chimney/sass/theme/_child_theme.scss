@@ -599,6 +599,17 @@ hr{
 		width:100%
 	}
 }
+.blog,.sub_page_sidebar{
+	hr{
+		height:2px;
+		width:100%;
+		margin:30px auto 40px;
+		background:$secondary_color;
+		@media only screen and (max-width: 767px){
+			width:100%
+		}
+	}
+}
 .map_location{
 	@media only screen and (max-width: 767px){
 		background:url("../img/m_service_area_map.jpg") !important;
@@ -722,7 +733,7 @@ hr{
 
 
 
-.subpage_content {
+.subpage_content,.blog,.sub_page_sidebar  {
 	h1 {
 	    position: relative;
 	    padding-bottom: 20px;
@@ -745,6 +756,12 @@ hr{
 	    padding-right: 10px;
 	    color:#2C2B2B;
 	    a{
+	    	text-decoration:none;
+	    	&:hover{
+	        	text-decoration:none;
+	        }	
+	    }
+	    a[href="tel: (555) 555-5555"]{
 	        color:#2C2B2B;
 	        font-weight: 700;
 	        &:hover{
@@ -800,6 +817,13 @@ main{
 			    position: absolute;
 			    left: 6px;
 			    top: 11px;
+			}
+		}
+	}
+	ul.pagination{
+		li{
+			&:before{
+				display:none !important;
 			}
 		}
 	}
@@ -1026,7 +1050,7 @@ a.swipebox-{
 #swipebox-overlay {
     background: rgba(42,42,42,.85) !important;
 }
-#swipebox-bottom-bar {
+/*#swipebox-bottom-bar {
     top: 50% !important;
     background:transparent !important;
     transform: translateY(-50%) !important;
@@ -1039,4 +1063,58 @@ a.swipebox-{
 #swipebox-close {
     right: 36%!important;
     top: 31.4%!important;
+}*/
+
+#swipebox-slider .slide img {
+    width: 45em;
+    min-width: 45em;
+    max-width: 45em;
+    @media screen and (max-width:1025px){
+    	width: 40em;
+    	min-width: 40em;
+    	max-width: 40em;
+    }
+    @media screen and (max-width: 420px){
+    	width: 20em !important;
+	    min-width: 20em;
+	    max-width: 40em;
+    }
+    @media screen and (max-width: 400px){
+    	width: 18em !important;
+		min-width: 18em;
+		max-width: 18em;
+
+    }
+    
+}
+a#swipebox-close {
+    right: 11em;
+    top: 1.2em;
+    @media screen and (max-width:1025px){
+    	right: 9em;
+    	top: 28.2em;
+    }
+    @media screen and (max-width:768px){
+    	right: 1em;
+    	top: 17.2em;
+    }
+    @media screen and (max-width: 420px){
+    	right: 0em;
+    	top: 15.2em;
+    }
+    @media screen and (max-width: 400px){
+    	right: 0em;
+    	top: 18.2em;
+    }
+}
+
+div#swipebox-bottom-bar {
+    top: 50%;
+    background: transparent;
+    transform: translateY(-50%) !important;
+}
+
+div#swipebox-arrows {
+    max-width: 50em;
+    width: 100%;
 }
