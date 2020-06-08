@@ -70,87 +70,78 @@
             <div class="row no-gutters">
                 <div class="col-lg-12 mt-2">
                     <div class="bs-example">
-    <div class="accordion" id="accordionExample">
-        <div class="card  border-0 b_bottom">
-            <div class="card-header position-relative border-bottom-0 bg-white " id="headingOne">
-                <h2 class="mb-0">
-                    <button  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3 collapsed">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glass_icon.svg"> Professional<br>Inspections <i class="fal fa-minus-circle"></i>
-                    </button>
-                                                      
-                </h2>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
-                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="card border-0 b_bottom">
-            <div class="card-header position-relative border-bottom-0 bg-white" id="headingTwo">
-                <h2 class="mb-0">
-                    <button  d data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg"> Chimney & Fireplace<br>Cleaning <i class="fal fa-plus-circle"></i>
-                    </button>
-                    
-                </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>s
-                </div>
-            </div>
-        </div>
-        <div class="card border-0 b_bottom">
-            <div class="card-header position-relative border-bottom-0 bg-white" id="headingThree">
-                <h2 class="mb-0">
-                    <button data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg"> Chimney & Fireplace<br>Repair <i class="fal fa-plus-circle"></i>
-                    </button>
-                    
-                </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>s
-                </div>
-            </div>
-        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card  border-0 b_bottom">
+                                <div class="card-header position-relative border-bottom-0 bg-white " id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3 collapsed">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glass_icon.svg"> Professional<br>Inspections <i class="fal fa-minus-circle"></i>
+                                        </button>
+                                                                          
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
+                                        <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-0 b_bottom">
+                                <div class="card-header position-relative border-bottom-0 bg-white" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button  d data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg"> Chimney & Fireplace<br>Cleaning <i class="fal fa-plus-circle"></i>
+                                        </button>
+                                        
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-0 b_bottom">
+                                <div class="card-header position-relative border-bottom-0 bg-white" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg"> Chimney & Fireplace<br>Repair <i class="fal fa-plus-circle"></i>
+                                        </button>
+                                        
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
 
-        <div class="card border-0 b_bottom">
-            <div class="card-header position-relative border-bottom-0 bg-white" id="headingFour">
-                <h2 class="mb-0">
-                    <button data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg"> Furnace & Fireplace<br>Relining <i class="fal fa-plus-circle"></i>
-                    </button>
-                    
-                </h2>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                    <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>s
+                            <div class="card border-0 b_bottom">
+                                <div class="card-header position-relative border-bottom-0 bg-white" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg"> Furnace & Fireplace<br>Relining <i class="fal fa-plus-circle"></i>
+                                        </button>
+                                        
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>                   
                 </div>
             </div>
         </div>
-        
     </div>
-</div>
-                    <<!-- ?php 
-                        echo do_shortcode('[bc_accordion]
-                            [bc_card title="Professional Inspections" image="'.get_stylesheet_directory_uri().'/img/glass_icon.svg"  expanded=1]It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.[/bc_card]
-                            [bc_card title="Chimney & Fireplace Cleaning" image="'.get_stylesheet_directory_uri().'/img/broom_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
-                            [bc_card title="Chimney & Fireplace Repair" image="'.get_stylesheet_directory_uri().'/img/bricks_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
-                            [bc_card title="Furnace & Fireplace Relining" image="'.get_stylesheet_directory_uri().'/img/fire_icon.svg"]Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/bc_card]
-                            [/bc_accordion]');
-                    ?> -->
-                   
-                    </div>
-                </div>
-            </div>
-        </div>
     
     <!-- End Mobile service_section for -->
