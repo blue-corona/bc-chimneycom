@@ -733,7 +733,7 @@ hr{
 
 
 
-.subpage_content,.blog,.sub_page_sidebar  {
+.subpage_content  {
 	h1 {
 	    position: relative;
 	    padding-bottom: 20px;
@@ -1070,41 +1070,41 @@ a.swipebox-{
     min-width: 45em;
     max-width: 45em;
     @media screen and (max-width:1025px){
-    	width: 40em;
-    	min-width: 40em;
-    	max-width: 40em;
+    	width: 40em !important;
+    	min-width: 40em !important;
+    	max-width: 40em !important;
     }
     @media screen and (max-width: 420px){
     	width: 20em !important;
-	    min-width: 20em;
-	    max-width: 40em;
+	    min-width: 20em !important;
+	    max-width: 40em !important;
     }
     @media screen and (max-width: 400px){
     	width: 18em !important;
-		min-width: 18em;
-		max-width: 18em;
+		min-width: 18em !important;
+		max-width: 18em !important;
 
     }
     
 }
 a#swipebox-close {
-    right: 11em;
-    top: 1.2em;
+    right: 13em;
+    top: 3.2em;
     @media screen and (max-width:1025px){
-    	right: 9em;
-    	top: 28.2em;
+    	right: 9em !important;
+    	top: 28.2em !important;
     }
     @media screen and (max-width:768px){
-    	right: 1em;
-    	top: 17.2em;
+    	right: 1em !important;
+    	top: 17.2em !important;
     }
     @media screen and (max-width: 420px){
-    	right: 0em;
-    	top: 15.2em;
+    	right: 0em !important;
+    	top: 15.2em !important;
     }
     @media screen and (max-width: 400px){
-    	right: 0em;
-    	top: 18.2em;
+    	right: 0em !important;
+    	top: 18.2em !important;
     }
 }
 
@@ -1117,4 +1117,72 @@ div#swipebox-bottom-bar {
 div#swipebox-arrows {
     max-width: 50em;
     width: 100%;
+}
+
+.blog,.sub_page_sidebar  {
+	main{
+		h1 {
+		    position: relative;
+		    padding-bottom: 20px;
+		    margin-bottom: 20px;
+		    &:after {
+		    	content: "";
+		    	border-bottom: 2px solid #8F3E28;
+		    	width: 350px;
+		    	height: 2px;
+		    	position: absolute;
+		    	left: 0px;
+		    	bottom: 0px;
+		    	@media screen and (max-width:767px){
+		    		width:100%
+		    	}
+		    }
+		}
+		p {
+		    margin-bottom: 30px;
+		    padding-right: 10px;
+		    color:#2C2B2B;
+		    a{
+		    	text-decoration:none;
+		    	&:hover{
+		        	text-decoration:none;
+		        }	
+		    }
+		    a[href="tel: (555) 555-5555"]{
+		        color:#2C2B2B;
+		        font-weight: 700;
+		        &:hover{
+		        	text-decoration:none;
+		        	color:#2C2B2B;
+		        }	
+		    }
+		}
+		h2{
+			line-height:48px;
+		}
+		h2, h3{
+		    margin-bottom:20px
+		}
+		ul{
+			padding-left:0px;
+			li{
+				padding-left:25px;
+				list-style:none;
+				position:relative;
+				color: #2c2b2b;
+				&:before{
+					content: "";
+				    width: 10px;
+				    background: #8f3e28;
+				    line-height: 30px;
+				    height: 10px;
+				    border-radius: 100%;
+				    font-size: 10px;
+				    position: absolute;
+				    left: 6px;
+				    top: 11px;
+				}
+			}
+		}
+	}
 }
