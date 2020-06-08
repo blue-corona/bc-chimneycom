@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 		echo '<img src="'.get_stylesheet_directory_uri().'/img/logo_header.png" class="img-responsive postImg">';
 	}?>
 	</div>
-	<div class="col-md-8 px-4">
+	<div class="col-md-8 px-4 subpage_content">
 		<article>
 		<h2><?php the_title()?></h2>
 		<p class="m-0"><strong><?php the_time( 'm/d/y' ); ?></strong></p>
