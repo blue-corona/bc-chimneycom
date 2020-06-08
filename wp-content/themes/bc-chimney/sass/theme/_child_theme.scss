@@ -977,3 +977,66 @@ main{
 .form_shadow{
  	box-shadow: 0 33px 68px 0px rgba(24,24,24,0.13);
 }
+a.swipebox-{
+	position: relative;
+    display: block;
+    img{
+    	width:100%;
+    }
+	&:before {
+	    width: 100%;
+	    z-index: 9;
+	    background-color: rgba(42,42,42,.75);
+	    left: 0;
+	    top: 0;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    transform: scale(0);
+	    transition: all ease .4s;
+	    content: "";
+	    position:absolute;
+	    height:100%;
+	}
+	&:after{
+		content:"";
+		background:url(../img/search-icon.png);
+		width: 36px;
+	    z-index: 9;
+	    height: 36px;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%,-50%);
+	    opacity:0;
+	    position:absolute;
+	    transition: all ease .5s;
+	}
+	&:hover{
+		&:before{
+			transform: scale(1);
+		}
+		&:after{
+			opacity:1;
+		}
+	}
+}
+
+#swipebox-overlay {
+    background: rgba(42,42,42,.85) !important;
+}
+#swipebox-bottom-bar {
+    top: 50% !important;
+    background:transparent !important;
+    transform: translateY(-50%) !important;
+}
+#swipebox-arrows {
+    width: 100%!important;
+    max-width: 450px !important;
+
+}
+#swipebox-close {
+    right: 36%!important;
+    top: 31.4%!important;
+}
