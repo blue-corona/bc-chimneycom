@@ -24,6 +24,6 @@ get_header('variant-announcement-bar');?>
 	?>
 
     <!--  Include testimonial file here -->
-	<?php get_template_part( 'page-templates/common/testimonials' ); ?>
+	<?php get_template_part( 'page-templates/common/experience-the-chimney' ); ?> 
 </main>
 <?php get_footer();?>
