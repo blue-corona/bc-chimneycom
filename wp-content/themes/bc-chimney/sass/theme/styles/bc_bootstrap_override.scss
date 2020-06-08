@@ -22,7 +22,7 @@
 .btn{
 	color:$primary_color;
 	font-family: $default_font_family !important ;
-	border :3px solid $secondary_color;
+	border :3px solid $secondary_color !important;
 	border-radius: 3px;
 	padding: 0.8rem 3rem;
 	font-size: 22px !important;
@@ -99,14 +99,14 @@
 
 .btn-secondary{
 	background: transparent;
-	color:$brown_color;
+	color:$brown_color  !important;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     background: transparent!important;
     transition-property: color;
     transition-duration: 0.3s;
-    border-color:$brown_color;
+    border-color:$brown_color  !important;
     width:auto;
 	&:before{
 		content: "";
@@ -122,7 +122,7 @@
 	}
 	&:hover{
 		background:transparent !important;
-		color: $white_color;
+		color: $white_color !important;
 		border-color :$brown_color;
 		&:before{
 		-webkit-transform: scale(1);
