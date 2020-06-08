@@ -1066,9 +1066,9 @@ a.swipebox-{
 }*/
 
 #swipebox-slider .slide img {
-    width: 45em;
-    min-width: 45em;
-    max-width: 45em;
+    width: 45em !important;
+    min-width: 45em !important;
+    max-width: 45em !important;
     @media screen and (max-width:1025px){
     	width: 40em !important;
     	min-width: 40em !important;
