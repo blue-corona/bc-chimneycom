@@ -15,7 +15,7 @@
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glass_icon.svg" class="mb-4">
                         <h5 class="mb-4">Professional<br>Inspections</h5>
-                        <a href="<?php echo get_home_url();?>/inspections/" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                        <a href="<?php echo get_home_url();?>/chimney-inspections/" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
                     </div>
                 </div>
 
@@ -27,7 +27,7 @@
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg" class="mb-4">
                         <h5 class="mb-4">Chimney & Fireplace<br>Cleaning</h5>
-                        <a href="<?php echo get_home_url();?>/cleaning/" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                        <a href="<?php echo get_home_url();?>/chimney-cleaning/" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_icon.svg" class="mb-4">
                         <h5 class="mb-4">Chimney & Fireplace<br>Repair</h5>
-                        <a href="<?php echo get_home_url();?>/repairs/" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                        <a href="<?php echo get_home_url();?>/chimney-repairs/" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg" class="mb-4">
                         <h5 class="mb-4">Furnace & Fireplace<br>Relining</h5>
-                        <a href="<?php echo get_home_url();?>/relining/" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
+                        <a href="<?php echo get_home_url();?>/chimney-relining/" class="bc_text_14 bc_font_alt_2 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative">Learn More <i class="fas fa-caret-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
-                                        <a href="<?php echo get_home_url();?>/inspections/" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
+                                <a href="<?php echo get_home_url();?>/chimney-inspections/" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="<?php echo get_home_url();?>/cleaning/" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
+                                        <a href="<?php echo get_home_url();?>/chimney-cleaning/" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +115,7 @@
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="<?php echo get_home_url();?>/repairs/" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
+                                        <a href="<?php echo get_home_url();?>/chimney-repairs/" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <p class="bc_font_alt_3 bc_text_16 bc_line_height_24 color_4 bc_text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="<?php echo get_home_url();?>/relining/" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
+                                        <a href="<?php echo get_home_url();?>/chimney-relining/" class="bc_text_14 bc_letter_spacing_0 bc_line_height_28 bc_color_brown bc_text_semibold learn_more position-relative bc_font_alt_1">Learn More <i class="fas fa-caret-right"></i></a>
                                     </div>
                                 </div>
                             </div>
