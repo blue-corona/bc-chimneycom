@@ -36,6 +36,7 @@ $understrap_include = array(
     '/widgets.php',
     '/bc-shortcode-override.php',
     '/widgets/bc-footer-location.php',
+    '/bc-locations-slug-rewrite.php',
   
 );
 foreach ( $understrap_include as $file ) {

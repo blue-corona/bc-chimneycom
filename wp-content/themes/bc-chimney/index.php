@@ -35,7 +35,7 @@ get_header();
 	<div class="container">
 	  <div class="row no-gutters">
 	    <div class="col-lg-8 sub_page_sidebar">
-	      <h1>Our Blog</h1>
+	     <h1><?php the_title()?></h1>
 	     	<?php 
 	     	if ( have_posts() ) :
 	     		while ( have_posts() ) : the_post();

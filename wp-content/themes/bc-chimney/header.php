@@ -13,7 +13,9 @@ defined( 'ABSPATH' ) || exit;
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <link rel="icon" href="<?php echo bc_get_theme_mod('bc_theme_options', 'bc_favicon_upload',false, get_template_directory_uri().'/img/favicon.ico'); ?>">
+<link rel="icon" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon.ico">
+<link rel="icon" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon-16x16.png">
+<link rel="icon" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon-32x32.png">
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
