@@ -19,21 +19,7 @@ get_header();
             get_template_part( 'page-templates/hero-section/bc-hero-video' );
         }
     ?>
- <script>
-    jQuery(document).ready(function(){
-        // Add minus icon for collapse element which is open by default
-        jQuery(".collapse.show").each(function(){
-            jQuery(this).prev(".card-header").find("svg").addClass("fa-minus-circle").removeClass("fa-plus-circle");
-        });
-        
-        // Toggle plus minus icon on show hide of collapse element
-        jQuery(".collapse").on('show.bs.collapse', function(){
-            jQuery(this).prev(".card-header").find("svg").removeClass("fa-plus-circle").addClass("fa-minus-circle");
-        }).on('hide.bs.collapse', function(){
-            jQuery(this).prev(".card-header").find("svg").removeClass("fa-minus-circle").addClass("fa-plus-circle");
-        });
-    });
-</script>
+
 
     <!-- service section #Trusted Chimney Company (desktop/mobile)--->
      <?php get_template_part( 'page-templates/common/trusted-chimney-company' ); ?>

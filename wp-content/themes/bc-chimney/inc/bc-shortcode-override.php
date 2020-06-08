@@ -137,8 +137,9 @@ function custom_testimonial_shortcode($atts , $content = null){
         <script>
             var swiperTestimonials = new Swiper('#bc_testimonials-swiper_<?php echo $count ?>', {
               slidesPerView: 3,
-              spaceBetween: 50,
+              spaceBetween: 30,
               slidesPerGroup: 1,
+              autoHeight: false, //enable auto height
 
               loop: true,
               loopFillGroupWithBlank: true,

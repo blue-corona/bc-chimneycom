@@ -15,7 +15,7 @@ get_header();
 <div class="container-fluid py-5 m-0">
 	<div class="container">
 	  <div class="row no-gutters">
-	    <div class="col-lg-8">
+	    <div class="col-lg-8 subpage_content">
 	     	<?php 
 	     	while ( have_posts() ) : the_post();
 	     	get_template_part( 'loop-templates/content', 'single' ); 
