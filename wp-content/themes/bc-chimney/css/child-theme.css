@@ -10248,16 +10248,24 @@ a.swipebox- {
       max-width: 18em !important; } }
 
 a#swipebox-close {
-  right: 13em;
-  top: 3.2em; }
-  @media screen and (max-width: 1025px) {
+  right: 13em !important;
+  top: 3.2em !important; }
+  @media screen and (max-width: 1366px) {
     a#swipebox-close {
       right: 9em !important;
-      top: 28.2em !important; } }
-  @media screen and (max-width: 768px) {
+      top: 0.4em !important; } }
+  @media screen and (max-width: 1025px) {
     a#swipebox-close {
-      right: 1em !important;
-      top: 17.2em !important; } }
+      right: 2em !important;
+      top: 20.2em !important;
+      -webkit-transform: none;
+              transform: none; } }
+  @media screen and (max-width: 820px) {
+    a#swipebox-close {
+      right: 2em !important;
+      top: 17.2em !important;
+      -webkit-transform: none;
+              transform: none; } }
   @media screen and (max-width: 420px) {
     a#swipebox-close {
       right: 0em !important;
@@ -10265,7 +10273,7 @@ a#swipebox-close {
   @media screen and (max-width: 400px) {
     a#swipebox-close {
       right: 0em !important;
-      top: 18.2em !important; } }
+      top: 12.6em !important; } }
 
 div#swipebox-bottom-bar {
   top: 50%;
