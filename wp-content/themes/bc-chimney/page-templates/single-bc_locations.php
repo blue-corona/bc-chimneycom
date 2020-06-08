@@ -17,6 +17,7 @@ global $post;
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-lg-8 subpage subpage_content">
+
                   <h1><?php the_title()?></h1>
                   <?php 
                   if ( have_posts() ) :
