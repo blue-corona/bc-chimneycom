@@ -96,7 +96,7 @@ global $post;
 
    var swiperTestimonials = new Swiper('#bc_testimonials-swiper', {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 30,
       slidesPerGroup: 1,
 
       loop: true,
