@@ -35,7 +35,7 @@ get_header();
 	<div class="container">
 	  <div class="row no-gutters">
 	    <div class="col-lg-8 subpage_content">
-	     <h1><?php the_title()?></h1>
+	     <h1>Industry News</h1>
 	     	<?php 
 	     	if ( have_posts() ) :
 	     		while ( have_posts() ) : the_post();
