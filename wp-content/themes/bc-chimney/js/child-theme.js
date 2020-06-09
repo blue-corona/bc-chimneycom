@@ -7037,6 +7037,7 @@ function toggleContent(toToggle, toggleScope, toggleType){
   if(currentIcon == 'minus' && text.search('Read Less') != -1) {
     jQuery(toggleScope).children('span').html(text.replace('Read Less', 'Read More'));  
   }
+  
 }
 jQuery(".bc_toggle_content").on('click', function(e){
   e.preventDefault();
