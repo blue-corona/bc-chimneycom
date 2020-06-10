@@ -10420,6 +10420,9 @@ div#swipebox-title {
       width: 100%;
       margin: 0px auto; } }
 
+img.bc_branding_logo {
+  width: 374px !important; }
+
 div#swipebox-title span {
   color: #FFFFFF;
   font-family: "Source Sans Pro";
