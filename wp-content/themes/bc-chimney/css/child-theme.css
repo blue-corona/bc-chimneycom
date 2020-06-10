@@ -8877,7 +8877,7 @@ ul.gform_fields li::before {
   transition-property: color;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
-  border-color: #ffffff; }
+  border-color: #ffffff !important; }
   .btn-white:before {
     content: "";
     position: absolute;
@@ -9614,7 +9614,7 @@ div, {
   line-height: 60px;
   padding: 0px;
   line-height: 24px !important;
-  font-size: 18px !important;
+  font-size: 22px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9820,12 +9820,12 @@ hr {
 
 .blog hr, .sub_page_sidebar hr {
   height: 2px;
-  width: 100%;
+  width: 95%;
   margin: 30px auto 40px;
   background: #8f3e28; }
   @media only screen and (max-width: 767px) {
     .blog hr, .sub_page_sidebar hr {
-      width: 100%; } }
+      width: 95%; } }
 
 @media only screen and (max-width: 767px) {
   .map_location {
@@ -10250,10 +10250,18 @@ a.swipebox- {
 a#swipebox-close {
   right: 13em !important;
   top: 3.2em !important; }
+  @media screen and (max-width: 1920px) {
+    a#swipebox-close {
+      right: 23em !important;
+      top: 8.2em !important; } }
   @media screen and (max-width: 1366px) {
     a#swipebox-close {
       right: 9em !important;
       top: 0.4em !important; } }
+  @media screen and (max-width: 1300px) {
+    a#swipebox-close {
+      right: 7em !important;
+      top: 1.4em !important; } }
   @media screen and (max-width: 1025px) {
     a#swipebox-close {
       right: 2em !important;
@@ -10343,5 +10351,91 @@ div#swipebox-arrows {
 
 #album_gallery_ {
   margin-bottom: 30px; }
+
+.affiliations_section .affiliation_logos {
+  padding: 78px 0px; }
+
+.footer_title {
+  padding-bottom: 17.5px !important;
+  padding-top: 17px;
+  height: 64.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer_logo {
+  padding-bottom: 20px; }
+
+.footer_locations {
+  margin-top: 20px; }
+
+div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
+  top: 81%;
+  background: 0 0;
+  text-align: left;
+  line-height: inherit;
+  display: block;
+  font-size: inherit;
+  -webkit-transform: none;
+          transform: none; }
+  @media screen and (max-width: 1366px) {
+    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
+      top: 85%; } }
+  @media screen and (max-width: 1024px) {
+    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
+      top: 66%; } }
+  @media screen and (max-width: 768px) {
+    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
+      top: 72%; } }
+  @media screen and (max-width: 420px) {
+    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
+      top: 62%;
+      height: auto; } }
+
+div#swipebox-title {
+  max-width: 45em;
+  width: 100%;
+  margin: 0px auto;
+  text-align: left;
+  display: block; }
+  @media screen and (max-width: 1024px) {
+    div#swipebox-title {
+      max-width: 40em; } }
+  @media screen and (max-width: 768px) {
+    div#swipebox-title {
+      max-width: 40em; } }
+  @media screen and (max-width: 420px) {
+    div#swipebox-title {
+      max-width: 18em;
+      width: 100%;
+      margin: 0px auto; } }
+  @media screen and (max-width: 380px) {
+    div#swipebox-title {
+      max-width: 18em;
+      width: 100%;
+      margin: 0px auto; } }
+
+div#swipebox-title span {
+  color: #FFFFFF;
+  font-family: "Source Sans Pro";
+  font-size: 20.02px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30.03px;
+  text-shadow: none;
+  text-transform: uppercase; }
+
+div#swipebox-title p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: #fff;
+  text-shadow: none; }
 
 /*# sourceMappingURL=child-theme.css.map */
