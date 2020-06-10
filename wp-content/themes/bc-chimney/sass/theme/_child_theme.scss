@@ -1094,6 +1094,10 @@ a#swipebox-close {
     	right: 23em!important;
     	top: 8.2em!important;
     }
+    @media screen and (max-width:1600px){
+    	right: 17em!important;
+    	top: 5.2em!important;
+    }
     @media screen and (max-width:1366px){
     	right: 9em !important;
     	top: 0.4em !important;
@@ -1233,6 +1237,9 @@ div#swipebox-top-bar,div#swipebox-top-bar.visible-bars {
     display: block;
     font-size: inherit;
     transform:none;
+    @media screen and (max-width:1600px){
+    	top:87%;
+    }
     @media screen and (max-width:1366px){
     	top:85%;
     }
