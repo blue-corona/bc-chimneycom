@@ -45,10 +45,10 @@ function custom_affiliation_shortcode_mobile( $atts , $content = null ) {
     $args  = array( 'post_type' => 'bc_affiliations', 'posts_per_page' => -1, 'order'=> 'ASC','post_status'  => 'publish');
     ob_start();
     ?>
-    <div class="container-fluid bg-white affiliations_section py-5">
+    <div class="container-fluid bg-white affiliations_section py-5 d-lg-none d-block">
         <div id="affiliation<?php echo $count;?>" class="container">
 
-            <div class="row d-lg-none d-block">
+            <div class="row">
                 <div class="col-md-12">
                     <div class="swiper-container affiliations_swiper">
                         <div class="swiper-wrapper d-flex align-items-center">
@@ -96,7 +96,7 @@ function custom_affiliation_shortcode( $atts , $content = null ) {
     $args  = array( 'post_type' => 'bc_affiliations', 'posts_per_page' => -1, 'order'=> 'ASC','post_status'  => 'publish');
     ob_start();
     ?>
-    <div class="container-fluid bg-white affiliations_section py-5">
+    <div class="container-fluid bg-white affiliations_section p-0">
         <div class="container">
 
             <div class="row d-lg-flex d-none align-items-center">
@@ -110,7 +110,7 @@ function custom_affiliation_shortcode( $atts , $content = null ) {
                     ?>
                     <div class="col-md-2 text-center">
 
-                        <img src="<?= $image;?>">
+                        <img src="<?= $image;?>" class="affiliation_logos">
 
                     </div>
                     <?php

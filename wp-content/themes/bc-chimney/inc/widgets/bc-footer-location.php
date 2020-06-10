@@ -34,15 +34,15 @@ public function widget( $args, $instance ) {
 		?>
 
 
- <div class="col-md-6 offset-md-1 mt-xl-4 mt-md-3 mt-lg-4 pt-lg-2 pt-xl-0">
+ <div class="col-md-6 offset-md-1">
                     <div class="row mt-3">
-                        <div class="col-md-6 col-10 offset-1 offset-md-0 right_md_border pt-md-4 pr-xl-4 text-md-left text-center mb-3">
+                        <div class="col-md-6 col-10 offset-1 offset-md-0 right_md_border text-md-left text-center pr-xl-4 mb-3 footer_locations">
                         
                         <?php 
 								if ( isset( $instance['title'] ) && !empty($instance['title']) ) {
 								echo $args['before_title'] . $instance['title'] . $args['after_title']; 
 								}else{
-								echo '<p class="bc_font_default bottom_border bc_text_24 bc_line_height_24 text-uppercase pb-2 bc_sm_text_17 bc_sm_line_height_17 mx-4 mx-md-0 mb-2 mb-md-3">Maryland</p>';
+								echo '<p class="bc_font_default bottom_border bc_text_24 bc_line_height_24 text-uppercase pb-2 bc_sm_text_17 bc_sm_line_height_17 footer_title">Maryland</p>';
 								}
 								?>
                            
@@ -50,12 +50,12 @@ public function widget( $args, $instance ) {
                             <p class="mb-md-5 bc_sm_line_height_20 px-4 px-md-0 pr-xl-3 mx-3 mx-md-0 footer_address"><?php echo $instance['text_description'];?>
                         </p>
                         </div>
-                        <div class="col-md-6  col-10 offset-1 offset-md-0 pt-md-4 pr-xl-4 text-md-left text-center pl-xl-4">
+                        <div class="col-md-6  col-10 offset-1 offset-md-0 text-md-left text-center pr-xl-4 footer_locations">
                         		<?php 
 								if ( isset( $instance['address_two'] ) && !empty($instance['address_two']) ) {
 								echo $args['before_title'] . $instance['address_two'] . $args['after_title']; 
 								}else{
-								echo ' <p class="bc_font_default bottom_border bc_text_24 bc_line_height_24 text-uppercase pb-2 bc_sm_text_17 bc_sm_line_height_17 mx-4 mx-md-0  mb-2 mb-md-3">Virginia</p>';
+								echo ' <p class="bc_font_default bottom_border bc_text_24 bc_line_height_24 text-uppercase pb-2 bc_sm_text_17 bc_sm_line_height_17 footer_title">Virginia</p>';
 								}
 								?>
                             

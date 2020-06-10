@@ -1,7 +1,7 @@
 <div class="container-fluid bc_nav_container_desktop">
     <div class="container">
         <div class="row m-0">
-            <div class="col-xl-9 offset-xl-3 mt-xl-n5 px-0">
+            <div class="col-xl-8 offset-xl-4 mt-xl-n5 px-0">
                 <nav class="navbar navbar-expand-lg navbar-dark ml-auto p-0 w-100 text-xl-right">
                     <div id="navbarSupportedContent" class="navbar-collapse collapse" style="">
                         <?php 

@@ -366,7 +366,7 @@ div, {
 	    line-height: 60px;
 	    padding: 0px;
 	    line-height: 24px !important;
-		font-size: 18px !important;
+		font-size: 22px !important;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -602,11 +602,11 @@ hr{
 .blog,.sub_page_sidebar{
 	hr{
 		height:2px;
-		width:100%;
+		width:95%;
 		margin:30px auto 40px;
 		background:$secondary_color;
 		@media only screen and (max-width: 767px){
-			width:100%
+			width:95%
 		}
 	}
 }
@@ -1194,4 +1194,25 @@ div#swipebox-arrows {
 }
 #album_gallery_ {
     margin-bottom: 30px;
+}
+
+.affiliations_section {
+    .affiliation_logos {
+	    padding: 78px 0px;
+	}
+}
+
+.footer_title{
+	padding-bottom: 17.5px!important;
+    padding-top: 17px;
+    height: 64.5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.footer_logo {
+    padding-bottom: 20px;
+}
+.footer_locations{
+	margin-top:20px;
 }
