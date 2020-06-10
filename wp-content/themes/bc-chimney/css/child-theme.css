@@ -10254,6 +10254,10 @@ a#swipebox-close {
     a#swipebox-close {
       right: 23em !important;
       top: 8.2em !important; } }
+  @media screen and (max-width: 1600px) {
+    a#swipebox-close {
+      right: 17em !important;
+      top: 5.2em !important; } }
   @media screen and (max-width: 1366px) {
     a#swipebox-close {
       right: 9em !important;
@@ -10383,6 +10387,9 @@ div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
   font-size: inherit;
   -webkit-transform: none;
           transform: none; }
+  @media screen and (max-width: 1600px) {
+    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
+      top: 87%; } }
   @media screen and (max-width: 1366px) {
     div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
       top: 85%; } }
