@@ -10388,13 +10388,13 @@ div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
       top: 85%; } }
   @media screen and (max-width: 1024px) {
     div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
-      top: 66%; } }
+      top: 74%; } }
   @media screen and (max-width: 768px) {
     div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
       top: 72%; } }
   @media screen and (max-width: 420px) {
     div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
-      top: 62%;
+      top: 68%;
       height: auto; } }
 
 div#swipebox-title {
