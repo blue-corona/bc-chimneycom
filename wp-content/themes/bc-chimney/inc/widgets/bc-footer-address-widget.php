@@ -28,7 +28,7 @@ class BC_Footer_Address_Widget extends WP_Widget {
                     </div>
     <div class="row">
         <div class="col-xl-9 col-md-12 pr-md-0">
-            <div class=" d-flex align-items-center top_line pt-3">
+            <div class="d-flex align-items-center top_line pt-3 justify-content-center justify-content-md-start">
                 <div class="footer_badge pr-xl-3 pr-md-2">
                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer_badge.png">
                 </div>

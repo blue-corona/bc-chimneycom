@@ -10371,12 +10371,23 @@ div#swipebox-arrows {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (max-width: 767px) {
+    .footer_title {
+      height: auto;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-top: 8px;
+      padding-bottom: 8px !important; } }
 
 .footer_logo {
   padding-bottom: 20px; }
 
 .footer_locations {
   margin-top: 20px; }
+  @media screen and (max-width: 767px) {
+    .footer_locations {
+      margin-top: 0px; } }
 
 div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
   top: 81%;
