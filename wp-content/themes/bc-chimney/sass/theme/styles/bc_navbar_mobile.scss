@@ -1,8 +1,11 @@
 $bc_mobile_nav_color_A:#ffffff; // Nav Background
-$bc_mobile_nav_color_B:#2a2a2a;	// Menu Text
-$bc_mobile_nav_color_C:#8f3e28;	// Focus Item Color
+$bc_mobile_nav_color_B:$primary_color;	// Menu Text
+$bc_mobile_nav_color_C:$secondary_color;	// Focus Item Color
 $bc_mobile_nav_color_D:#B5B5B5; // Border Color
 $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
+$bc_mobile_nav_color_F:#ffffff; // Search Icon 
+$bc_mobile_nav_color_G:#363636; // Search Icon Background
+$bc_mobile_nav_color_H:#C2C2C2; // Search placeholder
 
 .bc_nav_container_mobile{
 	display:none !important;
@@ -13,16 +16,32 @@ $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
 		position: absolute;
 		top:0;
 		background: $bc_mobile_nav_color_A; //Nav bg
-		z-index:99;
+
+		.level-3-background{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			left:100%; 
+			background: $bc_mobile_nav_color_A;
+		}
 
 		#navbarSupportedContent{
 			height: 100vh;
 			max-height: 100vh;
 			overflow-x: hidden;
 
-			.navbar-toggler{
+			&.navbar-collapse.collapsing {
+			    -webkit-transition: none!important;
+				transition: none!important;
+				display: none!important;
+
+		    }
+
+		    .navbar-toggler{
 				display: block;
-				color:$primary_color;
+				opacity: 0;
+				-webkit-transition: opacity 1s;
+				transition: opacity 1s;
 				&:focus, &:hover{
 					background: none;
 					outline-color: $bc_mobile_nav_color_A;
@@ -32,10 +51,37 @@ $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
 					}
 				}
 			}
+			
+			&.show .navbar-toggler{
+				opacity: 1;
+			}
+		   	.nav-header{
+		   		.nav-search{
+		   			input, input:focus{
+		   				border: 1px solid $bc_mobile_nav_color_D;
+		   				border-radius: 0px;
+		   				box-shadow:none; 
+		   				-webkit-box-shadow:none;
+		   				&::placeholder{
+		   					color:$bc_mobile_nav_color_H;
+		   				}
+		   			}
+		   			button{
+		   				background: $bc_mobile_nav_color_G;
+			   			svg{
+			   				color:$bc_mobile_nav_color_F;
+			   			}
+		   			}
+		   		}
+		   	}
 
 			.nav-header-level-3{
-				display: none;
+				position:absolute;
+				top:0;
+				left: 120%;
+				display: block;
 				button{
+					white-space: nowrap;
 					color:$bc_mobile_nav_color_B;
 					svg{
 						color:$bc_mobile_nav_color_B;
@@ -51,17 +97,14 @@ $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
 					padding: 0px;
 					a{
 						padding: 0px 0px;
-						color: #2a2a2a!important;
-					    font-family: "Open Sans",sans-serif;
-					    font-size: 20px;
+						font-size: 20px;
 					    line-height: 50px;
 					    font-weight: 400;
 					    text-transform: uppercase;
-					    padding: 16px 12px 10px;
+					    padding: 10px 10px 7px;
 					    white-space: break-spaces;
-					    transition: all ease .4s;
-					    border-radius: 0;
 						.nav-link-title{
+							font-weight: 400;
 							color: $bc_mobile_nav_color_B; //Link Text
 						}
 						.bc-nav-dropdown-icon{
@@ -74,8 +117,13 @@ $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
 						&:after{
 							display:none !important;
 						}
-						&:focus{
-							color: $bc_mobile_nav_color_C
+						&:focus, &:active{
+							background:none !important;
+							.nav-link-title{
+								background: none;
+								border:none;
+								color: $bc_mobile_nav_color_C
+							}
 						}
 					}
 					&.dropdown-active{
@@ -96,8 +144,9 @@ $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
 				}
 				ul{	
 					& > li{
-						padding-left: 1em;
+						padding-left: 20px;
 						svg{ display: none;}
+						a{padding:0px;}
 					}
 					ul{
 						display: none !important;
@@ -107,7 +156,7 @@ $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
 
 			& > ul.navbar-nav{
 				& > li{					//Top Level Item
-					padding:  0px;	
+					padding: 0px;	
 					border-top: 1px solid $bc_mobile_nav_color_D;
 				}
 			}
@@ -115,21 +164,10 @@ $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
 
 		&.show-level-3{
 			#navbarSupportedContent{
-				.nav-header{
-					display: none;
-				}
-				.nav-header-level-3{
-					display: block;
-				}
-
-				li:not(.level-3-active){
-					border: none;
-					padding: 0em 0px 0em 0px;
-					& > a{
-						display:none;
-					}
-				} 
+				overflow-x: visible;
+				
 				li.level-3-active {
+					left: 120%;
 					padding-left: 0px !important;
 					& > a, li{
 						border-bottom: 1px solid $bc_mobile_nav_color_D;
@@ -180,6 +218,4 @@ $bc_mobile_nav_color_E:#8f3e28; // Menu Dropdown Icon
 			}
 		}
 	}
-
-
 }
