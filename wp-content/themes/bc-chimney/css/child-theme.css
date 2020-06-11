@@ -9206,13 +9206,14 @@ ul.gform_fields li::before {
       display: block !important;
       position: absolute;
       top: 0;
-      background: #ffffff; }
-      .bc_nav_container_mobile .level-3-background {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        left: 100%;
-        background: #ffffff; }
+      background: #ffffff;
+      /*.level-3-background{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			left:100%; 
+			background: $bc_mobile_nav_color_A;
+		}*/ }
       .bc_nav_container_mobile #navbarSupportedContent {
         height: 100vh;
         max-height: 100vh;
