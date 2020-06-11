@@ -611,11 +611,19 @@ hr{
 	}
 }
 .map_location{
+	min-height:550px;
+	@media screen and (max-width:1080px){
+		min-height:100%;
+		min-height: auto;
+	    height: auto;
+	    background-position: bottom;
+	}
 	@media only screen and (max-width: 767px){
 		background:url("../img/m_service_area_map.jpg") !important;
 		background-repeat: no-repeat;
     	background-size: cover !important;
     	padding-top:385px;
+
 	}
 	@media only screen and (max-width: 376px){
 		padding-top:340px;
