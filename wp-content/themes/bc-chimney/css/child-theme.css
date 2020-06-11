@@ -9858,7 +9858,8 @@ hr {
       width: 95%; } }
 
 .map_location {
-  min-height: 550px; }
+  min-height: 550px;
+  background-position: center; }
   @media screen and (max-width: 1080px) {
     .map_location {
       min-height: 100%;
