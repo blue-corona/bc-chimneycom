@@ -9253,10 +9253,7 @@ ul.gform_fields li::before {
           .bc_nav_container_mobile #navbarSupportedContent .nav-header .nav-search button svg {
             color: #ffffff; }
         .bc_nav_container_mobile #navbarSupportedContent .nav-header-level-3 {
-          position: absolute;
-          top: 0;
-          left: 120%;
-          display: block; }
+          display: none; }
           .bc_nav_container_mobile #navbarSupportedContent .nav-header-level-3 button {
             white-space: nowrap;
             color: #2a2a2a; }
