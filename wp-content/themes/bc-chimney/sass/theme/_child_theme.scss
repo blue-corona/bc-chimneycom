@@ -612,6 +612,7 @@ hr{
 }
 .map_location{
 	min-height:550px;
+	background-position: center;
 	@media screen and (max-width:1080px){
 		min-height:100%;
 		min-height: auto;
