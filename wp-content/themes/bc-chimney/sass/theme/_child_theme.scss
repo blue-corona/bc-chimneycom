@@ -1221,12 +1221,21 @@ div#swipebox-arrows {
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    @media screen and (max-width:767px){
+    	height:auto;
+    	justify-content:center;
+    	padding-top:8px;
+    	padding-bottom:8px !important;
+    }
 }
 .footer_logo {
     padding-bottom: 20px;
 }
 .footer_locations{
 	margin-top:20px;
+	@media screen and (max-width:767px){
+    	margin-top:0px;
+    }
 }
 
 div#swipebox-top-bar,div#swipebox-top-bar.visible-bars {

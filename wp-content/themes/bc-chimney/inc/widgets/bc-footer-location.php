@@ -34,9 +34,9 @@ public function widget( $args, $instance ) {
 		?>
 
 
- <div class="col-md-6 offset-md-1">
-                    <div class="row mt-3">
-                        <div class="col-md-6 col-10 offset-1 offset-md-0 right_md_border text-md-left text-center pr-xl-4 mb-3 footer_locations">
+ <div class="col-md-6 offset-md-1 ">
+                    <div class="row mt-md-3">
+                        <div class="col-md-6 col-10 offset-1 offset-md-0 right_md_border text-md-left text-center pr-xl-4 mb-md-3 footer_locations">
                         
                         <?php 
 								if ( isset( $instance['title'] ) && !empty($instance['title']) ) {
@@ -50,7 +50,7 @@ public function widget( $args, $instance ) {
                             <p class="mb-md-5 bc_sm_line_height_20 px-4 px-md-0 pr-xl-3 mx-3 mx-md-0 footer_address"><?php echo $instance['text_description'];?>
                         </p>
                         </div>
-                        <div class="col-md-6  col-10 offset-1 offset-md-0 text-md-left text-center pr-xl-4 footer_locations">
+                        <div class="col-md-6  col-10 offset-1 offset-md-0 text-md-left text-center pl-xl-4 footer_locations mb-3 mb-md-0">
                         		<?php 
 								if ( isset( $instance['address_two'] ) && !empty($instance['address_two']) ) {
 								echo $args['before_title'] . $instance['address_two'] . $args['after_title']; 
