@@ -16,7 +16,7 @@ global $post;
     
 
         <div class="container-fluid">
-            <div class="container py-5">
+            <div class="container pt-5 pb-md-5">
                 <div class="row">
                     <div class="col-md-8 subpage_content">
                      <h1><?php the_title()?></h1>

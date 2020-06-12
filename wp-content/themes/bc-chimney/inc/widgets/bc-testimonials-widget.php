@@ -40,7 +40,7 @@ class BC_Testimonials_Widget extends WP_Widget {
 	?>
 
 
-<div class="testimonial pb-5">
+<div class="testimonial pb-md-5">
 <div class="text-center py-4">
   <div class=" text-center mb-4">
               <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
