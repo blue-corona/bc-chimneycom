@@ -22,7 +22,7 @@ class BC_Footer_Address_Widget extends WP_Widget {
      <div class="row">
                         <div class="col-md-12">
                             <a href="<?php echo get_home_url();?>" class="d-block footer_logo">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_footer.png" class="bc_branding_logo" alt="logo" style="width: 374px" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_footer.png 2x, <?php echo get_stylesheet_directory_uri(); ?>/img/m_logo_footer.png 3x">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_footer.png" class="bc_branding_logo" alt="logo" style="width: 374px" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_footer.png 2x, <?php echo get_stylesheet_directory_uri(); ?>/img/logo_footer.png 3x">
                             </a>
                         </div>
                     </div>

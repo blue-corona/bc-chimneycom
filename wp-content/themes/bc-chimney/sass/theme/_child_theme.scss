@@ -783,7 +783,11 @@ hr{
 		line-height:48px;
 	}
 	h2, h3{
-	    margin-bottom:20px
+		margin-bottom: 20px;
+		@media screen and (max-width:767px){
+			line-height: 35px;
+			color: #2a2a2a;
+		}
 	}
 	ul{
 		padding-left:0px;
@@ -844,6 +848,13 @@ main{
 		}
 		a[href="tel: (555) 555-5555"]{
 			display:block;
+		}
+		h2, h3{
+			margin-bottom: 20px;
+			@media screen and (max-width:767px){
+				line-height: 35px;
+				color: #2a2a2a;
+			}
 		}
 	}
 }
@@ -1188,7 +1199,11 @@ div#swipebox-arrows {
 			line-height:48px;
 		}
 		h2, h3{
-		    margin-bottom:20px
+			margin-bottom: 20px;
+			@media screen and (max-width:767px){
+				line-height: 35px;
+				color: #2a2a2a;
+			}
 		}
 		ul{
 			padding-left:0px;
