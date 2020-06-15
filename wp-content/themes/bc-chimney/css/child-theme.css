@@ -10278,6 +10278,11 @@ a.swipebox- {
   width: 900px !important;
   min-width: 900px !important;
   max-width: 900px !important; }
+  @media screen and (min-width: 1290px) and (max-width: 1366px) {
+    #swipebox-slider .slide img {
+      width: 800px !important;
+      min-width: 800px !important;
+      max-width: 800px !important; } }
   @media screen and (max-width: 900px) {
     #swipebox-slider .slide img {
       width: 650px !important;
@@ -10297,7 +10302,13 @@ a.swipebox- {
 @media screen and (max-width: 1920px) {
   a#swipebox-close {
     right: 3em !important;
-    top: 2.2em !important; } }
+    top: 2em !important;
+    text-align: center;
+    background: none !important; } }
+
+@media screen and (min-width: 1290px) and (max-width: 1366px) {
+  a#swipebox-close {
+    top: 2.5em !important; } }
 
 @media screen and (max-width: 1025px) {
   a#swipebox-close {
@@ -10446,6 +10457,9 @@ div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
   -webkit-transform: none;
   transform: none;
   bottom: 0px; }
+  @media screen and (min-width: 1290px) and (max-width: 1366px) {
+    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
+      bottom: 2%; } }
   @media screen and (max-width: 1024px) {
     div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
       top: 82%; } }
@@ -10463,6 +10477,9 @@ div#swipebox-title {
   margin: 0px auto;
   text-align: left;
   display: block; }
+  @media screen and (min-width: 1290px) and (max-width: 1366px) {
+    div#swipebox-title {
+      max-width: 800px; } }
   @media screen and (max-width: 840px) {
     div#swipebox-title {
       max-width: 650px; } }
@@ -10522,6 +10539,10 @@ div#swipebox-title p {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); } }
+
+@media screen and (min-width: 1290px) and (max-width: 1366px) {
+  #swipebox-container {
+    max-width: 1000px; } }
 
 #swipebox-next, #swipebox-prev {
   background: none !important;
