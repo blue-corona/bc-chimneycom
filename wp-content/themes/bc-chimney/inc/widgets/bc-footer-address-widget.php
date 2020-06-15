@@ -34,7 +34,7 @@ class BC_Footer_Address_Widget extends WP_Widget {
                 </div>
                 <div class="ml-xl-3 ml-md-2 text-left">
                     <p class="mb-2 bc_font_default bc_text_normal bc_text_23 bc_line_height_24 bc_color_primary text-uppercase">Call Today</p>
-                    <p class="mb-2 bc_text_bold"><i class="fas fa-phone  bc_text_21 bc_line_height_50 bc_text_bold bc_sm_line_height_51"></i> <a href="tel: 555-555-5555" class="bc_text_bold text-decoration-none"><strong class="bc_font_default bc_text_23 bc_line_height_20 bc_color_secondary bc_text_bold bc_sm_line_height_24">
+                    <p class="mb-2 bc_text_bold"><i class="fas fa-phone  bc_text_21 bc_line_height_50 bc_text_bold bc_sm_line_height_51"></i> <a href="tel:<?php echo bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '(555) 555-5555');?>" class="bc_text_bold text-decoration-none"><strong class="bc_font_default bc_text_23 bc_line_height_20 bc_color_secondary bc_text_bold bc_sm_line_height_24">
                     <?php echo bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '(555) 555-5555');?>
                     </strong></a></p>
                     <div class="social_icons mb-0 d-none d-md-block">
