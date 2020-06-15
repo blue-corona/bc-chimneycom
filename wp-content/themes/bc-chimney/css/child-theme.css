@@ -10302,7 +10302,7 @@ a.swipebox- {
 @media screen and (max-width: 1920px) {
   a#swipebox-close {
     right: 3em !important;
-    top: 2em !important;
+    top: 40px !important;
     text-align: center;
     background: none !important; } }
 
