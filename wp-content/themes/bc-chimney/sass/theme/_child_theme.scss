@@ -1117,6 +1117,11 @@ a#swipebox-close {
 	    top: 2em!important;
 	    transform: none;
     }
+    @media screen and (max-width:840px){
+    	right: 1em!important;
+	    top: 7em!important;
+	    transform: none;
+    }
     @media screen and (max-width:820px){
     	right: 0em!important;
     	top: 7.5em!important;
@@ -1124,11 +1129,11 @@ a#swipebox-close {
     }
     @media screen and (max-width: 420px){
     	right: 0em !important;
-    	top: 15.2em !important;
+    	top: 14.2em !important;
     }
     @media screen and (max-width: 400px){
     	right: 0em !important;
-    	top: 14.6em!important;
+    	top: 12.6em!important;
     }
 }
 
@@ -1261,7 +1266,7 @@ div#swipebox-top-bar,div#swipebox-top-bar.visible-bars {
    
     
     @media screen and (max-width:1024px){
-    	top: 93%;
+    	top: 82%;
     }
     @media screen and (max-width:768px){
     	top: 82%;
@@ -1279,11 +1284,12 @@ div#swipebox-title {
     margin: 0px auto;
     text-align: left;
     display: block;
-    @media screen and (max-width:1024px){
-    	max-width: 900px;
+    
+    @media screen and (max-width:840px){
+    	max-width: 650px;
     }
     @media screen and (max-width:768px){
-    	max-width: 40em;
+    	max-width: 650px;
     }
     @media screen and (max-width:420px){
 	    max-width: 18em;
