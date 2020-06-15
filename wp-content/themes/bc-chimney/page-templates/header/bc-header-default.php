@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-9 offset-md-3 offset-lg-3 col-lg-9 col-sm-12 col-xs-12 ml-auto">
                    <div class="d-flex align-items-center justify-content-end">
-                        <span class=" mr-2 bc_text_27 bc_font_default bc_text_normal text-uppercase bc_line_height_50 bc_letter_spacing_0 color_3">Call Today <a href="tel: (555) 555-5555" class="no_hover_underline bc_line_height_50"><strong class="bc_color_secondary bc_line_height_50 bc_letter_spacing_0"><?php echo bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '(555) 555-5555');?></strong></a>
+                        <span class=" mr-2 bc_text_27 bc_font_default bc_text_normal text-uppercase bc_line_height_50 bc_letter_spacing_0 color_3">Call Today <a href="tel:<?php echo bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '(555) 555-5555');?>" class="no_hover_underline bc_line_height_50"><strong class="bc_color_secondary bc_line_height_50 bc_letter_spacing_0"><?php echo bc_get_theme_mod('bc_theme_options', 'bc_phone',false, '(555) 555-5555');?></strong></a>
                         </span>
                         <a href="<?php echo get_home_url();?>" class="bc_color_secondary_bg text-white px-4 py-3 bc_text_18 bc_text_semibold text-left  bc_font_alt_1 bc_color_secondary_hover_bg bc_line_height_20 border-0 w-200  no_hover_underline text-uppercase bc_color_tertiary_hover_bg outer_shadow free_estimate">
                             <span class="d-flex justify-content-center align-items-center">

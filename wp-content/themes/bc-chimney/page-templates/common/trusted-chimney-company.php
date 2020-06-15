@@ -107,7 +107,7 @@
                                 <div class="card-header position-relative border-bottom-0 bg-white" id="headingThree">
                                     <h2 class="mb-0">
                                         <button data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" class="w-100 position-relative border-bottom-0 bg-white service_head border-0 h-100 p-3">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg"> Chimney & Fireplace<br>Repair <i class="fal fa-plus-circle"></i>
+                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_icon.svg"> Chimney & Fireplace<br>Repair <i class="fal fa-plus-circle"></i>
                                         </button>
                                         
                                     </h2>
