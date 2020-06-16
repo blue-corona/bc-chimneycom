@@ -12,7 +12,7 @@ get_header();?>
     <?php get_template_part( 'page-templates/common/bc-banner-section' ); ?> 
     <!-- The Content Starts -->
        <div class="container-fluid">
-            <div class="container py-5">
+            <div class="container px-0 py-5">
                 <div class="row">
                     <div class="col-md-12 subpage_content">
 <h1><?php the_title()?></h1>

@@ -12,7 +12,7 @@ global $post;
 <main>
     <?php get_template_part( 'page-templates/common/bc-banner-section' ); ?> 
 
-<div class="container-fluid testimonial pb-5" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_bg.jpg')">
+<div class="container-fluid testimonial pb-5" style="background: #fff;">
     <div class="container text-center py-4">
 
         <div class="row">
@@ -24,10 +24,10 @@ global $post;
                     <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
                     <i class="fas fa-star bc_text_20 bc_line_height_55  color_5"></i>
                 </div>
-                <h2 class="mb-3 px-md-0 px-4 bc_color_primary">What Your Neighbors Have to Say</h2>
+                <h1 class="mb-3 px-md-0 px-4">What Your Neighbors Have to Say</h1>
                 <div class="position-relative mt-4">
-                    <div id="bc_testimonials-swiper" class="swiper-container testimonial_swiper">
-                        <div class="swiper-wrapper">
+                    <div id="bc_testimonials-swiper" class="testimonial_swiper">
+                        <div class="row">
 
                           <?php 
                           $args  = array( 'post_type' => 'bc_testimonials', 'posts_per_page' => -1, 'order'=> 'DESC','post_status'  => 'publish');
@@ -41,8 +41,8 @@ global $post;
                             $message = get_post_meta( get_the_id(), 'testimonial_message', true );
                             $image = get_post_meta( get_the_id(), 'testimonial_custom_image', true );
                             ?>
-                            <div class="swiper-slide">
-                                <div class="testimonial_inner position-relative bg-white p-4">
+                            <div class="col-md-6 mb-4">
+                                <div class="testimonial_inner position-relative review_columns p-4">
                                     <h7 class="h7 bc_sm_text_16 d-lg-block d-none"><?php 
                                      if (strlen($message) > 189){
                                         echo $message = substr($message, 0,189) . '...';
@@ -66,19 +66,17 @@ global $post;
                        <?php }?>
                    </div>
                    <!-- Add Pagination -->
-                   <div class="swiper-pagination testimonial_pagination d-md-none d-block"></div>
+                  
 
                </div>
                <!-- Add Arrows -->
-               <div class="testimonial_buttons d-none d-md-block">
-                <div class="swiper-button-next testimonial_next  bc_text_16 bc_line_height_0"><i class="fas fa-chevron-right bc_text_16 bc_line_height_0"></i></div>
-                <div class="swiper-button-prev testimonial_prev bc_text_16 bc_line_height_0"><i class="fas fa-chevron-left bc_text_16 bc_line_height_0"></i></div>
+               
             </div>
 
         </div>
 
     </div>
-    <div class="col-md-12 text-center mt-3"><a href="<?php echo get_home_url();?>/testimonials/" class="btn btn-primary text-uppercase w-auto mt-4">Read our reviews</a></div>
+    <div class="col-md-12 text-center mt-3"><a href="<?php echo get_home_url();?>/testimonials/" class="btn btn-primary text-uppercase w-auto mt-4">Write a Review</a></div>
 
 </div>
 
@@ -92,7 +90,7 @@ global $post;
 
 </main>
 <?php get_footer();?>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
    var swiperTestimonials = new Swiper('#bc_testimonials-swiper', {
       slidesPerView: 3,
@@ -122,4 +120,4 @@ global $post;
           spaceBetween: 0,
       },}
   });
-</script>
+</script> -->

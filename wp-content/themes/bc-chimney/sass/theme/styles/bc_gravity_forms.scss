@@ -335,19 +335,9 @@
 	}
 }
 
-/*input[type="submit"]{
-	background:map-get($submit_btn, background);
-	padding:map-get($submit_btn, padding);
-	color:map-get($submit_btn, color);
-	border:{
-		radius: map-get($form_input, border-radius);
-		style: map-get($form_input, border);
-	}
-}*/
 select{
 	color:#4d4d4d !important;
 }
-
 ul.gform_fields li::before {
  list-style-type: none;
 }
@@ -365,5 +355,44 @@ ul.gform_fields li::before {
 		}
 	}
 }
+.banner_form  {
+	.gform_wrapper {
+		ul {
+			li.gfield {
+				select {
+    				background: url(../img/br_down.png) no-repeat 90% center transparent!important;
+    				color: #000 !important;
+				    font-size: 14px!important;
+				    font-weight: 400!important;
+				    font-family: "Source Sans Pro",sans-serif;
+				    letter-spacing: 1px;
+    			}
+    		}
+    	}
+    }
+}
 
+.banner_form {
+	li:first-child {
+		.ginput_container_text{
+    		border-top: 1px solid #E4E4E4 !important;
+    	}
+    }
+}
 
+.page-template-bc-subpage-withoutsidebar {
+	.banner_form {
+		.floating_labels_wrapper{
+			@media screen and (max-width:1024px){
+				padding-left: 0px !important;
+			}
+			.floating_labels {
+			 	.gfield {
+				    @media screen and (max-width:1024px){
+				    	padding-left: 0px !important;
+				    }
+				}
+			}
+		}
+	}
+}
