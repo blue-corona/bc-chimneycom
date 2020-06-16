@@ -586,13 +586,15 @@ hr{
 		min-height: auto;
 	    height: auto;
 	    background-position: bottom;
+	    max-height: fit-content;
+	    background-size: cover;
 	}
 	@media only screen and (max-width: 767px){
 		background:url("../img/m_service_area_map.jpg") !important;
 		background-repeat: no-repeat;
     	background-size: cover !important;
     	padding-top:385px;
-
+    	max-height: fit-content;
 	}
 	@media only screen and (max-width: 376px){
 		padding-top:340px;

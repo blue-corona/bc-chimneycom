@@ -9862,13 +9862,20 @@ hr {
       min-height: 100%;
       min-height: auto;
       height: auto;
-      background-position: bottom; } }
+      background-position: bottom;
+      max-height: -webkit-fit-content;
+      max-height: -moz-fit-content;
+      max-height: fit-content;
+      background-size: cover; } }
   @media only screen and (max-width: 767px) {
     .map_location {
       background: url("../img/m_service_area_map.jpg") !important;
       background-repeat: no-repeat;
       background-size: cover !important;
-      padding-top: 385px; } }
+      padding-top: 385px;
+      max-height: -webkit-fit-content;
+      max-height: -moz-fit-content;
+      max-height: fit-content; } }
   @media only screen and (max-width: 376px) {
     .map_location {
       padding-top: 340px; } }
