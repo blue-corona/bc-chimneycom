@@ -116,3 +116,71 @@ function change_limit_mobile($query){
         set_query_var('posts_per_page',$new_limit);
     }
 }
+
+add_action('admin_enqueue_scripts', 'bc_album_include_admin_css_js');
+function bc_album_include_admin_css_js($hook){
+  $current_screen = get_current_screen();
+    if ( $current_screen->post_type == 'album_gallery') {
+        wp_enqueue_script('bc-album-image-upload-js', get_stylesheet_directory_uri().'/src/js/bc-album-image-upload.js', array( 'jquery'));
+    }
+}
+
+
+add_action( 'add_meta_boxes', 'bc_album_create_metabox' );
+function bc_album_create_metabox() {
+    add_meta_box(
+        'bc_album_metabox',
+        'Thumbnail Image', // Title to display
+        'bc_album_metabox', // Function to call that contains the metabox content
+        'album_gallery', // Post type to display metabox on
+        'side', // Where to put it (normal = main colum, side = sidebar, etc.)
+        'default' // Priority relative to other metaboxes
+    );
+}
+
+add_action( 'edit_form_after_title', 'bc_team_run_after_title_meta_boxes' );
+function bc_team_run_after_title_meta_boxes() {
+    global $post, $wp_meta_boxes;
+    # Output the `below_title` meta boxes:
+    do_meta_boxes( get_current_screen(), 'test', $post );
+    unset($wp_meta_boxes['bc_teams']['test']);
+}
+
+function bc_album_metabox() {
+   global $post;
+    $image = get_post_meta( $post->ID, 'bc_album_thumbnail_custom_image', true );
+    ?>
+    
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Custom Image</label>
+        <div class="col-sm-10">
+            <input type="text" name="bc_album_thumbnail_custom_image" class="meta-image col-sm-5" value="<?= $image;?>" required accept='image/*' style="margin-top: auto;">
+            <input type="button" class="button bc-album-image-upload col-sm-5" value="Upload" style="margin-top: 20px;">
+
+            <div class="image-preview col-sm-3" style="margin-right: 20%; max-width: 100%">
+                <?php if(isset($image) && !empty($image)){?>
+                <img src="<?php echo $image;?>" class="img-fluid" style="width:90px;margin-top: 20px;">
+                <?php }else{?>
+                <img src="http://placehold.it/100x100" class="rounded-circle" style="width: 90px; height: 63px;"/>
+                <?php }?>
+            </div>
+        </div>
+    </div>
+ <?php wp_nonce_field( 'bc_album_form_metabox_nonce', 'bc_album_form_metabox_process' );
+}
+
+add_action( 'save_post', 'bc_album_save_metabox', 1, 2 );
+function bc_album_save_metabox( $post_id, $post ) {
+    if ( !isset( $_POST['bc_album_form_metabox_process'] ) ) return;
+    if ( !wp_verify_nonce( $_POST['bc_album_form_metabox_process'], 'bc_album_form_metabox_nonce' ) ) {
+        return $post->ID;
+    }
+    if ( !current_user_can( 'edit_post', $post->ID )) { return $post->ID;}
+
+    if ( !isset( $_POST['bc_album_thumbnail_custom_image'] ) ) {return $post->ID;}
+    $sanitizedcustomimage = wp_filter_post_kses( $_POST['bc_album_thumbnail_custom_image'] );
+
+    update_post_meta( $post->ID, 'bc_album_thumbnail_custom_image', $sanitizedcustomimage );
+}
+
+// add_filter( 'auto_update_plugin', '__return_true' );
