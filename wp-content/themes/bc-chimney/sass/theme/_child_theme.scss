@@ -577,8 +577,10 @@ hr{
 	}
 }
 .map_location{
-	min-height:550px;
-	background-position: center;
+	min-height: 527px;
+    background-position: center;
+    background-size: 100%;
+    max-height: 527px;
 	@media screen and (max-width:1080px){
 		min-height:100%;
 		min-height: auto;
@@ -934,7 +936,7 @@ main{
 			height: 8px!important;
 			margin: 25px 5px;
 			border-radius: 0!important;
-			background: #fff!important;
+			background: #e0e0e0!important;
 			opacity: 1!important;
 		}
 		.swiper-pagination-bullet-active {
@@ -1140,6 +1142,14 @@ div#swipebox-arrows {
 }
 
 .blog,.sub_page_sidebar  {
+	ul{
+		li{
+			list-style:none;
+			&:before{
+				display:none;
+			}
+		}
+	}
 	main{
 		ul{
 			padding-left:0px;
@@ -1307,9 +1317,22 @@ div#swipebox-title{
     }
 }
 .review_columns{
-	background:#f2f1f1;
+	background:#f2f1f1 !important;
+	padding:1.5rem !important;
 	&:before{
-	    border-top: 35px solid #f2f1f1;
+	    border-top: 35px solid #f2f1f1 !important;
 	    z-index: 9;
+	    content: "" !important;
+	    position: absolute!important;
+	    margin-left: -.5em!important;
+	    bottom: -35px!important;
+	    left: 80%!important;
+	    width: 0;
+	    height: 0;
+	    border-left: 20px solid transparent!important;
+	    border-right: 20px solid transparent!important;
+	    font-size: 0;
+	    line-height: 0;
+	    display:block !important;
 	}
 }
