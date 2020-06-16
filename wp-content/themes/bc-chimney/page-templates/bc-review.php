@@ -41,7 +41,7 @@ global $post;
                             $message = get_post_meta( get_the_id(), 'testimonial_message', true );
                             $image = get_post_meta( get_the_id(), 'testimonial_custom_image', true );
                             ?>
-                            <div class="col-md-6 mb-4">
+                            <div class="col-md-6 mb-md-4 mb-5">
                                 <div class="testimonial_inner position-relative review_columns p-4">
                                     <h7 class="h7 bc_sm_text_16 d-lg-block d-none"><?php 
                                      if (strlen($message) > 189){
@@ -76,7 +76,7 @@ global $post;
         </div>
 
     </div>
-    <div class="col-md-12 text-center mt-3"><a href="<?php echo get_home_url();?>/testimonials/" class="btn btn-primary text-uppercase w-auto mt-4">Write a Review</a></div>
+    <div class="col-md-12 text-center mt-md-3"><a href="<?php echo get_home_url();?>/testimonials/" class="btn btn-primary text-uppercase w-auto mt-md-4">Write a Review</a></div>
 
 </div>
 
