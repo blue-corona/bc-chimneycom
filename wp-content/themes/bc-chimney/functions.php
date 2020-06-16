@@ -130,7 +130,7 @@ add_action( 'add_meta_boxes', 'bc_album_create_metabox' );
 function bc_album_create_metabox() {
     add_meta_box(
         'bc_album_metabox',
-        'Thumbnail Image', // Title to display
+        'Gallery Thumbnail', // Title to display
         'bc_album_metabox', // Function to call that contains the metabox content
         'album_gallery', // Post type to display metabox on
         'side', // Where to put it (normal = main colum, side = sidebar, etc.)
@@ -152,12 +152,12 @@ function bc_album_metabox() {
     ?>
     
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label">Custom Image</label>
-        <div class="col-sm-10">
-            <input type="text" name="bc_album_thumbnail_custom_image" class="meta-image col-sm-5" value="<?= $image;?>" required accept='image/*' style="margin-top: auto;">
-            <input type="button" class="button bc-album-image-upload col-sm-5" value="Upload" style="margin-top: 20px;">
+        <!-- <label class="col-sm-2 col-form-label"> </label> -->
+        <div class="col-sm-12">
+            <input type="text" name="bc_album_thumbnail_custom_image" class="meta-image col-sm-8" value="<?= $image;?>" required accept='image/*' style="margin-top: auto;"><br>
+            <input type="button" class="button bc-album-image-upload col-sm-4" value="Upload" style="margin-top: 10px;margin-left: 2px;">
 
-            <div class="image-preview col-sm-3" style="margin-right: 20%; max-width: 100%">
+            <div class="image-preview col-sm-2" style="margin-right: 20%; max-width: 100%">
                 <?php if(isset($image) && !empty($image)){?>
                 <img src="<?php echo $image;?>" class="img-fluid" style="width:90px;margin-top: 20px;">
                 <?php }else{?>
