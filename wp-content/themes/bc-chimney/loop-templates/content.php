@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
 		<h2><?php the_title()?></h2>
 		<p class="m-0"><strong><?php the_time( 'm/d/y' ); ?></strong></p>
 		<p class="m-0">	<?php echo get_the_excerpt();?> ... <br>
-		<a class="bc_color_primary bc_color_info_hover no_hover_underline" href="<?php echo get_permalink();?>"><span class="pr-1">READ MORE</span> <em aria-hidden="true" class="fa fa-chevron-circle-right"></em>
+		<a class="no_hover_underline" href="<?php echo get_permalink();?>"><span class="pr-1">READ MORE</span> <em aria-hidden="true" class="fa fa-chevron-circle-right"></em>
 			</a>
 		</p>
 		</article>
