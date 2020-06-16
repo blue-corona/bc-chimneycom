@@ -102,3 +102,17 @@ function bc_site_info_phone_number ( $atts ) {
     return ob_get_clean();
 }
 
+
+add_action('pre_get_posts','change_limit_mobile');
+function change_limit_mobile($query){
+    $new_limit = 4;
+    $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+    $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+    $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
+    $berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+    $ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+
+    if (( $iphone || $android || $ipad || $ipod || $berry ) && $query->is_main_query()){
+        set_query_var('posts_per_page',$new_limit);
+    }
+}
