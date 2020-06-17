@@ -9368,6 +9368,13 @@ ul.gform_fields li::before {
           .bc_nav_container_mobile nav.navbar-expand-lg #navbarSupportedContent.navbar-collapse > ul {
             width: 100%; } }
 
+.ui_kit_mobile_header .navbar-toggler svg, .ui_kit_mobile_header .phone-icon svg {
+  font-size: 24px; }
+
+.ui_kit_mobile_header .col-2.text-center {
+  text-align: left !important;
+  padding: 0px !important; }
+
 .no_hover_underline:hover {
   text-decoration: none; }
 
