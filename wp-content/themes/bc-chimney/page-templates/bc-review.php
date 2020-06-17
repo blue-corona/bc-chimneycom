@@ -41,23 +41,19 @@ global $post;
                             $message = get_post_meta( get_the_id(), 'testimonial_message', true );
                             $image = get_post_meta( get_the_id(), 'testimonial_custom_image', true );
                             ?>
-                            <div class="col-md-6 mb-md-4 mb-5">
-                                <div class="testimonial_inner position-relative review_columns p-4">
+                            <div class="col-md-6 mt-5">
+                                <div class="testimonial_inner position-relative review_columns p-4 h-100">
                                     <h7 class="h7 bc_sm_text_16 d-lg-block d-none"><?php 
-                                     if (strlen($message) > 189){
-                                        echo $message = substr($message, 0,189) . '...';
-                                    }else{
+                                     
                                         echo $message;
-                                    }
+                                    
                                     ?>
                                     </h7>
                                     <p class="d-lg-none d-block">
                                     <?php 
-                                     if (strlen($message) > 189){
-                                        echo $message = substr($message, 0,189) . '...';
-                                    }else{
+                                    
                                         echo $message;
-                                    }
+                                    
                                     ?></p>
                                 <span class="bc_text_16 bc_font_alt_2 bc_letter_spacing_1 bc_line_height_0 bc_text_bold">
                                    <?php echo $name;?></span>
@@ -76,7 +72,7 @@ global $post;
         </div>
 
     </div>
-    <div class="col-md-12 text-center mt-md-3"><a href="<?php echo get_home_url();?>/testimonials/" class="btn btn-primary text-uppercase w-auto mt-md-4">Write a Review</a></div>
+    <div class="col-md-12 text-center mt-md-5 mt-5"><a href="<?php echo get_home_url();?>/testimonials/" class="btn btn-primary text-uppercase w-auto mt-md-4">Write a Review</a></div>
 
 </div>
 
