@@ -10277,34 +10277,10 @@ a.swipebox- {
 #swipebox-overlay {
   background: rgba(42, 42, 42, 0.85) !important; }
 
-/*#swipebox-bottom-bar {
-    top: 50% !important;
-    background:transparent !important;
-    transform: translateY(-50%) !important;
-}
-#swipebox-arrows {
-    width: 100%!important;
-    max-width: 450px !important;
-
-}
-#swipebox-close {
-    right: 36%!important;
-    top: 31.4%!important;
-}*/
 #swipebox-slider .slide img {
-  width: 900px !important;
-  min-width: 900px !important;
-  max-width: 900px !important; }
-  @media screen and (min-width: 1290px) and (max-width: 1366px) {
-    #swipebox-slider .slide img {
-      width: 800px !important;
-      min-width: 800px !important;
-      max-width: 800px !important; } }
-  @media screen and (max-width: 900px) {
-    #swipebox-slider .slide img {
-      width: 650px !important;
-      min-width: 650px !important;
-      max-width: 650px !important; } }
+  width: 460px !important;
+  min-width: 460px !important;
+  max-width: 460px !important; }
   @media screen and (max-width: 420px) {
     #swipebox-slider .slide img {
       width: 20em !important;
@@ -10318,45 +10294,22 @@ a.swipebox- {
 
 @media screen and (max-width: 1920px) {
   a#swipebox-close {
-    right: 3em !important;
-    top: 40px !important;
+    right: 10px !important;
+    top: -6px !important;
     text-align: center;
-    background: none !important; } }
-
-@media screen and (min-width: 1290px) and (max-width: 1366px) {
-  a#swipebox-close {
-    top: 2.5em !important; } }
-
-@media screen and (max-width: 1025px) {
-  a#swipebox-close {
-    right: 1em !important;
-    top: 2em !important;
-    -webkit-transform: none;
-            transform: none; } }
-
-@media screen and (max-width: 840px) {
-  a#swipebox-close {
-    right: 1em !important;
-    top: 7em !important;
-    -webkit-transform: none;
-            transform: none; } }
-
-@media screen and (max-width: 820px) {
-  a#swipebox-close {
-    right: 0em !important;
-    top: 7.5em !important;
-    -webkit-transform: none;
-            transform: none; } }
+    background: 0 0 !important;
+    width: 36px;
+    height: 36px; } }
 
 @media screen and (max-width: 420px) {
   a#swipebox-close {
-    right: 0em !important;
-    top: 14.2em !important; } }
+    right: 7px !important;
+    top: 2.4em !important; } }
 
 @media screen and (max-width: 400px) {
   a#swipebox-close {
-    right: 0em !important;
-    top: 12.6em !important; } }
+    right: 0 !important;
+    top: 3.1em !important; } }
 
 div#swipebox-bottom-bar {
   top: 50%;
@@ -10365,7 +10318,7 @@ div#swipebox-bottom-bar {
           transform: translateY(-50%) !important; }
 
 div#swipebox-arrows {
-  max-width: 1000px;
+  max-width: 550px;
   width: 100%; }
 
 .blog ul li, .sub_page_sidebar ul li {
@@ -10429,75 +10382,10 @@ div#swipebox-arrows {
       margin-top: 0px; } }
 
 div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
-  top: auto;
-  background: 0 0;
-  text-align: left;
-  line-height: inherit;
-  display: block;
-  font-size: inherit;
-  -webkit-transform: none;
-  transform: none;
-  bottom: 0px; }
-  @media screen and (min-width: 1290px) and (max-width: 1366px) {
-    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
-      bottom: 2%; } }
-  @media screen and (max-width: 1024px) {
-    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
-      top: 82%; } }
-  @media screen and (max-width: 768px) {
-    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
-      top: 82%; } }
-  @media screen and (max-width: 420px) {
-    div#swipebox-top-bar, div#swipebox-top-bar.visible-bars {
-      top: 68%;
-      height: auto; } }
-
-div#swipebox-title {
-  max-width: 900px;
-  width: 100%;
-  margin: 0px auto;
-  text-align: left;
-  display: block; }
-  @media screen and (min-width: 1290px) and (max-width: 1366px) {
-    div#swipebox-title {
-      max-width: 800px; } }
-  @media screen and (max-width: 840px) {
-    div#swipebox-title {
-      max-width: 650px; } }
-  @media screen and (max-width: 768px) {
-    div#swipebox-title {
-      max-width: 650px; } }
-  @media screen and (max-width: 420px) {
-    div#swipebox-title {
-      max-width: 18em;
-      width: 100%;
-      margin: 0px auto; } }
-  @media screen and (max-width: 380px) {
-    div#swipebox-title {
-      max-width: 18em;
-      width: 100%;
-      margin: 0px auto; } }
+  display: none !important; }
 
 img.bc_branding_logo {
   width: 374px !important; }
-
-div#swipebox-title span {
-  color: #FFFFFF;
-  font-family: "Source Sans Pro";
-  font-size: 20.02px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 30.03px;
-  text-shadow: none;
-  text-transform: uppercase; }
-
-div#swipebox-title p {
-  font-family: "Open Sans";
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 24px;
-  color: #fff;
-  text-shadow: none; }
 
 .mobile_header_type_A .p-2 {
   padding-top: 1.5rem !important;
@@ -10505,17 +10393,13 @@ div#swipebox-title p {
 
 @media screen and (max-width: 1920px) {
   #swipebox-container {
-    max-width: 1100px;
+    max-width: 550px;
     overflow: hidden;
     margin: 0px auto;
-    max-height: 700px;
+    max-height: 310px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); } }
-
-@media screen and (min-width: 1290px) and (max-width: 1366px) {
-  #swipebox-container {
-    max-width: 1000px; } }
 
 #swipebox-next, #swipebox-prev {
   background: none !important;
