@@ -112,7 +112,7 @@ class BC_Testimonials_Widget extends WP_Widget {
               
           </div>
   
-      <div class="text-center"><a href="#" class="btn btn-primary text-uppercase w-auto mt-4 subpage_review">our reviews</a></div>
+      <div class="text-center"><a href="<?php echo get_home_url();?>/testimonials/" class="btn btn-primary text-uppercase w-auto mt-4 subpage_review">our reviews</a></div>
 </div>
                         </div>
 
