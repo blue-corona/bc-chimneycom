@@ -1057,10 +1057,14 @@ a.swipebox-{
 
 
 #swipebox-slider .slide img {
-    width: 460px !important;
-    min-width: 460px !important;
-    max-width: 460px !important;
-    
+    width: 1000px !important;
+    min-width: 1000px !important;
+    max-width: 1000px !important;
+    @media screen and (max-width: 1024px){
+    	width: 650px!important;
+	    min-width: 650px!important;
+	    max-width: 650px!important;
+    }
     @media screen and (max-width: 420px){
     	width: 20em !important;
 	    min-width: 20em !important;
@@ -1083,14 +1087,14 @@ a#swipebox-close {
 	    width: 36px;
 	    height: 36px;
     }
-    
+
     @media screen and (max-width: 420px){
     	right: 7px!important;
-    	top: 2.4em!important;
+	    top: -5px!important;
     }
     @media screen and (max-width: 400px){
     	right: 0!important;
-    	top: 3.1em!important
+    	top: -7px!important;
     }
 }
 div#swipebox-bottom-bar {
@@ -1099,7 +1103,7 @@ div#swipebox-bottom-bar {
     transform: translateY(-50%) !important;
 }
 div#swipebox-arrows {
-    max-width: 550px;
+    max-width: 1090px;
     width: 100%;
 }
 
@@ -1187,13 +1191,25 @@ img.bc_branding_logo {
 
 #swipebox-container {
     @media screen and (max-width:1920px){
-	    max-width: 550px;
+	    max-width: 1090px;
 	    overflow: hidden;
 	    margin: 0px auto;
-	    max-height: 310px;
+	    max-height: 667px;
 	    top: 50%;
 	    transform: translateY(-50%);
 	}
+	@media screen and (max-width: 1024px){
+    	max-width: 800px;
+	    overflow: hidden;
+	    margin: 0 auto;
+	    max-height: 445px;
+    }
+    @media screen and (max-width: 420px){
+    	max-height: 215px;
+    }
+    @media screen and (max-width: 400px){
+    	max-height: 193px;
+    }
 }
 
 #swipebox-next,#swipebox-prev {

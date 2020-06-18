@@ -10285,9 +10285,14 @@ a.swipebox- {
   background: rgba(42, 42, 42, 0.85) !important; }
 
 #swipebox-slider .slide img {
-  width: 460px !important;
-  min-width: 460px !important;
-  max-width: 460px !important; }
+  width: 1000px !important;
+  min-width: 1000px !important;
+  max-width: 1000px !important; }
+  @media screen and (max-width: 1024px) {
+    #swipebox-slider .slide img {
+      width: 650px !important;
+      min-width: 650px !important;
+      max-width: 650px !important; } }
   @media screen and (max-width: 420px) {
     #swipebox-slider .slide img {
       width: 20em !important;
@@ -10311,12 +10316,12 @@ a.swipebox- {
 @media screen and (max-width: 420px) {
   a#swipebox-close {
     right: 7px !important;
-    top: 2.4em !important; } }
+    top: -5px !important; } }
 
 @media screen and (max-width: 400px) {
   a#swipebox-close {
     right: 0 !important;
-    top: 3.1em !important; } }
+    top: -7px !important; } }
 
 div#swipebox-bottom-bar {
   top: 50%;
@@ -10325,7 +10330,7 @@ div#swipebox-bottom-bar {
           transform: translateY(-50%) !important; }
 
 div#swipebox-arrows {
-  max-width: 550px;
+  max-width: 1090px;
   width: 100%; }
 
 .blog ul li, .sub_page_sidebar ul li {
@@ -10400,13 +10405,28 @@ img.bc_branding_logo {
 
 @media screen and (max-width: 1920px) {
   #swipebox-container {
-    max-width: 550px;
+    max-width: 1090px;
     overflow: hidden;
     margin: 0px auto;
-    max-height: 310px;
+    max-height: 667px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); } }
+
+@media screen and (max-width: 1024px) {
+  #swipebox-container {
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 445px; } }
+
+@media screen and (max-width: 420px) {
+  #swipebox-container {
+    max-height: 215px; } }
+
+@media screen and (max-width: 400px) {
+  #swipebox-container {
+    max-height: 193px; } }
 
 #swipebox-next, #swipebox-prev {
   background: none !important;
