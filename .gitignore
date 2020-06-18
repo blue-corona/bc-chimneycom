@@ -75,6 +75,7 @@ wp-content/mysql.sql
 /wp-content/plugins/hello.php
 /wp-content/plugins/akismet*
 /wp-content/plugins/*
+!/wp-content/plugins/bc-ui-kit
 /wp-content/wp-rocket-config
 
 
