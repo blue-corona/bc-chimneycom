@@ -10,7 +10,7 @@
                     <p class="p-alt mb-0 pr-md-4 bc_sm_line_height_24 pb-4 pb-md-0">We are the only chimney company in the metropolitan area licensed by WSSC. This license is required to perform service on or reline gas appliances.</p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a href="#" class="btn btn-white w-auto px-lg-5 px-3 mt-lg-5 text-uppercase">Learn More</a>
+                    <a href="<?php echo get_home_url();?>/chimney-relining/" class="btn btn-white w-auto px-lg-5 px-3 mt-lg-5 text-uppercase">Learn More</a>
                 </div>
             </div>
         </div>
