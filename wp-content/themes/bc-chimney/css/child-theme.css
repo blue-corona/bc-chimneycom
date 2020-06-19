@@ -10288,6 +10288,11 @@ a.swipebox- {
   width: 1000px !important;
   min-width: 1000px !important;
   max-width: 1000px !important; }
+  @media screen and (max-width: 1360px) {
+    #swipebox-slider .slide img {
+      width: 800px !important;
+      min-width: 800px !important;
+      max-width: 800px !important; } }
   @media screen and (max-width: 1024px) {
     #swipebox-slider .slide img {
       width: 650px !important;
@@ -10304,24 +10309,37 @@ a.swipebox- {
       min-width: 18em !important;
       max-width: 18em !important; } }
 
-@media screen and (max-width: 1920px) {
-  a#swipebox-close {
-    right: 10px !important;
-    top: -6px !important;
-    text-align: center;
-    background: 0 0 !important;
-    width: 36px;
-    height: 36px; } }
-
-@media screen and (max-width: 420px) {
-  a#swipebox-close {
-    right: 7px !important;
-    top: -5px !important; } }
-
-@media screen and (max-width: 400px) {
-  a#swipebox-close {
-    right: 0 !important;
-    top: -7px !important; } }
+a#swipebox-close {
+  right: 10px !important;
+  top: -6px !important;
+  text-align: center;
+  background: 0 0 !important;
+  width: 36px;
+  height: 36px; }
+  @media screen and (max-width: 1920px) {
+    a#swipebox-close {
+      right: 10px !important;
+      top: -6px !important;
+      text-align: center;
+      background: 0 0 !important;
+      width: 36px;
+      height: 36px; } }
+  @media screen and (max-width: 1366px) {
+    a#swipebox-close {
+      right: 10px !important;
+      top: -5px !important;
+      text-align: center;
+      background: 0 0 !important;
+      width: 36px;
+      height: 36px; } }
+  @media screen and (max-width: 420px) {
+    a#swipebox-close {
+      right: 7px !important;
+      top: -5px !important; } }
+  @media screen and (max-width: 400px) {
+    a#swipebox-close {
+      right: 0 !important;
+      top: -7px !important; } }
 
 div#swipebox-bottom-bar {
   top: 50%;
@@ -10403,30 +10421,44 @@ img.bc_branding_logo {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important; }
 
-@media screen and (max-width: 1920px) {
-  #swipebox-container {
-    max-width: 1090px;
-    overflow: hidden;
-    margin: 0px auto;
-    max-height: 667px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); } }
-
-@media screen and (max-width: 1024px) {
-  #swipebox-container {
-    max-width: 800px;
-    overflow: hidden;
-    margin: 0 auto;
-    max-height: 445px; } }
-
-@media screen and (max-width: 420px) {
-  #swipebox-container {
-    max-height: 215px; } }
-
-@media screen and (max-width: 400px) {
-  #swipebox-container {
-    max-height: 193px; } }
+#swipebox-container {
+  max-width: 1090px;
+  overflow: hidden;
+  margin: 0px auto;
+  max-height: 667px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  @media screen and (max-width: 1920px) {
+    #swipebox-container {
+      max-width: 1090px;
+      overflow: hidden;
+      margin: 0px auto;
+      max-height: 667px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); } }
+  @media screen and (max-width: 1360px) {
+    #swipebox-container {
+      max-width: 900px;
+      overflow: hidden;
+      margin: 0px auto;
+      max-height: 550px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); } }
+  @media screen and (max-width: 1024px) {
+    #swipebox-container {
+      max-width: 800px;
+      overflow: hidden;
+      margin: 0 auto;
+      max-height: 445px; } }
+  @media screen and (max-width: 420px) {
+    #swipebox-container {
+      max-height: 215px; } }
+  @media screen and (max-width: 400px) {
+    #swipebox-container {
+      max-height: 193px; } }
 
 #swipebox-next, #swipebox-prev {
   background: none !important;
