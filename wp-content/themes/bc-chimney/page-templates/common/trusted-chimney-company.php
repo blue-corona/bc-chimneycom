@@ -10,7 +10,7 @@
                 <div class="col-md-3">
                     <div class="bg-white sevice_wrapper pt-5 pb-4 position-relative">
                         <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">It is recommended to have your chimney system inspected annually for safety regardless of frequency of use. Water damage is a chimney’s number one enemy and can happen at any time.</p>
+                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Chimney inspections ensure your fireplace is safe and structurally sound. Schedule professional inspections once a year, regardless of how often you use your fireplace.</p>
                             
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/glass_icon.svg" class="mb-4">
@@ -22,7 +22,7 @@
                 <div class="col-md-3">
                     <div class="bg-white sevice_wrapper pt-5 pb-4 position-relative">
                         <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="bc_text_16 bc_line_height_24 text-white p-3">If you have noticed strange odors or are concerned about potential creosote buildup, we recommend chimney and fireplace cleaning to prevent a safety hazard from developing. </p>
                             
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/broom_icon.svg" class="mb-4">
@@ -34,7 +34,7 @@
                 <div class="col-md-3">
                     <div class="bg-white sevice_wrapper pt-5 pb-4 position-relative">
                         <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Aging chimneys need attention once they start showing signs of wear. We repair popped-off bricks, cracked and missing mortar, damaged fireboxes, poorly sealed roof flashing, and more. </p>
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bricks_icon.svg" class="mb-4">
                         <h5 class="mb-4">Chimney & Fireplace<br>Repair</h5>
@@ -45,7 +45,7 @@
                 <div class="col-md-3">
                     <div class="bg-white sevice_wrapper pt-5 pb-4  position-relative">
                         <div class="service_content position-absolute">
-                            <p class="bc_text_16 bc_line_height_24 text-white p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="bc_text_16 bc_line_height_24 text-white p-3">When a vent lining becomes damaged, it can mean trouble for the entire system. Furnace and fireplace relining ensures optimal safety and performance for decades to come. </p>
                             
                         </div>
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fire_icon.svg" class="mb-4">
