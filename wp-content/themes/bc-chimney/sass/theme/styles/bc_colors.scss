@@ -1,0 +1,151 @@
+//Classes for color
+.bc_color_primary { 
+	color: $primary_color; 
+	&--imp{
+		@extend .bc_color_primary;
+		color: $primary_color !important; 
+	}
+}
+.bc_color_secondary { 
+	color: $secondary_color; 
+	&--imp{
+		@extend .bc_color_secondary;
+		color: $secondary_color !important; 
+	}
+}
+.bc_color_tertiary { 
+	color: $tertiary_color; 
+	&--imp{
+		@extend .bc_color_tertiary;
+		color: $tertiary_color !important; 
+	}
+}
+.bc_color_quaternary{ 
+	color: $quaternary_color; 
+	&--imp{
+		@extend .bc_color_quaternary;
+		color: $quaternary_color !important; 
+	}
+}
+.bc_color_error { 
+	color: $error_color; 
+	&--imp{
+		@extend .bc_color_error;
+		color: $error_color !important; 
+	}
+}
+.bc_color_warning { 
+	color: $warning_color; 
+	&--imp{
+		@extend .bc_color_warning;
+		color: $warning_color !important; 
+	}
+}
+.bc_color_success { 
+	color: $success_color; 
+	&--imp{
+		@extend .bc_color_success;
+		color: $success_color !important; 
+	}
+}
+.bc_color_info { 
+	color: $info_color; 
+	&--imp{
+		@extend .bc_color_info;
+		color: $info_color !important; 
+	}
+}
+.bc_color_black { 
+	color: #000000; 
+	&--imp{
+		@extend .bc_color_black;
+		color: #000000 !important; 
+	}
+}
+.bc_color_white { 
+	color: $white_color!important; 
+	&--imp{
+		@extend .bc_color_white;
+		color: $white_color !important; 
+	}
+}
+.bc_color_brown { 
+	color: $brown_color!important; 
+	&--imp{
+		@extend .bc_color_brown;
+		color: $brown_color !important; 
+	}
+}
+.color_1{
+	color: $color_1!important; 
+	&--imp{
+		@extend .color_1;
+		color: $color_1 !important; 
+	}
+}
+.color_2{
+	color: $color_2!important; 
+	&--imp{
+		@extend .color_2;
+		color: $color_2 !important; 
+	}
+}
+.color_3{
+	color: $color_3!important; 
+	&--imp{
+		@extend .color_3;
+		color: $color_3 !important; 
+	}
+}
+.color_4{
+	color: $color_4!important; 
+	&--imp{
+		@extend .color_4;
+		color: $color_4 !important; 
+	}
+}
+.color_5{
+	color: $color_5!important; 
+	&--imp{
+		@extend .color_5;
+		color: $color_5 !important; 
+	}
+}
+//Classes for bg color
+.bc_color_primary_bg { background-color: $primary_color; }
+.bc_color_secondary_bg { background-color: $secondary_color; }
+.bc_color_tertiary_bg { background-color: $tertiary_color; }
+.bc_color_quaternary_bg{ background-color: $quaternary_color; }
+.bc_color_error_bg { background-color: $error_color; }
+.bc_color_warning_bg { background-color: $warning_color; }
+.bc_color_success_bg { background-color: $success_color; }
+.bc_color_info_bg { background-color: $info_color; }
+.bc_color_black_bg { background-color: #000000; }
+.bc_color_white_bg { background-color: $white_color; }
+.bc_color_brown_bg { background-color: $brown_color !important; }
+
+//Classes for hover color
+.bc_color_primary_hover { &:hover{ color: $primary_color !important; } }
+.bc_color_secondary_hover { &:hover{ color: $secondary_color !important; } }
+.bc_color_tertiary_hover { &:hover{ color: $tertiary_color !important; } }
+.bc_color_quaternary_hover{ &:hover{ color: $quaternary_color !important; } }
+.bc_color_error_hover { &:hover{ color: $error_color !important; } }
+.bc_color_warning_hover { &:hover{ color: $warning_color !important; } }
+.bc_color_success_hover { &:hover{ color: $success_color !important; } }
+.bc_color_info_hover { &:hover{ color: $info_color !important; } }
+.bc_color_black_hover { &:hover{ color: #000000 !important; } }
+.bc_color_white_hover { &:hover{ color: $white_color !important; } }
+.bc_color_brown_hover { &:hover{ color: $brown_color !important; } }
+
+//Classes for hover bg color
+.bc_color_primary_hover_bg { &:hover{ background-color: $primary_color; } }
+.bc_color_secondary_hover_bg { &:hover{ background-color: $secondary_color; } }
+.bc_color_tertiary_hover_bg { &:hover{ background-color: $tertiary_color; } }
+.bc_color_quaternary_hover_bg{ &:hover{ background-color: $quaternary_color; } }
+.bc_color_error_hover_bg { &:hover{ background-color: $error_color; } }
+.bc_color_warning_hover_bg { &:hover{ background-color: $warning_color; } }
+.bc_color_success_hover_bg { &:hover{ background-color: $success_color; } }
+.bc_color_info_hover_bg { &:hover{ background-color: $info_color; } }
+.bc_color_black_hover_bg { &:hover{ background-color: #000000; } }
+.bc_color_white_hover_bg { &:hover{ background-color:  $white_color; } }
+.bc_color_brown_hover_bg { &:hover{ background-color:  $brown_color; } }
